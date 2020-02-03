@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  background-color: #f07c00;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0078a3;
+  text-decoration: underline;
+}
+
+.wrap {
+  background-color: white;
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0078a3;
+  text-decoration: underline;
+}
+
+#nav-bar {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  z-index: 4;
+}
+
+/* .sticky {
+    position:fixed !important;
+    top:0;
+    background: $blueAccent !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+} */
+.logo {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto 10px 15px;
+  z-index: 3;
+}
+
+.logo img {
+  max-width: 270px;
+  cursor: pointer;
+}
+
+/* The hamburger menu mobileMenu (background) */
+.mobileMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(240, 124, 0, 0.9);
+  overflow: hidden;
+  -webkit-transition: .8s;
+  transition: .8s;
+  /* The navigation links inside the mobileMenu */
+}
+
+.mobileMenu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 800;
+  color: white;
+  display: block;
+}
+
+.mobileMenu a:hover, .mobileMenu a:focus {
+  color: #00aeef;
+}
+
+/* Position the content inside the mobileMenu */
+.mobileMenu-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links so they don't overlap */
+@media screen and (max-height: 450px) {
+  .mobileMenu a {
+    font-size: 20px;
+  }
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger {
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 6px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.hamburger:before, .hamburger:after {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 50px;
+  height: 6px;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .8s, -webkit-transform .8s;
+  transition: .8s, -webkit-transform .8s;
+  transition: .8s, transform .8s;
+  transition: .8s, transform .8s, -webkit-transform .8s;
+  z-index: 8;
+}
+
+.hamburger:before {
+  top: -16px;
+}
+
+.hamburger:after {
+  top: 16px;
+}
+
+.hamburgertext {
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: coda,sans-serif;
+  font-size: .95em;
+  font-weight: 400;
+  color: white;
+  top: 65px;
+  right: 15.5px;
+  -webkit-transition: .8s;
+  transition: .8s;
+  text-align: center;
+  width: 50px;
+}
+
+.menu-icon:hover .hamburgertext,
+.menu-icon:focus .hamburgertext {
+  color: #00aeef;
+}
+
+.menu-icon:hover .hamburger,
+.menu-icon:hover .hamburger:before,
+.menu-icon:hover .hamburger:after {
+  background: #00aeef;
+}
+
+.menu-icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+}
+
+.menu-icon.active .hamburger:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-icon.active .hamburger:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0;
+}
+
+.menu-items {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Media Queries */
+@media (min-width: 475px) {
+  .logo img {
+    margin-right: auto;
+    max-width: 350px;
+  }
+  .menu-icon {
+    top: 20px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo img {
+    max-width: 250px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-items a {
+    color: white;
+    font-weight: 800;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+    font-family: Coda;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-property: color;
+    transition-property: color;
+  }
+  .menu-items a:hover {
+    color: #00aeef;
+    text-decoration: underline;
+  }
+  .menu-items a:active {
+    color: rgba(76, 142, 167, 0.94);
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo img {
+    max-width: 380px;
+  }
+  /*     .menu-items li {
+        font-size: 1.5rem;
+    } */
+  .menu-items a {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */

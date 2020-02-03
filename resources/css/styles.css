@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  background-color: #f07c00;
+}
+
+body {
+  background-color: white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+a:hover {
+  color: #0078a3;
+  text-decoration: underline;
+}
+
+.wrap {
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

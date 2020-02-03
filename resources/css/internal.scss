@@ -1,0 +1,256 @@
+@import './styles';
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex:1;
+    background-color: $white;
+}
+
+#banner {
+    @include parallax-background('../images/backgrounds/background.jpg');
+    padding-top:200px;
+    display:flex;
+    min-height: 20vh;
+    div.banner-text {
+        font-family: Coda;
+        font-size:4rem;
+        font-weight: 800;
+        margin:auto;
+        color: $white;
+    }
+}
+  
+.sidebar-wrap {
+    display:none;
+}
+
+.mid-wrap {
+    margin:10px;
+    flex:1;
+}
+
+h1 {
+    color: $orange;
+    text-align: center;
+    line-height: 1.1em;
+    margin:20px;
+}
+  
+p {
+    font-size: 1.25rem;
+}
+
+.button {
+    background:$blue;
+    color: $orange;
+    padding:15px 55px 15px 55px;
+    margin:20px;
+    width:20%;
+    align-self: center;
+    text-align:center;
+    border: 1px solid $orange;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition-property: color, border,background, padding;
+    transition-duration: .5s;
+}
+
+.button:hover {
+    background:  $orange;
+    color: $blue;
+    border: 1px solid $blue;
+}
+
+.button:active {
+    background: $orange;
+    color: $blue;
+    border:5px solid $blue;
+    font-size:1em;
+    padding: 10px;
+}
+
+.button-icon {
+    opacity:0;
+    background-image: url();
+}
+
+.button:hover .button-icon {
+    opacity:1;
+    position: absolute;
+    left:80%;
+}
+
+/* Media Queries */
+
+
+@media (min-width:400px) {
+    .logo img{
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .logo img{
+        max-width: 250px;
+    }
+
+    .menu-icon {
+        display:none;
+    }
+
+    .menu-items {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .menu-items ul {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .menu-items li {
+        font-size: 1.2rem;
+        padding-right: 1.5rem;
+        font-family: Coda;
+    }
+
+    .menu-items a {
+        text-decoration: none;
+        color:white;
+        font-weight: 800;
+    }
+
+    li a {
+        transition-duration: .5s;
+        transition-property: color;
+    }
+
+    li a:hover {
+        color: rgba(var(--main-color),1);
+        text-decoration: underline;
+    }
+
+    li a:active {
+        color: rgba(var(--third-color), .94);
+        text-decoration: none;
+    }
+
+
+    .footer-form-wrap {
+        display:inline-flex;
+        flex-direction: row;
+    }
+
+    .footer-form-col-1 {
+        display:flex;
+        flex-direction:column;
+        flex:1 1 40%;   
+    }
+
+    .footer-form-col-1 span,
+    span.form-cta  {
+        font-size: 2rem;
+        color: rgba(var(--second-color),1);
+        line-height: 1.2em;
+        font-family: coda;
+        font-weight: 800;
+    }
+
+    span.line1 {
+        padding:10px;
+        color:rgba(var(--third-color),1);
+    }
+
+    span.line2,
+    span.line3,
+    span.line4 {
+        font-size:1.2rem;
+        font-weight:400;
+        color:rgba(var(--third-color),1);
+        line-height: 1.5em;
+    }
+
+    iframe {
+        padding:10px;
+    }
+
+    .footer-form-col-2 {
+        display:flex;
+        flex-direction: column;
+        flex:1 1 60%;
+
+    }
+
+}
+
+@media (min-width:1025px) {
+    .logo img{
+        max-width: 400px;
+    }
+
+    .menu-items li {
+        font-size: 1.5rem;
+    }
+
+    .mid-wrap {
+        display:flex;
+        flex-direction: row;
+        max-width: 1600px;
+        margin: 10px auto;
+    }
+
+    .content-wrap {
+        flex-direction:column;
+        display: flex;
+        flex:10;
+        max-height: 100vh;
+        overflow:scroll;
+        
+    }
+
+    .content {
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .sidebar-wrap {
+        flex:4;
+        display:flex;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width:90%;
+        margin:0 auto;
+    }
+
+    .sidebar li:first-child {
+    border-top: rgba(var(--main-color),.9) 5px solid;
+    }
+
+    .sidebar li {
+        border-bottom: rgba(var(--second-color),1) 1px solid;
+        padding:25px;
+        font-size:1rem;
+        font-weight: 400;
+    }
+
+    .sidebar a {
+        color:rgba(var(--main-color),1);
+        font-weight:800;
+        text-decoration: none;
+    }
+
+    .sidebar a:hover {
+        color:rgba(var(--second-color),1);
+        text-decoration: underline;
+    }
+}
