@@ -129,7 +129,7 @@ function pacificbeachhomes_scripts() {
 		$path = '//127.0.0.1:3000';
 	else :
 		$path = get_stylesheet_directory_uri();
-		wp_enqueue_style( 'custom-style', get_stylesheet_uri() . '/assets/css/main.bundle.css');
+		wp_enqueue_style( 'custom-style', $path . '/assets/css/main.bundle.css');
 	endif;
 
 	wp_enqueue_script( 'main', $path . '/assets/js/main.bundle.js', [], null, true );
