@@ -82,7 +82,7 @@
             <main class="content2">
                 <article>
                     <h2>Why Choose Pacific Beach Homes and Ryan Pearson?</h2>
-                    <img class="lazy ryanimg" data-src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/agents/ryan-pearson.png" alt="Ryan Pearson Pacific Beach realtor">
+                    <img class="lazy ryanimg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/agents/ryan-pearson.png" alt="Ryan Pearson Pacific Beach realtor">
                     <p class="buying-text2">
                         Ryan Pearson grew up on Law street in Pacific Beach, and went to Pacific Beach Elementary, Pacific Beach Middle School and Mission Bay High School. While Ryan is experienced in helping buyers and sellers all over San Diego County, he specializes in Pacific Beach and the coastal market. Whether you are thinking of buying your first home, a seasoned investor looking for the best deal on the market, or a Seller wondering what your options are, you can trust Ryan Pearson with your real estate needs.
                         <br><br>
