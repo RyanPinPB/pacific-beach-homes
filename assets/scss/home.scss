@@ -13,7 +13,7 @@
     display:inline-flex;
     flex-direction: column;
     color: white;
-    background: linear-gradient( black,rgba(0, 120, 163,1));
+    background: linear-gradient( $black,$blueAccent);
     flex:1 1 auto;
     justify-content: center;
     text-align: center;
@@ -29,7 +29,7 @@
 }
 
 .selling-point:hover {
-    background:radial-gradient( black,rgba(0, 120, 163,1));
+    background:radial-gradient( $black,$blueAccent);
     z-index: 3;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .sp1 h3 {
-    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),rgba(0, 174, 239,1)); 
+    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),$blue); 
 }
 
 .sp2 h3 {
@@ -71,7 +71,7 @@
 }
 
 .sp3 h3 {
-    background: -webkit-linear-gradient(right, rgba(0, 174, 239,1),rgba(170, 234, 249,1)); 
+    background: -webkit-linear-gradient(right, $blue,rgba(170, 234, 249,1)); 
 }
 
 .selling-point h3 {
@@ -152,7 +152,7 @@
     padding:20px 30px 20px 30px;
     opacity:1;
     border-radius:50px;
-    box-shadow: 1px 10px 10px black;
+    box-shadow: 1px 10px 10px $black;
     margin:20px;
     text-decoration:none;
     color:white;
@@ -161,14 +161,14 @@
 }
 
 .imagebutton a:hover{
-    background:rgba(0, 120, 163,1);
-    box-shadow: 1px 10px 10px black;
+    background:$blueAccent;
+    box-shadow: 1px 10px 10px $black;
 
 }
 
 .imagebutton a:active{
     background:rgba(0, 120, 163,.80);
-    box-shadow: 1px 5px 5px black;
+    box-shadow: 1px 5px 5px $black;
 
 }
 
@@ -216,7 +216,7 @@
 }
 
 .local{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
     font-size: 1.25rem;
     line-height: 1.2em;
     font-family: Coda;
@@ -287,7 +287,7 @@
 }
 
 .calltoaction{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
     font-size: 1.5rem;
     line-height: 1.5em;
     font-family: Coda;
@@ -373,7 +373,7 @@
         flex:1 1 25%;
         order:-1;
         padding:10px;
-        background:linear-gradient( rgba(0, 120, 163,1),white);
+        background:linear-gradient( $blueAccent,white);
     }
     .sidebar {
         display:flex;

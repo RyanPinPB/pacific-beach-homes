@@ -50,7 +50,7 @@
   
 /* When you mouse over the navigation links, change their color */
 /* .mobileMenu a:hover, .mobileMenu a:focus {
-    color: rgba(0, 174, 239,1);
+    color: $blue;
 } */
   
 
@@ -108,7 +108,7 @@
     font-family:coda,sans-serif;
     font-size: .95em;
     font-weight: 400;
-    color:rgba(255,255,255,1);
+    color:$white;
     top:65px;
     right:15.5px;
     transition:.8s;
@@ -117,7 +117,7 @@
 }
 
 /* .menu-icon:hover .hamburgertext{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
 } */
 
 /* .menu-icon:hover .hamburger,

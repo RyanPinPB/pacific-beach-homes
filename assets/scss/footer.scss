@@ -1,7 +1,7 @@
 
 footer {
     text-align:center;
-    background:linear-gradient( white,rgba(0, 174, 239,1));
+    background:linear-gradient( $white,$blue);
     margin:auto;
     padding:100px 10px 0px 10px;
     position:relative;
@@ -18,7 +18,7 @@ footer {
 .footer-form-col-1 span,
 span.form-cta  {
     font-size: 2rem;
-    color: rgba(240, 124, 0,1);
+    color: $orange;
     line-height: 1.2em;
     font-family: coda;
     font-weight: 800;
@@ -31,7 +31,7 @@ span.form-cta  {
 
 span.line1 {
     padding:10px;
-    color:rgba(0, 120, 163,1);
+    color:$blueAccent;
 }
 
 span.line2,
@@ -39,7 +39,7 @@ span.line3,
 span.line4 {
     font-size:1.2rem;
     font-weight:400;
-    color:rgba(0, 120, 163,1);
+    color:$blueAccent;
     line-height: 1.5em;
 }
 
@@ -61,7 +61,7 @@ span.footer-text {
 }
 
 .footer-text a {
-    color: rgba(0,0,0,1);
+    color: $black;
 }
 
 .footer-text a:hover {
@@ -70,7 +70,7 @@ span.footer-text {
 }
 
 span.orange {
-    color:rgba(240, 124, 0,1);
+    color:$orange;
     font-weight:800;
 }
 
@@ -109,7 +109,7 @@ svg {
 }
 
 svg:hover {
-    fill:rgba(240, 124, 0,1) !important;
+    fill:$orange !important;
 }
 
 
@@ -143,7 +143,7 @@ svg:hover {
     .footer-form-col-1 span,
     span.form-cta  {
         font-size: 2rem;
-        color: rgba(240, 124, 0,1);
+        color: $orange;
         line-height: 1.2em;
         font-family: coda;
         font-weight: 800;
@@ -151,7 +151,7 @@ svg:hover {
     }
 
     .form-cta {
-        color:rgba(240, 124, 0,1);
+        color:$orange;
         font-family:coda;
         font-weight:800;
         font-size: 2em;
@@ -162,7 +162,7 @@ svg:hover {
 
     span.line1 {
         padding:10px;
-        color:rgba(0, 120, 163,1);
+        color:$blueAccent;
     }
 
     span.line2 {
@@ -174,7 +174,7 @@ svg:hover {
     span.line4 {
         font-size:1.2rem;
         font-weight:400;
-        color:rgba(0, 120, 163,1);
+        color:$blueAccent;
         line-height: 1.5em;
     }
 
@@ -225,8 +225,8 @@ svg:hover {
         font-weight: 800;
         padding:20px;
         margin:10px auto;
-        background:rgba(240, 124, 0,1);
-        color:white;
+        background:$orange;
+        color:$white;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -235,17 +235,17 @@ svg:hover {
     .footerForm input:focus,
     .footerForm button[type=submit]:focus,
     .footerForm textarea:focus {
-        outline: rgba(240, 124, 0,1) solid 3px;
+        outline: $orange solid 3px;
     }
     
     .footerForm button[type=submit]:hover {
         /*background:rgba(255,215,0,.8);*/
-        background:radial-gradient( rgba(240, 124, 0,1),rgba(240, 124, 0,.75));
+        background:radial-gradient( $orange, fade-out($orange, .25));
     }
     
     .footerForm button[type=submit]:active {
         /*background:rgba(255,215,0,.8);*/
-        background:radial-gradient( rgba(240, 124, 0,1),rgba(240, 124, 0,.25));
+        background:radial-gradient( $orange,fade-out($orange, .75));
     }
 
     .footerForm input,
@@ -255,28 +255,28 @@ svg:hover {
     }
 
     .yelp {
-        fill:rgba(0,0,0, 1);
+        fill:$black;
     }
     
     .google {
-        fill: rgba(0,0,0, 1);
+        fill: $black;
     }
     
     .facebook {
-        fill:rgba(0, 0 ,0 , 1);
+        fill:$black;
     }
     
     .instagram {
-        fill: rgba(0,0,0,1);
+        fill: $black;
         
     }
     
     .linkedin {
-        fill:rgba(0, 0, 0, 1);
+        fill:$black;
     }
     
     .twitter {
-        fill:rgba(0, 0, 0, 1);
+        fill:$black;
     }
 
 

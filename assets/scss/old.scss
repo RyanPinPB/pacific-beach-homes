@@ -604,7 +604,7 @@ a {
 } */
 
 a:hover, a:focus, a:active {
-	color: rgba(0, 120, 163,1);
+	color: $blueAccent;
 }
 
 a:focus {
@@ -988,12 +988,12 @@ html {
 }
 
 a {
-    color: rgba(0, 174, 239,1);
+    color: $blue;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(0, 120, 163,1);
+    color: $blueAccent;
     text-decoration: underline;
 }
 
@@ -1053,7 +1053,7 @@ a:hover {
     position:fixed;
     z-index: 5;
     top:0;
-    background: rgba(0, 120, 163,1) !important;
+    background: $blueAccent !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
 }
 
@@ -1129,7 +1129,7 @@ a:hover {
   
 /* When you mouse over the navigation links, change their color */
 /* .mobileMenu a:hover, .mobileMenu a:focus {
-    color: rgba(0, 174, 239,1);
+    color: $blue;
 } */
   
 
@@ -1196,7 +1196,7 @@ a:hover {
 }
 
 /* .menu-icon:hover .hamburgertext{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
 } */
 
 /* .menu-icon:hover .hamburger,
@@ -1250,12 +1250,12 @@ ul {
 }
 
 #menu-sidebar li a:hover {
-    color: rgba(0, 120, 163,1);
+    color: $blueAccent;
 }
 
 #menu-sidebar li:first-child {
     border-top: none;
-  }
+}
 
 .container-banner-text {
     position: absolute;
@@ -1413,7 +1413,7 @@ ul {
     display:inline-flex;
     flex-direction: column;
     color: white;
-    background: linear-gradient( black,rgba(0, 120, 163,1));
+    background: linear-gradient( black,$blueAccent);
     flex:1 1 auto;
     justify-content: center;
     text-align: center;
@@ -1429,7 +1429,7 @@ ul {
 }
 
 .selling-point:hover {
-    background:radial-gradient( black,rgba(0, 120, 163,1));
+    background:radial-gradient( black,$blueAccent);
     z-index: 3;
 }
 
@@ -1463,7 +1463,7 @@ ul {
 }
 
 .sp1 h3 {
-    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),rgba(0, 174, 239,1)); 
+    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),$blue); 
 }
 
 .sp2 h3 {
@@ -1471,7 +1471,7 @@ ul {
 }
 
 .sp3 h3 {
-    background: -webkit-linear-gradient(right, rgba(0, 174, 239,1),rgba(170, 234, 249,1)); 
+    background: -webkit-linear-gradient(right, $blue,rgba(170, 234, 249,1)); 
 }
 
 .selling-point h3 {
@@ -1525,7 +1525,7 @@ h1 {
     font-family: coda;
     font-weight: 800;
     margin:20px 10px 20px 10px;
-    background: -webkit-linear-gradient( rgba(0, 120, 163,1),rgba(0, 174, 239, 1)); 
+    background: -webkit-linear-gradient( $blueAccent,rgba(0, 174, 239, 1)); 
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1599,7 +1599,7 @@ p {
 }
 
 .imagebutton a:hover{
-    background:rgba(0, 120, 163,1);
+    background:$blueAccent;
     box-shadow: 1px 10px 10px black;
 
 }
@@ -1654,7 +1654,7 @@ p {
 }
 
 .local{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
     font-size: 1.25rem;
     line-height: 1.2em;
     font-family: Coda;
@@ -1725,7 +1725,7 @@ p {
 }
 
 .calltoaction{
-    color:rgba(0, 174, 239,1);
+    color:$blue;
     font-size: 1.5rem;
     line-height: 1.5em;
     font-family: Coda;
@@ -1745,7 +1745,7 @@ p {
 
 footer {
     text-align:center;
-    background:linear-gradient( white,rgba(0, 174, 239,1));
+    background:linear-gradient( white,$blue);
     margin:auto;
     padding:100px 10px 0px 10px;
     position:relative;
@@ -1775,7 +1775,7 @@ span.form-cta  {
 
 span.line1 {
     padding:10px;
-    color:rgba(0, 120, 163,1);
+    color:$blueAccent;
 }
 
 span.line2,
@@ -1783,7 +1783,7 @@ span.line3,
 span.line4 {
     font-size:1.2rem;
     font-weight:400;
-    color:rgba(0, 120, 163,1);
+    color:$blueAccent;
     line-height: 1.5em;
 }
 
@@ -1942,7 +1942,7 @@ svg:hover {
     }
 
     li a:hover {
-        color: rgba(0, 174, 239,1);
+        color: $blue;
         text-decoration: underline;
     }
 
@@ -2041,7 +2041,7 @@ svg:hover {
         flex:1 1 25%;
         order:-1;
         padding:10px;
-        background:linear-gradient( rgba(0, 120, 163,1),white);
+        background:linear-gradient( $blueAccent,white);
     }
     .sidebar {
         display:flex;
@@ -2162,7 +2162,7 @@ svg:hover {
 
     span.line1 {
         padding:10px;
-        color:rgba(0, 120, 163,1);
+        color:$blueAccent;
     }
 
     span.line2 {
@@ -2174,7 +2174,7 @@ svg:hover {
     span.line4 {
         font-size:1.2rem;
         font-weight:400;
-        color:rgba(0, 120, 163,1);
+        color:$blueAccent;
         line-height: 1.5em;
     }
 
