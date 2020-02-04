@@ -291,8 +291,10 @@
     font-weight: 800;
     text-align: center;
     margin:40px 10px 10px 10px;
+    a {
+        white-space: nowrap;
+    }
 }
-
 
 
 /* Media Queries */

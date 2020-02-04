@@ -64,11 +64,11 @@
 
     <section id="section3">
         <div class="imagebutton pbsale lazy">
-            <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral">Pacific Beach real estate for sale</a>
+            <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" target="blank">Pacific Beach real estate for sale</a>
         </div>
 
         <div class="imagebutton homeworth lazy">
-            <a href="https://pearson.lajollaagent.com/home-valuation/">How much is my home worth?</a>
+            <a href="https://pearson.lajollaagent.com/home-valuation/" target="blank">How much is my home worth?</a>
         </div>
 
         <div class="imagebutton learn lazy">
