@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 	
-	<footer id="colophon" class="site-footer">
+	<footer id="footer" class="site-footer">
 		<div class="site-info">
 
 			<div class="footer-form-wrap">
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	</footer><!-- #footer -->
 
 </div><!-- #page -->
 

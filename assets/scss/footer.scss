@@ -188,10 +188,6 @@ svg:hover {
         flex:1 1 60%;
     }
 
-/*     .footerForm form {
-        width:80%;
-    } */
-
     fieldset {
         padding: 0.35em 0.75em 0.625em;
         width:80%;
@@ -206,10 +202,10 @@ svg:hover {
 
     .footerForm input {
         width:100%;
-        /* height:40px; */
         padding:10px;
         margin:10px auto;
         font-size: 1.5rem;
+        font-family:coda;
     }
     
     .footerForm textarea {
@@ -218,6 +214,7 @@ svg:hover {
         height:150px;
         padding:10px;
         margin:10px auto;
+        font-family:coda;
     }
     
     .footerForm button[type=submit] {
