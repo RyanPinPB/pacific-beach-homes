@@ -28,7 +28,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Coda:400,800&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
-	<link rel="icon" type="image/png" href="/resources/icons/favicon.png">
+	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/favicon.png">
 	<!-- <link rel="manifest" href="/manifest.json" async> -->
 	<?php wp_head(); ?>
 </head>
