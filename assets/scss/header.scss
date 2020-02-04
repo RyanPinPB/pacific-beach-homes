@@ -69,7 +69,7 @@
 }
 
 .site-branding img{
-    max-width: 270px;
+    max-width: 220px;
     cursor: pointer;
 }
 
@@ -126,6 +126,14 @@
 
 
 /* Media Queries */
+@media (min-width:375px) {
+    .site-branding img{
+        max-width: 270px;
+    }
+
+}
+
+
 @media (min-width:400px) {
     
     .banner-text {
