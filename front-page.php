@@ -2,8 +2,6 @@
 
 <a id="scroll"><span></span>Scroll</a>
 
-<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga illum quis ipsa praesentium, accusantium dignissimos rerum libero eaque, harum vel quidem explicabo adipisci eveniet voluptatem cupiditate pariatur itaque labore totam?</h1>
-
 <section id="section1" class="stickyMenuStart">
     <div class="selling-point sp1">
         <h3>Local agents you can trust</h3><span>Talk with agents who live and work in Pacific Beach. Wondering if a home is a good deal? Overpriced? Ask a local agent. Get tips about the best homes available, the buying and selling process, and more.</span>
