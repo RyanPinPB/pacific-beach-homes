@@ -1,0 +1,527 @@
+#section1 {
+    width:100%;
+    display: inline-flex;
+    flex-direction: row;
+    min-height:250px;
+    justify-content: space-evenly;
+    align-items:stretch;
+    align-content: stretch;
+    z-index:3;
+}
+
+.selling-point {
+    display:inline-flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient( black,rgba(0, 120, 163,1));
+    flex:1 1 auto;
+    justify-content: center;
+    text-align: center;
+    min-height:250px;
+    margin:auto;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.selling-point span {
+    display:none;
+    z-index: 3;
+}
+
+.selling-point:hover {
+    background:radial-gradient( black,rgba(0, 120, 163,1));
+    z-index: 3;
+}
+
+.selling-point:hover h3 {
+    display:none;
+}
+
+.selling-point:hover span{
+    display:inline-block;
+    z-index: 3;
+}
+
+.sp1:hover {
+    box-shadow: 5px 10px 10px black;
+    z-index: 3;
+}
+
+.sp2:hover {
+    box-shadow: 0px 10px 10px black;
+    z-index: 3;
+}
+
+.sp3:hover {
+    box-shadow: -5px 10px 10px black;
+    z-index: 3;
+}
+
+.sp2,
+.sp3 {
+    display:none;
+}
+
+.sp1 h3 {
+    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),rgba(0, 174, 239,1)); 
+}
+
+.sp2 h3 {
+    background: -webkit-linear-gradient(right, rgba(170, 234, 249,1),rgba(85, 204, 244,1)); 
+}
+
+.sp3 h3 {
+    background: -webkit-linear-gradient(right, rgba(0, 174, 239,1),rgba(170, 234, 249,1)); 
+}
+
+.selling-point h3 {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.selling-point span {
+    padding:0px 20px 10px 20px;
+    font-size:1em;
+    line-height: 1.5em;
+} 
+
+#contact-flag {
+    display:none;
+}
+
+
+.mid-wrap {
+    display:flex;
+    flex-direction: column;
+    flex:1 1 auto;
+}
+
+#section2 {
+    display: flex;
+    flex-direction:row;
+    flex:1 1 auto;
+}
+
+.content-wrap {
+    display:flex;
+    flex:1 1 100%;
+    width:100%;
+}
+
+.content {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.content span{
+    font-weight:700;
+}
+
+.sidebar-wrap {
+    display:none;
+}
+
+#section3 {
+    display:flex;
+    flex-direction:column;
+    flex:1 1 100%;
+    margin:5px;
+}
+
+.imagebutton {
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    text-align: center;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+    margin:5px 0px 5px 0px;
+    white-space: normal;
+}
+
+.imagebutton a{
+    background: rgba(0, 120, 163,.95);
+    background:linear-gradient( rgba(0, 120, 163,.95),rgba(0, 174, 239,.95));
+    padding:20px 30px 20px 30px;
+    opacity:1;
+    border-radius:50px;
+    box-shadow: 1px 10px 10px black;
+    margin:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    font-size: .90em;
+}
+
+.imagebutton a:hover{
+    background:rgba(0, 120, 163,1);
+    box-shadow: 1px 10px 10px black;
+
+}
+
+.imagebutton a:active{
+    background:rgba(0, 120, 163,.80);
+    box-shadow: 1px 5px 5px black;
+
+}
+
+.pbsale.lazy {
+    background-image: none;
+}
+
+.pbsale {
+    background-image: url("../images/button/house-with-pool.jpg");
+}
+
+.homeworth.lazy {
+    background-image: none;
+}
+
+.homeworth {
+    background-image: url("../images/button/crystal-pier.jpg");
+}
+
+.learn.lazy {
+    background-image: none;
+}
+
+.learn {
+    background-image: url("../images/button/crystal-pier-aeriel.jpg");
+}
+
+
+#section4 {
+    display: flex;
+    flex-direction:row;
+    flex:1 1 auto;
+}
+
+.content-wrap2 {
+    display:flex;
+    flex:1 1 auto;
+}
+
+.content2 {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    flex:1 1 auto;
+}
+
+.local{
+    color:rgba(0, 174, 239,1);
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-family: Coda;
+    font-weight: 800;
+    text-align: center;
+    margin:50px 30px 30px 30px;
+}
+
+.content2 h2 {
+    color: rgba(240, 124, 0,1);
+    text-align: center;
+    margin-top:20px;
+    line-height: 1;
+}
+  
+.content2 p {
+    font-size: 1.25rem;
+    margin-top:20px;
+}
+
+.ryanimg {
+    display:none;
+}
+
+.sidebar-wrap2 {
+    display:none;
+}
+
+#section5 {
+    display: flex;
+    flex-direction:row;
+    flex:1 1 auto;
+}
+
+.content-wrap3 {
+    display:flex;
+    flex:1 1 100%;
+    width:100%;
+    background: url("../images/backgrounds/cubes.png") repeat/* , radial-gradient( farthest-corner at 60% 55%, rgba(240, 124, 0,1), white,white) */;
+}
+
+.content3 {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.content3 h2 {
+    color: rgba(240, 124, 0,1);
+    text-align: center;
+    margin-top:20px;
+    line-height: 1;
+}
+  
+.content3 p {
+    font-size: 1.25rem;
+    margin-top:20px;
+}
+
+.content3 ul{
+    list-style: disc;
+    font-size:1.25rem;
+    line-height: 1.5rem;
+}
+
+.content3 ul li{
+    padding: 5px 7.5px 7.5px 0px;
+}
+
+.calltoaction{
+    color:rgba(0, 174, 239,1);
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    font-family: Coda;
+    font-weight: 800;
+    text-align: center;
+    margin:40px 10px 10px 10px;
+}
+
+
+
+/* Media Queries */
+@media (min-width:400px) {
+
+}
+
+@media (min-width:450px) {
+
+}
+
+@media (min-width: 769px) {
+
+    .selling-point {
+        display:inline-flex;
+        width:33%;
+    }
+
+    .selling-point h3 {
+        padding:0px 20px 0px 20px;
+    }
+
+    #contact-flag {
+        position:fixed;
+        top:50%;
+        left:0;
+        width:175px;
+        height:100px;
+        background:rgba(240, 124, 0,1);
+        box-shadow: 1px 15px 15px rgba(0,0,0,.3);
+        z-index: 2;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flag-text {
+        color:rgba(255,255,255,1);
+        font-size: 1.2em;
+        font-weight:700;
+        padding:10px;
+        text-align: center;
+    }
+    
+    .flag-text:hover {
+        color:rgba(255,255,255,.9);
+        font-size: 1.5em;
+        font-weight:800;
+        padding:8px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .mid-wrap {
+        display:flex;
+        flex-direction: column;
+        max-width: 1700px;
+        margin: auto;
+    }
+
+    .content-wrap {
+        display: flex;
+        flex-direction:column;
+        flex:1 1 75%;        
+    }
+
+    .content {
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .sidebar-wrap {
+        display:flex;
+        flex:1 1 25%;
+        order:-1;
+        padding:10px;
+        background:linear-gradient( rgba(0, 120, 163,1),white);
+    }
+    .sidebar {
+        display:flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .sidebar img {
+        margin:10px auto;
+        width:100%;
+        flex:1 1 auto;
+        object-fit: scale-down;
+    }
+
+    #section3 {
+        flex-direction: row;
+    }
+
+    .imagebutton {
+        margin:5px;
+        height:400px;
+    }
+
+    .imagebutton a{
+        font-size: 1em;
+    }
+
+    .local{
+        font-size: 2rem;
+        line-height: 1.2em;
+        margin:50px 50px 30px 50px;
+    }
+
+    .content2,
+    .content3 {
+        padding:0px 15px;
+    }
+
+    img.ryanimg {
+        display:flex;
+        float:right;
+        background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(255,255,255,.95) 80%,rgba(255,255,255,.95) 100%);
+    }
+
+
+/* removed the map iframe and moved it to the footer - sidebar is blank so added a background cube pattern instead of sidebar
+    .content-wrap3 {
+        display: flex;
+        flex-direction:column;
+        flex:1 1 75%;    
+        background: url("https://pacificbeachhomes.com/wp-content/uploads/2019/10/cubes.png") repeat, radial-gradient(circle, rgba(240, 124, 0,1) 5%, white 95%);   
+    }
+
+    .content3 {
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .sidebar-wrap3 {
+        display:flex;
+        order:-1;
+        flex:1 1 25%;
+        padding:10px;
+        background: url("https://pacificbeachhomes.com/wp-content/uploads/2019/10/cubes.png") repeat, radial-gradient(circle, rgba(240, 124, 0,1) 20%, white 80%);
+        /*background-image: repeating-linear-gradient( -45deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 15px, transparent 15px, transparent 30px);
+        background-color:rgba(240, 124, 0,1);
+    }
+    .sidebar3 {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .sidebar3 iframe {
+        margin:10px auto;
+        max-width:100%;
+        flex:1 1 auto;
+        max-height: 700px;
+    }
+*/
+    span.calltoaction {
+        display:none;
+    }
+
+}
+
+@media (min-width:1025px) {
+
+    img.petcoparkimg {
+        display:none;
+    }
+
+    #contact-flag {
+        left:unset;
+        right:0;
+
+    }
+
+    .content3 {
+        width:80%;
+        margin:40px auto;
+    }
+
+
+/*      Removing the image in sidebar - added as a float instead
+    img.ryanimg {
+        display:none;
+    }
+
+    .content-wrap2 {
+        display: flex;
+        flex-direction:column;
+        flex:1 1 75%;        
+    }
+
+    .content2 {
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .sidebar-wrap2 {
+        display:flex;
+        flex:1 1 25%;
+        padding:10px;
+    }
+    .sidebar2 {
+        display:flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .sidebar2 img {
+        margin:10px auto;
+        object-fit: scale-down;
+        flex:1 1 auto;
+    }*/
+}
+
+@media (min-width:1350px) {
+    img.surfimg {
+        display:none;
+    }
+    
+    img.wavesimg {
+        display:none;
+    }
+}

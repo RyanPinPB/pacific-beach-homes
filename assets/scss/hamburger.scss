@@ -1,0 +1,168 @@
+
+
+/* The hamburger menu Overlay (background) */
+
+.mobileMenu {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 19; /* Sit on top of everything but the Hamburger */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(240, 124, 0, 0.9); /* Orange w/opacity */
+    overflow: hidden; /* Disable horizontal scroll */
+    transition: .8s; /* 2 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+  
+/* Position the content inside the overlay */
+.mobileMenu-content {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    /*text-align: center;  Centered text/links */ 
+}
+
+#menu-mobile {
+    display:flex;
+    flex-direction: column;
+}
+
+/* The navigation links inside the overlay */
+#menu-mobile a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight:800;
+    color: rgba(255, 255, 255,1);
+    display: block; /* Display block instead of inline */
+    /* transition: 0.8s; */ /* Transition effects on hover (color) */
+}
+
+#menu-mobile a:hover,
+#menu-mobile a:active,
+#menu-mobile a:focus {
+    color: rgba(0, 174, 239, 1);
+}
+  
+/* When you mouse over the navigation links, change their color */
+/* .mobileMenu a:hover, .mobileMenu a:focus {
+    color: rgba(0, 174, 239,1);
+} */
+  
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links so they don't overlap */
+@media screen and (max-height: 450px) {
+    #menu-mobile a {
+        font-size: 20px}
+}
+
+.menu-icon {
+    position:absolute;
+    top:0px;
+    right:5px;
+    width:80px;
+    height:80px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger {
+    position: absolute;
+    background:white;
+    top:50%;
+    left:50%;
+    width:50px;
+    height:6px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+    transition: .8s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    background:white;
+    width:50px;
+    height:6px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+    transition:.8s, transform .8s;
+    z-index: 8;
+}
+
+.hamburger:before {
+    top:-16px;
+}
+
+.hamburger:after {
+    top:16px;
+}
+
+.hamburgertext {
+    position:absolute;
+    justify-content: space-between;
+    font-family:coda,sans-serif;
+    font-size: .95em;
+    font-weight: 400;
+    color:rgba(255,255,255,1);
+    top:65px;
+    right:15.5px;
+    transition:.8s;
+    text-align: center;
+    width:50px;
+}
+
+/* .menu-icon:hover .hamburgertext{
+    color:rgba(0, 174, 239,1);
+} */
+
+/* .menu-icon:hover .hamburger,
+.menu-icon:hover .hamburger:before,
+.menu-icon:hover .hamburger:after{
+    background: rgba(0, 174, 239, 1);
+} */
+
+.menu-icon.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow:0px 2px 5px rgba(0,0,0,0);
+}
+
+.menu-icon.active .hamburger:before {
+    transform: rotate(45deg);
+    top:0;
+}
+
+.menu-icon.active .hamburger:after {
+    transform: rotate(135deg);
+    top:0;
+}
+
+
+
+/* Media Queries */
+@media (min-width:400px) {
+
+}
+
+@media (min-width:450px) {
+
+    .menu-icon {
+        top:20px;
+        right:10px;
+        width:80px;
+        height:80px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .menu-icon {
+        display:none;
+	}
+	
+}

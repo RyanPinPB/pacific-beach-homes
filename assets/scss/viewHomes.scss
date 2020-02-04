@@ -1,0 +1,217 @@
+.properties {
+    display: none;
+}
+
+.propContainer {
+    display:flex;
+    flex: 1 1 auto;
+    height: 100%;
+    margin: 5px;
+    /* cursor: pointer; */
+    overflow:hidden;
+    transition: all .3s ease-in-out;
+}
+
+.propContainer:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+
+.propContainer div{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: top;
+    transition: all .3s ease-in-out;
+}
+
+div.overlay {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: all .3s ease-in-out;
+    background-color: rgba(0,0,0,.1);
+}
+
+div.overlay a {
+    font-size: .75rem;
+    padding:10px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 120, 163,.9);
+    color:white;
+    text-align: center;
+    margin:auto;
+    transition: transform .3s ease-in-out;
+}
+
+div.overlay a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.propContainer:hover div div.overlay {
+    opacity:1;
+}
+
+.prop1 {
+    background-image: url(../images/properties/prop1.png);
+}
+
+.prop2 {
+    background-image: url(../images/properties/prop2.png);
+}
+
+.prop3 {
+    background-image: url(../images/properties/prop3.png);
+}
+
+.prop4 {
+    background-image: url(../images/properties/prop4.png);
+}
+
+.prop5 {
+    background-image: url(../images/properties/prop5.png);
+}
+
+.prop6.lazy {
+    background-image: none;
+}
+
+.prop6 {
+    background-image: url(../images/properties/prop7.png);
+}
+
+.prop7.lazy {
+    background-image: none;
+}
+
+.prop7 {
+    background-image: url(../images/properties/prop6.png);
+}
+
+.prop8.lazy {
+    background-image: none;
+}
+
+.prop8 {
+    background-image: url(../images/properties/prop8.png);
+}
+
+.prop9.lazy {
+    background-image: none;
+}
+
+.prop9 {
+    background-image: url(../images/properties/prop9.png);
+}
+
+.prop10.lazy {
+    background-image: none;
+}
+
+.prop10 {
+    background-image: url(../images/properties/prop10.png);
+}
+
+@media (min-width: 769px) {
+    .properties {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        height:175px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 840px) {
+    .properties {
+        height:200px;
+    }
+}
+
+@media (min-width: 950px) {
+    .properties {
+        height:225px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .properties {
+        height:250px;
+    }
+    a.overlay a {
+        font-size: 1.25rem;
+        padding:10px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .properties {
+        height:275px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .properties {
+        height:300px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .properties {
+        height:200px;
+    }
+
+    div.overlay a {
+        font-size: .75rem;
+        padding:10px 10px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .properties {
+        height:225px;
+    }
+}
+
+@media (min-width: 1650px) {
+    .properties {
+        height:250px;
+    }
+}
+
+a.viewHomes {
+    display:flex;
+    align-self: auto;
+    text-align: center;
+    width: fit-content;
+    background-color: rgba(240, 124, 0,.9);
+    padding:15px;
+    border-radius: 20px;
+    color:white;
+    margin:25px auto 50px auto;
+    font-size: 1rem;
+    font-family: coda;
+    transition: color .3s ease-in-out;
+    box-shadow:1px 2px 4px rgba(0,0,0,.5);
+}
+
+a.viewHomes:hover {
+    background-color: rgba(240, 124, 0,1);
+    /* color:rgba(0, 174, 239, 1); */
+    text-decoration: none;
+    box-shadow:1px 5px 10px rgba(0,0,0,.5);
+}
+
+a.viewHomes:active {
+    box-shadow:0px 0px 0px rgba(0,0,0,0);
+}
+
+@media (min-width: 769px) {
+    a.viewHomes {
+        font-size:1.25rem;
+    }
+}
