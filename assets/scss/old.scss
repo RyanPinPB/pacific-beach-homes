@@ -755,13 +755,13 @@ a:hover, a:active {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
+	// display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
+	// display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -1141,7 +1141,7 @@ a:hover {
 
 .menu-icon {
     position:absolute;
-    top:10px;
+    top:0px;
     right:5px;
     width:80px;
     height:80px;

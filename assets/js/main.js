@@ -3,7 +3,7 @@ if ( module.hot ) {
 	module.hot.accept();
 }
 
-// import hambugerMenu from './hambuhger-menu';
+// import hambugerMenu from './hamburger-menu';
 import '../scss/app.scss';
 
 class App {
@@ -151,7 +151,7 @@ class App {
     }); */
 
     /** ================================================================
-      Lazy load images 500px before in viewport
+    Lazy load images 500px before in viewport
     ================================================================= */
 
     document.addEventListener("DOMContentLoaded", function() {

@@ -55,9 +55,9 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/volleyball.jpg" alt="Pacific Beach Volleyball">
                 <img class="lazy" src="https://ik.imagekit.io/y0qivtggs/pacific-beach-sunset__2QgRDVRpl.jpg?tr=w-400,h-600,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset.jpg" alt="Pacific Beach cliffs during sunset">
                 <img class="lazy" src="https://ik.imagekit.io/y0qivtggs/crystal-pier-drone_-25QyiIjm.jpg?tr=w-400,h-600,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone.jpg" alt="Pacific Beach Crystal Pier aerial">
-                <img class="lazy surfimg" src="https://ik.imagekit.io/y0qivtggs/surfing_MdZmFDH1go.jpg?tr=w-400,h-550,bl-30,q-50" data-src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing.jpg" alt="Pacific Beach Surfer in a barrel">
-                <img class="lazy wavesimg" src="https://ik.imagekit.io/y0qivtggs/waves_PVdcIIMpm.jpg?tr=w-400,h-300,bl-30,q-50" data-src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves.jpg" alt="waves in pacific beach">
-                <img class="lazy petcoparkimg" src="https://ik.imagekit.io/y0qivtggs/petco-park_y_9_zOB6Lq.jpg?tr=w-400,h-300,bl-30,q-50" data-src=".<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park.jpg" alt="Aerial image of Petco Park">
+                <img class="lazy surfimg" src="https://ik.imagekit.io/y0qivtggs/surfing_MdZmFDH1go.jpg?tr=w-400,h-550,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing.jpg" alt="Pacific Beach Surfer in a barrel">
+                <img class="lazy wavesimg" src="https://ik.imagekit.io/y0qivtggs/waves_PVdcIIMpm.jpg?tr=w-400,h-300,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves.jpg" alt="waves in pacific beach">
+                <img class="lazy petcoparkimg" src="https://ik.imagekit.io/y0qivtggs/petco-park_y_9_zOB6Lq.jpg?tr=w-400,h-300,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park.jpg" alt="Aerial image of Petco Park">
             </div>
         </div>
     </section>
