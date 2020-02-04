@@ -120,13 +120,19 @@ add_action( 'widgets_init', 'pacificbeachhomes_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pacificbeachhomes_scripts() {
+	
 	wp_enqueue_style( 'pacificbeachhomes-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'pacificbeachhomes-navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], '20151215', true );
+	wp_enqueue_script( 'pacificbeachhomes-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'pacificbeachhomes-navigation', get_template_directory_uri() . '/js/navigation.js', [], '20151215', true );
+	if ( $_SERVER['SERVER_NAME'] === 'localhost' || strpos($_SERVER['SERVER_NAME'], '.local') !== false ) :
+		$path = '//127.0.0.1:3000';
+	else :
+		$path = get_stylesheet_directory_uri();
+		wp_enqueue_style( 'custom-style', get_stylesheet_uri() . '/assets/css/main.bundle.css');
+	endif;
 
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', [], null, true );
-
-	wp_enqueue_script( 'pacificbeachhomes-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'main', $path . '/assets/js/main.bundle.js', [], null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
