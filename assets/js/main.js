@@ -123,9 +123,9 @@ class App {
 
 
 
-    /** ================================================================
-      Hide / show the master navigation menu only after scrolling up
-    ================================================================= */
+    /** ==================================================================================================
+      Hide / show the master navigation menu only after scrolling up - will need jquery library as written
+    ==================================================================================================== */
         
     /* $(document).ready(function(){
       console.log('Window Height is: ' + $(window).height());

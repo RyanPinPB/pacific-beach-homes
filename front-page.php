@@ -14,7 +14,7 @@
     </div>
 </section>
 <div id="contact-flag">
-    <a href="#colophon" class="flag-text">contact us today</a>
+    <a href="#footer" class="flag-text">contact us today</a>
 </div>
 
 <!-- Content Section -->
