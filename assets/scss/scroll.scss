@@ -94,7 +94,7 @@
 
 
 /*fade to black on background behind to contrast well with white mouse and text */
-#banner::after {
+.frontBanner::after {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -4,7 +4,7 @@
 
 .mobileMenu {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed; /* Stay in place */
     z-index: 19; /* Sit on top of everything but the Hamburger */
@@ -62,17 +62,25 @@
 
 // sized for small screens here, breakpoint of 375 pixels below in media query
 .menu-icon {
-    position:absolute;
-    top:-7px;
-    right:0px;
+    // position:absolute;
+    display:flex;
+    flex-direction: column;
+    // top:-7px;
+    // right:0px;
     width:80px;
     height:80px;
     cursor: pointer;
     z-index: 20;
 }
 
+.hamburgerContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
 .hamburger {
-    position: absolute;
+    position: relative; //changed from absolute
     background:white;
     top:50%;
     left:50%;
@@ -104,17 +112,17 @@
 }
 
 .hamburgertext {
-    position:absolute;
-    justify-content: space-between;
+    // position:absolute;
+    // justify-content: space-between;
     font-family:coda,sans-serif;
     font-size: .95em;
     font-weight: 400;
     color:$white;
-    top:65px;
-    right:15.5px;
+    // top:65px;
+    // right:15.5px;
     transition:.8s;
     text-align: center;
-    width:50px;
+    // width:50px;
 }
 
 /* .menu-icon:hover .hamburgertext{

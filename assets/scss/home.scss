@@ -6,7 +6,6 @@
     justify-content: space-evenly;
     align-items:stretch;
     align-content: stretch;
-    z-index:3;
 }
 
 .selling-point {
@@ -20,17 +19,14 @@
     min-height:250px;
     margin:auto;
     cursor: pointer;
-    // z-index: 3;
 }
 
 .selling-point span {
     display:none;
-    // z-index: 3;
 }
 
 .selling-point:hover {
     background:radial-gradient( $black,$blueAccent);
-    // z-index: 3;
 }
 
 .selling-point:hover h3 {
@@ -39,22 +35,18 @@
 
 .selling-point:hover span{
     display:inline-block;
-    // z-index: 3;
 }
 
 .sp1:hover {
     box-shadow: 5px 10px 10px black;
-    // z-index: 3;
 }
 
 .sp2:hover {
     box-shadow: 0px 10px 10px black;
-    // z-index: 3;
 }
 
 .sp3:hover {
     box-shadow: -5px 10px 10px black;
-    // z-index: 3;
 }
 
 .sp2,
