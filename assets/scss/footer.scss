@@ -83,6 +83,7 @@ div.social-icons {
 }
 
 .google {
+    fill: #34A853;
     fill: url(#google-gradient);
 }
 
@@ -91,6 +92,7 @@ div.social-icons {
 }
 
 .instagram {
+    fill: #fe4164;
     fill: url(#ig-gradient);
     
 }
@@ -282,6 +284,7 @@ svg:hover {
     }
     
     .footer-text-container:hover .google {
+        fill: #34A853;
         fill: url(#google-gradient);
     }
     
@@ -290,6 +293,7 @@ svg:hover {
     }
     
     .footer-text-container:hover .instagram {
+        fill: #fe4164;
         fill: url(#ig-gradient);
         
     }

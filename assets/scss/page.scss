@@ -1,5 +1,7 @@
 .internal-page {
     padding: 0px 5px;
+    display:flex;
+    flex-direction: column;
 }
 
 
@@ -43,6 +45,12 @@
 }
 
 @media (min-width:1350px) {
+
+    .internal-page {
+        flex-direction: row;
+        max-width:1600px;
+        margin:auto;
+    }
 
     .internal-page div.content-area {
         flex: 1 1 70%;
