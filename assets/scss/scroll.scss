@@ -1,5 +1,11 @@
 /* Scrolldown animation */
 
+@media (max-height:449px) {
+    a#scroll {
+        display:none;
+    }
+}
+
 @media (min-height:450px) {
     a#scroll {
         position: absolute;

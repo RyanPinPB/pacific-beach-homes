@@ -57,7 +57,7 @@
 /* When the height of the screen is less than 450 pixels, change the font-size of the links so they don't overlap */
 @media screen and (max-height: 450px) {
     #menu-mobile a {
-        font-size: 20px}
+        font-size: 2rem}
 }
 
 // sized for small screens here, breakpoint of 375 pixels below in media query
