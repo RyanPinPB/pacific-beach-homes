@@ -39,7 +39,6 @@
     align-items: center;
     width:100%;
     transition: all .3s ease-in;
-    // max-height:100px;
     z-index:100;
 }
     
@@ -69,8 +68,6 @@
     display: flex;
     align-items: center;
     margin:10px;
-    // z-index: 3;
-    // max-width: 230px;
 }
 
 .site-branding a{
@@ -219,6 +216,10 @@
         top:45%;
     }
 
+    #banner.internal {
+        min-height: 25vh;
+    }
+
 }
 
 @media (min-width:1025px) {
@@ -237,5 +238,7 @@
 }
 
 @media (min-width:1350px) {
-
+    #banner.internal {
+        min-height: 30vh;
+    }
 }

@@ -152,12 +152,9 @@ class App {
 
         const contentStart = document.getElementById("content");
         const distanceToContent = contentStart.offsetTop;
-/*         if (window.pageYOffset > distanceToContent) {
-          nav.classList.add("blueNav");
-        } else {
-          nav.classList.remove("blueNav");
-        } */
-        document.getElementById('scroll').style.opacity = 0;
+        if(document.getElementById('scroll')) {
+          document.getElementById('scroll').style.opacity = 0;
+        }
 
       }
       lastScroll = currentScroll;
