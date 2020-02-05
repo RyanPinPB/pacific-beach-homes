@@ -36,11 +36,11 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pacificbeachhomes' ); ?></a>
 		<?php if ( is_front_page() ) : ?>
-			<section id="banner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 100vh; position: relative; width:100%; z-index: 3;">
+			<section id="banner" class="frontBanner">
 		<?php else: ?>
-			<section id="banner-internal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 35vh; position: relative; width:100%; z-index: 3;">
+			<section id="banner" class="internal">
 		<?php endif; ?>
-			<header id="masthead" class="site-header header">
+			<header id="masthead" class="site-header header is-visible">
 				<div class="site-branding">
 					<?php
 					the_custom_logo();
@@ -88,7 +88,7 @@
 		<?php if ( is_front_page() ) : ?>
 			<span class="banner-text">Welcome to Pacific Beach</span>
 		<?php else:  ?>
-			<span class="banner-text-internal stickyMenuStart"><?php single_post_title(); ?></span>
+			<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
 		<?php endif; ?>
 		</section>
 

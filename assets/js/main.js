@@ -69,7 +69,10 @@ class App {
       })
     }
 
-    // Fade banner text and scroll-down icon on scroll parallax affect
+
+    /** =======================================================================================
+        Fade banner text and scroll-down icon on scroll parallax affect
+    ========================================================================================= */
 
     /* document.addEventListener('scroll', function() {
         let currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -96,59 +99,83 @@ class App {
     background_image_parallax($("#banner")); */
 
 
-    /** ======================================================
+    /** =======================================================================================
         Activate sticky nav bar
-        When the user scrolls the page, execute activateStickyMenu
-    ======================================================= */
+        When the user scrolls the page, execute activateStickyMenu after passing banner section
+    ========================================================================================= */
 
-    window.onscroll = function() {activateStickyMenu()};
+/*     window.onscroll = function() {activateStickyMenu()};
 
-    // Get the header
     let header = document.getElementById("masthead");
-    let section1 = document.querySelector(".stickyMenuStart");
+    let endOfBanner = document.getElementById("content");
 
-    // Get the offset position of the navbar
-    let sticky = section1.offsetTop;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    let distanceToContent = endOfBanner.offsetTop;
 
     function activateStickyMenu() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
+        if (window.pageYOffset > distanceToContent) {
+            header.classList.add("blueNav");
         } else {
-            header.classList.remove("sticky");
+            header.classList.remove("blueNav");
         }
-    }
+    } */
 
 
 
 
     /** ==================================================================================================
       Hide / show the master navigation menu only after scrolling up - will need jquery library as written
-    ==================================================================================================== */
-        
-    /* $(document).ready(function(){
-      console.log('Window Height is: ' + $(window).height());
-      console.log('Document Height is: ' + $(document).height());
-        let previousScroll = 0;
-        $(window).scroll(function(){
-            let currentScroll = $(this).scrollTop();
-            if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
-                if (currentScroll > previousScroll){
-                    window.setTimeout(hideNav, 300);
-                } else {
-                    window.setTimeout(showNav, 300);
-                }
-                previousScroll = currentScroll;
-            }
-        });
-        function hideNav() {
-            $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
-        }
-        function showNav() {
-            $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
-        }
-    }); */
+    ==================================================================================================== */   
+
+    const nav = document.querySelector("#masthead");
+    const visible = "is-visible";
+    const hidden = "is-hidden";
+    let lastScroll = 0;
+    
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll == 0) {
+        nav.classList.remove(hidden);
+        nav.classList.remove("blueNav");
+        return;
+      }
+      
+      if (currentScroll > lastScroll && !nav.classList.contains(hidden)) {
+        // down
+        nav.classList.remove(visible);
+        nav.classList.add(hidden);
+
+      } else if (currentScroll < lastScroll && nav.classList.contains(hidden)) {
+        // up
+        nav.classList.remove(hidden);
+        nav.classList.add(visible);
+        nav.classList.add("blueNav");
+
+        const contentStart = document.getElementById("content");
+        const distanceToContent = contentStart.offsetTop;
+/*         if (window.pageYOffset > distanceToContent) {
+          nav.classList.add("blueNav");
+        } else {
+          nav.classList.remove("blueNav");
+        } */
+        document.getElementById('scroll').style.opacity = 0;
+
+      }
+      lastScroll = currentScroll;
+    });
+
+    /** ========================================================================
+    Sizing banner on initial vertical height to prevent jumping on mobile scroll
+    ========================================================================== */
+
+    let vh = window.innerHeight * 0.01;
+
+    let header = document.getElementById('banner');
+    // let headerInt = document.getElementById('banner-internal');
+    if(header.classList.contains('frontBanner')) {
+      header.style.setProperty('--vh', `${vh}px`);
+    }
+
+
 
     /** ================================================================
     Lazy load images 500px before in viewport

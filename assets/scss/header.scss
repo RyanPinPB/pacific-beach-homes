@@ -4,36 +4,42 @@
 
 // loading banners as inline styles
 
-// #banner {
-//     background-image: url('../images/backgrounds/background.jpg');
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     min-height: 100vh;
-//     position: relative;
-//     width:100%;
-//     z-index: 3;
-// }
+.frontBanner {
+    background-image: url('../images/backgrounds/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    width:100%;
+    z-index: 3;
+}
 
-// #banner-internal {
-//     background-image: url('../images/backgrounds/backgroundInternal.jpg');
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     min-height: 35vh;
-//     position: relative;
-//     width:100%;
-//     z-index: 3;
-// }
+#banner.internal {
+    background-image: url('../images/backgrounds/backgroundInternal.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:200px;
+    // min-height: 35vh;
+    // height: calc(var(--vh, 1vh) * 35);
+    position: relative;
+    width:100%;
+    z-index: 3;
+}
 
 #masthead {
+    position:fixed;
+    top:0;
     background: rgba(0, 120, 163,0);
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     width:100%;
     transition: all .3s ease-in;
-
+    max-height:100px;
+    z-index:100;
 }
     
 #masthead.is-hidden {
@@ -52,11 +58,8 @@
     -webkit-transition: -webkit-transform .3s,background .3s,color .3s;
 }
 
-.sticky {
-    position:fixed;
-    z-index: 5;
-    top:0;
-    background: $blueAccent !important;
+#masthead.blueNav {
+    background: $blueAccent;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
 }
 
@@ -69,7 +72,7 @@
 }
 
 .site-branding img{
-    max-width: 220px;
+    max-width: 230px;
     cursor: pointer;
 }
 
