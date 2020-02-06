@@ -72,6 +72,7 @@
 
 .site-branding a{
     max-width: 235px;
+    max-height:80px;
     cursor: pointer;
 }
 
@@ -140,7 +141,7 @@
 
 /* Media Queries */
 /* @media (min-width:375px) {
-    .site-branding img{
+    .site-branding a{
         max-width: 270px;
     }
 
@@ -158,7 +159,7 @@
 }
 
 @media (min-width:450px) {
-/*     .site-branding img{
+/*     .site-branding a{
         margin-right: auto;
         max-width:350px;
     } */
@@ -173,7 +174,7 @@
 
 @media (min-width: 769px) {
     
-/*     .site-branding img{
+/*     .site-branding a{
         max-width: 250px;
     } */
 	
@@ -223,7 +224,7 @@
 }
 
 @media (min-width:1025px) {
-/*     .site-branding img{
+/*     .site-branding a{
         max-width: 380px;
     } */
 
