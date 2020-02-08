@@ -73,8 +73,12 @@
 .site-branding a{
     max-width: 235px;
     height: auto;
-    // max-height:80px;
+    max-height:80px;
     cursor: pointer;
+    transition: transform .3s ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .main-navigation {
@@ -98,8 +102,6 @@
 .menu-main-container {
     display:none;
 }
-
-
 
 
 .container-banner-text {
@@ -200,14 +202,42 @@
 
     .menu-main-container li {
         font-size: 1.2rem;
-        padding-right: 1.5rem;
+        padding: 0px .75rem;
         font-family: coda;
     }
 
     .menu-main-container a {
         text-decoration: none;
-        color:rgba(255,255,255,1);
+        color: $white;
         font-weight: 800;
+
+        &:hover {
+            transform:scale(1.03);
+            color: $white; // fade-out($white, $amount: .15);
+            text-decoration: none;
+        }
+    }
+
+    .underlineAnimation {
+        position: relative;
+    }
+
+    .underlineAnimation:after{
+        content: '';
+        position: absolute;
+        width: 0; height: 2px;
+        display: block;
+        margin-top: 0px;
+        right: 0;
+        background: fade-out($color: $white, $amount: .6); // -webkit-linear-gradient(right,$orange, $white);
+        transition: width .3s ease;
+        -webkit-transition: width .3s ease;
+    }
+        
+    .underlineAnimation:hover:after{
+        width: 100%;
+        left: 0;
+        background: fade-out($color: $white, $amount: .6); // -webkit-linear-gradient(right,$orange, $white);
     }
 
     .banner-text {

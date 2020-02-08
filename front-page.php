@@ -103,6 +103,74 @@
     -->
     </section>
 
+    <h2 class="testimonials">Client Testimonials</h2>
+    <div class="carousel-container">
+        <section class="carousel" aria-label="Gallery">
+            <ul class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide current-slide">
+                    <div class="carousel__snapper">
+                        <!-- <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a> -->
+                        <div class="testimonial">
+                            <q class="testimonial-header">Ryan Pearson was terrific!</q>
+                            <p class="testimonial-quote">Warm, friendly, & knowledgeable. He was totally available and responded immediately to my questions; either phone or email. He was patient and showed me many condos all over San Diego for five months until I found my perfect home.  The home was a highly sought-after condo that came with multiple offers.  I was impressed by how Ryan was able to negotiate and win my home!  I highly recommend Ryan to any potential client.</p>
+                            <span class="testimonial-author">Bea</span>
+                        </div> 
+                        <!-- <a href="#carousel__slide2" class="carousel__next">Go to next slide</a> -->
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <!-- <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a> -->
+                        <div class="testimonial">
+                            <q class="testimonial-header">I would recommend Ryan to anyone</q>
+                            <p class="testimonial-quote">I worked with Ryan on my first home purchase, and I couldn't be happier with my experience and the house he found for me! We toured La Jolla, North Park, South Park and Golden Hill over the course of a few months, and we finally found a new development in Golden Hill that was exactly what I was looking for. I decided on an end unit with the highest elevation (and best views). We were first to act, so we managed to get it for $20k less than even the middle units, which was a great surprise! I can't thank Ryan enough for making this first home buying experience seamless. I would recommend Ryan to anyone looking for a knowledgeable San Diego real estate agent.</p>
+                            <span class="testimonial-author">Jason</span>
+                        </div> 
+                        <!-- <a href="#carousel__slide3" class="carousel__next">Go to next slide</a> -->
+                    </div>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <!-- <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a> -->
+                        <div class="testimonial">
+                            <q class="testimonial-header">Ryan Pearson is a great real estate agent in Pacific Beach.</q>
+                            <p class="testimonial-quote">Ryan helped us remodel and sell our home about a year ago. His knowledge of the market, contractors, negotiating and all of the contracts really helped. He was always respectful of our time and was very responsive and advised us well on what to remodel on our house before the sale. I would recommend Ryan for any real estate need in PB or San Diego. We also had a blast celebrating the sale and I look forward to my future real estate investments</p>
+                            <span class="testimonial-author">Doug</span>
+                        </div> 
+                        <!-- <a href="#carousel__slide4" class="carousel__next">Go to next slide</a> -->
+                    </div>
+                </li>
+                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <!-- <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a> -->
+                        <div class="testimonial">
+                            <q class="testimonial-header">Really helpful in making real estate easy to understand</q>
+                            <p class="testimonial-quote">Ryan Pearson helped me sell my townhome in Pacific Beach in March 2017 and it was a great experience. Ryan is a local in Pacific Beach and knows more about the area than most and is really helpful in making real estate easy to understand. Some words I would use to describe Ryan are kind, trustworthy and outgoing. I highly recommend using Ryan to help you achieve your real estate goals.</p>
+                            <span class="testimonial-author">Matt</span>
+                        </div> 
+                        <!-- <a href="#carousel__slide1" class="carousel__next">Go to first slide</a> -->
+                    </div>
+                </li>
+            </ul>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <button class="carousel__navigation-button current-slide">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <button class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <button class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <button class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+    </div>
+
     <section id="section5">
         <div class="content-wrap3">
             <main class="content3">

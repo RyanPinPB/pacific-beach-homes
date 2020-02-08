@@ -323,6 +323,10 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        transition: all .3 ease-in-out;
+        &:hover {
+                box-shadow: 1px 15px 15px fade-out($color: $orange, $amount: .5);
+        }
     }
     
     .flag-text {
@@ -331,6 +335,7 @@
         font-weight:700;
         padding:10px;
         text-align: center;
+        transition:all .3s ease-in-out;
     }
     
     .flag-text:hover {
@@ -388,6 +393,17 @@
     .imagebutton {
         margin:5px;
         height:400px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+        transition: transform .3s ease-in-out;
+        &:hover {
+            transform:scale(1.02);
+            box-shadow: 8px 8px 13px rgba(0,0,0,.4);
+            a {
+                box-shadow: 1px 10px 10px fade-out($color: $black, $amount: .3);
+            }
+        }
+
+
     }
 
     .imagebutton a{
