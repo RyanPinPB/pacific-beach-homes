@@ -176,123 +176,120 @@ class App {
     /** ================================================================
     Make homepage testimonial slider interactive
     ================================================================= */
+    if(document.querySelector('.carousel-container')) {
+      const track = document.querySelector('.carousel__viewport');
+      const slides = Array.from(track.children);
+      // const currentSlide = track.querySelector('.current-slide');
+      // const nextButton = document.querySelector('.carousel__next');
+      // const prevButton = document.querySelector('.carousel__prev');
 
-    const track = document.querySelector('.carousel__viewport');
-    const slides = Array.from(track.children);
-    // const currentSlide = track.querySelector('.current-slide');
-    // const nextButton = document.querySelector('.carousel__next');
-    // const prevButton = document.querySelector('.carousel__prev');
+      const slideWidth = slides[0].getBoundingClientRect().width;
 
-    const slideWidth = slides[0].getBoundingClientRect().width;
+      function updateSlideClass(track, currentSlide , targetSlide) {
+        currentSlide.classList.remove('current-slide');
+        targetSlide.parentNode.classList.add('current-slide');
+      }
 
+      // **uncomment this if you activate next and previous buttons on side of carrousel **
+      // ******* when user clicks left, move slides to the left *******
+      
+      // prevButton.addEventListener('click', e => {
+      //   const currentSlide = track.querySelector('.current-slide');
+      //   const prevSlide = currentSlide.previousElementSibling;
 
-    function moveToSlide(track, currentSlide , targetSlide) {
-      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-      currentSlide.style = 'right:1';
-      currentSlide.classList.remove('current-slide');
-      targetSlide.parentNode.classList.add('current-slide');
-    }
-
-    // **uncomment this if you activate next and previous buttons on side of carrousel **
-    // ******* when user clicks left, move slides to the left *******
-    
-    // prevButton.addEventListener('click', e => {
-    //   const currentSlide = track.querySelector('.current-slide');
-    //   const prevSlide = currentSlide.previousElementSibling;
-
-    //   moveToSlide(track, currentSlide, targetSlide);
-    // });
+      //   moveToSlide(track, currentSlide, targetSlide);
+      // });
 
 
-    // ***** when user clicks right, move slides to the right ******
+      // ***** when user clicks right, move slides to the right ******
 
-    // nextButton.addEventListener('click', e => {
-    //   const currentSlide = track.querySelector('.current-slide');
-    //   const nextSlide = currentSlide.nextElementSibling;
+      // nextButton.addEventListener('click', e => {
+      //   const currentSlide = track.querySelector('.current-slide');
+      //   const nextSlide = currentSlide.nextElementSibling;
 
-    //   moveToSlide(track, currentSlide, targetSlide);
-    // });
+      //   moveToSlide(track, currentSlide, targetSlide);
+      // });
 
-    // ****** when user clicks nav button, move to that slide *******
+      // ****** when user clicks nav button, move to that slide *******
 
-    const dotsNav = document.querySelector('.carousel__navigation-list')
-    const dots = Array.from(dotsNav.children);
-    const currentSlide = track.querySelector('.current-slide');
-    // const nextSlide = currentSlide.nextElementSibling;
-    // const prevSlide = currentSlide.previousElementSibling;
+      const dotsNav = document.querySelector('.carousel__navigation-list')
+      const dots = Array.from(dotsNav.children);
+      const currentSlide = track.querySelector('.current-slide');
+      // const nextSlide = currentSlide.nextElementSibling;
+      // const prevSlide = currentSlide.previousElementSibling;
 
-    dotsNav.addEventListener('click', e => {
-        const targetDot = e.target.closest('button');
+      dotsNav.addEventListener('click', e => {
+          const targetDot = e.target.closest('button');
 
-        if(!targetDot) return;
+          if(!targetDot) return;
 
-        const currentSlide = track.querySelector('.current-slide');
-        const currentDot = dotsNav.querySelector('.current-slide');
-        const targetIndex = dots.findIndex(dot => dot.firstElementChild === targetDot);
-        const currentIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
-        const targetSlide = slides[targetIndex];
-        let distanceToMove = (-1)*slideWidth*(targetIndex);
+          const currentSlide = track.querySelector('.current-slide');
+          const currentDot = dotsNav.querySelector('.current-slide');
+          const targetIndex = dots.findIndex(dot => dot.firstElementChild === targetDot);
+          const currentIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
+          const targetSlide = slides[targetIndex];
+          let distanceToMove = (-1)*slideWidth*(targetIndex);
 
-        currentDot.classList.remove('current-slide');
+          currentDot.classList.remove('current-slide');
 
-        moveToSlide(track, currentSlide, targetSlide.firstElementChild);
+          updateSlideClass(track, currentSlide, targetSlide.firstElementChild);
 
-        targetDot.classList.add('current-slide');
+          targetDot.classList.add('current-slide');
 
-        slides.forEach(slide => {
-          slide.style.transform = 'translateX(' + distanceToMove + 'px)';
-        })
+          slides.forEach(slide => {
+            slide.style.transform = 'translateX(' + distanceToMove + 'px)';
+          })
 
-    });
+      });
 
-    // change currentDot on swipe/slide/flick of carousel - turned off because of scroll left/right back-button issues.
+      // change currentDot on swipe/slide/flick of carousel - turned off because of scroll left/right back-button issues.
 
-    /* let carouselObserver = new IntersectionObserver(function(slides, observer) {
+      /* let carouselObserver = new IntersectionObserver(function(slides, observer) {
 
-      slides.forEach( slide => {
-        if(!slide.isIntersecting) {
+        slides.forEach( slide => {
+          if(!slide.isIntersecting) {
 
-          if(slide.target.classList.contains('current-slide')) {
-            const prevIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
-            slide.target.classList.remove('current-slide');
-            dots[prevIndex].firstElementChild.classList.remove('current-slide');
-          } else {
-            return;
-          }
-
-        } else {
-          if (!slide.target.classList.contains('current-slide')) {
-            slide.target.classList.add('current-slide');
-
-            const target = slide.target;
-
-            const allSlides = document.querySelectorAll('.carousel__slide');
-
-            let newIndex;
-            let i;
-            for(i=0; i < allSlides.length; i++) {
-              if (allSlides[i] === target) {
-                newIndex = i;
-              };
+            if(slide.target.classList.contains('current-slide')) {
+              const prevIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
+              slide.target.classList.remove('current-slide');
+              dots[prevIndex].firstElementChild.classList.remove('current-slide');
+            } else {
+              return;
             }
 
-            dots[newIndex].firstElementChild.classList.add('current-slide');
-
           } else {
-            return;
+            if (!slide.target.classList.contains('current-slide')) {
+              slide.target.classList.add('current-slide');
+
+              const target = slide.target;
+
+              const allSlides = document.querySelectorAll('.carousel__slide');
+
+              let newIndex;
+              let i;
+              for(i=0; i < allSlides.length; i++) {
+                if (allSlides[i] === target) {
+                  newIndex = i;
+                };
+              }
+
+              dots[newIndex].firstElementChild.classList.add('current-slide');
+
+            } else {
+              return;
+            }
+
           }
+        })
+      }, {
+          threshold: 1
+          // rootMargin: "0px 0px 500px 0px"
+      });
 
-        }
-      })
-    }, {
-        threshold: 1
-        // rootMargin: "0px 0px 500px 0px"
-    });
-
-    slides.forEach(function(slide) {
-      carouselObserver.observe(slide);
-    }); */
-
+      slides.forEach(function(slide) {
+        carouselObserver.observe(slide);
+      }); */
+    }
 
     /** ================================================================
     Lazy load images 500px before in viewport
