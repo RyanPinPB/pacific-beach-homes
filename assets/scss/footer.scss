@@ -79,31 +79,58 @@ div.social-icons {
 }
 
 .yelp {
-    fill:rgba(211, 35, 35, 1);
+    fill:$black;
 }
 
 .google {
-    fill: #34A853;
-    // fill: url(#google-gradient);
+    fill:$black;
 }
 
 .facebook {
-    fill:rgba(65, 114, 184, 1);
+    fill:$black;
 }
 
 .instagram {
-    fill: #fe4164;
-    // fill: url(#ig-gradient);
+    fill:$black;
     
 }
 
 .linkedin {
-    fill:rgba(0, 119, 181, 1);
+    fill:$black;
 }
 
 .twitter {
+    fill:$black;
+}
+
+
+.footer-text-container:hover .yelp {
+    fill:rgba(211, 35, 35, 1);
+}
+
+.footer-text-container:hover .google {
+    // fill: #34A853;
+    fill: url(#google-gradient);
+}
+
+.footer-text-container:hover .facebook {
+    fill:rgba(65, 114, 184, 1);
+}
+
+.footer-text-container:hover .instagram {
+    // fill: #fe4164;
+    fill: url(#ig-gradient);
+    
+}
+
+.footer-text-container:hover .linkedin {
+    fill:rgba(0, 119, 181, 1);
+}
+
+.footer-text-container:hover .twitter {
     fill:rgba(29, 161, 242, 1);
 }
+
 
 svg {
     width:45px;
@@ -233,7 +260,6 @@ div.grecaptcha-badge {
         cursor: pointer;
     }
     
-    /* input[type=text]:focus, */
     .footerForm input:focus,
     .footerForm button[type=submit]:focus,
     .footerForm textarea:focus {
@@ -254,59 +280,6 @@ div.grecaptcha-badge {
     .footerForm textarea,
     .footerForm button {
         box-shadow: 0px 5px 10px rgba(0,0,0,.5);
-    }
-
-    .yelp {
-        fill:$black;
-    }
-    
-    .google {
-        fill: $black;
-    }
-    
-    .facebook {
-        fill:$black;
-    }
-    
-    .instagram {
-        fill: $black;
-        
-    }
-    
-    .linkedin {
-        fill:$black;
-    }
-    
-    .twitter {
-        fill:$black;
-    }
-
-
-    .footer-text-container:hover .yelp {
-        fill:rgba(211, 35, 35, 1);
-    }
-    
-    .footer-text-container:hover .google {
-        fill: #34A853;
-        fill: url(#google-gradient);
-    }
-    
-    .footer-text-container:hover .facebook {
-        fill:rgba(65, 114, 184, 1);
-    }
-    
-    .footer-text-container:hover .instagram {
-        fill: #fe4164;
-        fill: url(#ig-gradient);
-        
-    }
-    
-    .footer-text-container:hover .linkedin {
-        fill:rgba(0, 119, 181, 1);
-    }
-    
-    .footer-text-container:hover .twitter {
-        fill:rgba(29, 161, 242, 1);
     }
 
 }
