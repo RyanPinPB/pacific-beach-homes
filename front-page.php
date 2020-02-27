@@ -62,6 +62,12 @@
         </div>
     </section>
 
+    <section class="image-buttons-carousel">
+        <div class="button-container pbsale"></div>
+        <div class="button-container homeworth"></div>
+        <div class="button-container learn"></div>
+    </section>
+
     <section id="section3">
         <div class="imagebutton pbsale lazy">
             <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" target="blank">Pacific Beach real estate for sale</a>
@@ -74,8 +80,8 @@
         <div class="imagebutton learn lazy">
             <a href="http://pacificbeachhomes.com/buying-a-home-in-pacific-beach/">Learn more about Pacific Beach</a>
         </div>
-
     </section>
+
     <span class="local">Ryan Pearson is a local, born and raised in Pacific Beach, and is actively invested in the community.</span>
     <section id="section4">
         <div class="content-wrap2">

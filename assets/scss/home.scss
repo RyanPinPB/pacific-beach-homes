@@ -117,6 +117,23 @@
     display:none;
 }
 
+
+.image-buttons-carousel {
+    height:300px;
+    width: fit-content;
+    margin:20px 0px;
+    display:flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.button-container {
+    width:100%;
+    height:auto;
+}
+
+
+
 #section3 {
     display:flex;
     flex-direction:column;
@@ -155,13 +172,12 @@
 .imagebutton a:hover{
     background:$blueAccent;
     box-shadow: 1px 10px 10px $black;
-
+    text-decoration: none;
 }
 
 .imagebutton a:active{
     background:rgba(0, 120, 163,.80);
     box-shadow: 1px 5px 5px $black;
-
 }
 
 .pbsale.lazy {
