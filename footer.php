@@ -18,14 +18,14 @@
 
 			<div class="footer-form-wrap">
 				<div class="footer-form-col-1">
-					<span class="form-cta">Contact Us<br>Today</span>
+					<span class="form-cta">Contact us<br>today</span>
 					<span class="line2">Phone: <a href="tel:8587408495">858-740-8495</a></span>
 					<span class="line3">Email: <a href="mailto:ryanpinpb@gmail.com">RyanPinPB@gmail.com</a></span>
 					<span class="line4">Located in Pacific Beach</span>
 					<iframe class="mapofpb lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36756.17666588754!2d-117.25274746866957!3d32.79500597287665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc01c762be19e5%3A0xa7bdb8ca881be76c!2sPacific+Beach%2C+San+Diego%2C+CA!5e1!3m2!1sen!2sus!4v1560577559593!5m2!1sen!2sus" width="350" height="410" frameborder="0" style="border:0" title="Map of Pacific Beach" allowfullscreen></iframe>
 				</div>
 				<div class="footer-form-col-2">
-					<span class="form-cta">Request a free consultation</span>
+					<span class="form-cta">Request a free<br>consultation</span>
 
 					<?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
 					

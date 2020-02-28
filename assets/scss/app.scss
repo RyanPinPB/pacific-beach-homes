@@ -1,16 +1,12 @@
 @import './_variables.scss';
 @import './normalize.scss';
+@import './custom.scss';
 @import './header.scss';
 @import './hamburger.scss';
-@import './home.scss';
+@import './front-page/home.scss';
+@import './front-page/scroll.scss';
 @import './footer.scss';
-@import './viewHomes.scss';
-@import './sidebar.scss';
-@import './scroll.scss';
-@import './page.scss';
-@import './carousel.scss';
-@import './reviews.scss';
-
-// @import './old.scss'; this is the older stylesheet that's been replaced by the modularized files above
-
-
+@import './internal-page/viewHomes.scss';
+@import './internal-page/sidebar.scss';
+@import './internal-page/page.scss';
+@import './internal-page/reviews.scss';

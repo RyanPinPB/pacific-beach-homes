@@ -1,0 +1,114 @@
+
+.image-buttons-carousel {
+    height:300px;
+    width: fit-content;
+    margin:20px 0px;
+    display:flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.button-container {
+    width:100%;
+    height:auto;
+}
+
+
+
+#section3 {
+    display:flex;
+    flex-direction:column;
+    flex:1 1 100%;
+    margin:5px;
+}
+
+.imagebutton {
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    text-align: center;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+    margin:5px 0px 5px 0px;
+    white-space: normal;
+}
+
+.imagebutton a{
+    background: rgba(0, 120, 163,.95);
+    background:linear-gradient( rgba(0, 120, 163,.95),rgba(0, 174, 239,.95));
+    padding:20px 30px 20px 30px;
+    opacity:1;
+    border-radius:50px;
+    box-shadow: 1px 10px 10px $black;
+    margin:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    font-size: 1.6rem;
+}
+
+.imagebutton a:hover{
+    background:$blueAccent;
+    box-shadow: 1px 10px 10px $black;
+    text-decoration: none;
+}
+
+.imagebutton a:active{
+    background:rgba(0, 120, 163,.80);
+    box-shadow: 1px 5px 5px $black;
+}
+
+.pbsale.lazy {
+    background-image: none;
+}
+
+.pbsale {
+    background-image: url("../images/button/house-with-pool.jpg");
+}
+
+.homeworth.lazy {
+    background-image: none;
+}
+
+.homeworth {
+    background-image: url("../images/button/crystal-pier.jpg");
+}
+
+.learn.lazy {
+    background-image: none;
+}
+
+.learn {
+    background-image: url("../images/button/crystal-pier-aeriel.jpg");
+}
+
+@media (min-width: 769px) {
+
+    #section3 {
+        flex-direction: row;
+    }
+
+    .imagebutton {
+        margin:5px;
+        height:400px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+        transition: transform .3s ease-in-out;
+        &:hover {
+            transform:scale(1.02);
+            box-shadow: 8px 8px 13px rgba(0,0,0,.4);
+            a {
+                box-shadow: 1px 10px 10px fade-out($color: $black, $amount: .3);
+            }
+        }
+
+
+    }
+
+    .imagebutton a{
+        font-size: 1.8rem;
+    }
+
+}

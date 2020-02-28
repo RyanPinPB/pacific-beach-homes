@@ -164,13 +164,13 @@ class App {
     Sizing banner on initial vertical height to prevent jumping on mobile scroll
     ========================================================================== */
 
-    let vh = window.innerHeight * 0.01;
+    // let vh = window.innerHeight * 0.01;
 
-    let header = document.getElementById('banner');
-    // let headerInt = document.getElementById('banner-internal');
-    if(header.classList.contains('frontBanner')) {
-      header.style.setProperty('--vh', `${vh}px`);
-    }
+    // let header = document.getElementById('banner');
+    // // let headerInt = document.getElementById('banner-internal');
+    // if(header.classList.contains('frontBanner')) {
+    //   header.style.setProperty('--vh', `${vh}px`);
+    // }
 
 
     /** ================================================================

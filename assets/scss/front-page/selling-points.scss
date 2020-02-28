@@ -1,0 +1,94 @@
+#section1 {
+    width:100%;
+    display: inline-flex;
+    flex-direction: row;
+    min-height:250px;
+    justify-content: space-evenly;
+    align-items:stretch;
+    align-content: stretch;
+}
+
+.selling-point {
+    display:inline-flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient( $black,$blueAccent);
+    flex:1 1 auto;
+    justify-content: center;
+    text-align: center;
+    min-height:250px;
+    margin:auto;
+    cursor: pointer;
+}
+
+.selling-point span {
+    display:none;
+}
+
+.selling-point:hover {
+    background:radial-gradient( $black,$blueAccent);
+}
+
+.selling-point:hover h3 {
+    display:none;
+}
+
+.selling-point:hover span{
+    display:inline-block;
+}
+
+.sp1:hover {
+    box-shadow: 5px 10px 10px black;
+}
+
+.sp2:hover {
+    box-shadow: 0px 10px 10px black;
+}
+
+.sp3:hover {
+    box-shadow: -5px 10px 10px black;
+}
+
+.sp2,
+.sp3 {
+    display:none;
+}
+
+.sp1 h3 {
+    background: -webkit-linear-gradient(right, rgba(85, 204, 244,1),$blue); 
+}
+
+.sp2 h3 {
+    background: -webkit-linear-gradient(right, rgba(170, 234, 249,1),rgba(85, 204, 244,1)); 
+}
+
+.sp3 h3 {
+    background: -webkit-linear-gradient(right, $blue,rgba(170, 234, 249,1)); 
+}
+
+.selling-point h3 {
+    font-size: 3.25rem;
+    line-height: 1.5em;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.selling-point span {
+    padding:0px 20px 10px 20px;
+    font-size:1.8rem;
+    line-height: 1.5em;
+} 
+
+@media (min-width: 769px) {
+
+    .selling-point {
+        display:inline-flex;
+        width:33%;
+        z-index: 3;
+    }
+
+    .selling-point h3 {
+        padding:0px 20px 0px 20px;
+    }
+}

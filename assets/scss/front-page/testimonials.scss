@@ -45,7 +45,6 @@
 
 
 * {
-    box-sizing: border-box;
     scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
 }
@@ -121,7 +120,7 @@ h2.testimonials {
         left: 50%;
         transform: translate3d(-50%,-40%,70px);
         color: #fff;
-        font-size: 2em;
+        font-size: 3.6rem;
     } */
 }
 
@@ -179,11 +178,11 @@ h2.testimonials {
 
 .carousel__navigation-button {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.7rem;
+    height: 2.7rem;
     background-color: $orange;
     background-clip: content-box;
-    border: 0.25rem solid transparent;
+    border: 0.45rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s color .3s;
@@ -233,7 +232,7 @@ h2.testimonials {
     background-repeat: no-repeat;
     background-position: center center;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     line-height: 4rem;
     text-align: center;
     pointer-events: none;
@@ -258,7 +257,7 @@ div.testimonial {
 
 q.testimonial-header{
     quotes: "“" "”" "‘" "’";
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     line-height: 1.2;
     padding-bottom:15px;
     color: $orange;
@@ -269,18 +268,18 @@ q.testimonial-header{
 q.testimonial-header:before {
     content: open-quote;
     color: $black;
-    font-size: 1.5rem;
+    font-size: 2.7rem;
 }
 
 q.testimonial-header:after {
     content: close-quote;
     color: $black;
-    font-size: 1.5rem;
+    font-size: 2.7rem;
 
 }
 
 p.testimonial-quote {
-    font-size:1rem;
+    font-size:1.8rem;
     line-height: 1.2;
     margin: 5px auto;
     padding-bottom:10px;
@@ -288,7 +287,7 @@ p.testimonial-quote {
 }
 
 span.testimonial-author {
-    font-size:1rem;
+    font-size:1.8rem;
     line-height: 1.2;
     color: $black;
     // text-align: end;
@@ -348,29 +347,29 @@ span.testimonial-author {
 
     
     q.testimonial-header{
-        font-size: 1.75rem;
+        font-size: 3.15rem;
         line-height: 1.2;
         padding-bottom:15px;
     }
     
     q.testimonial-header:before {
-        font-size: 1.75rem;
+        font-size: 3.15rem;
     }
     
     q.testimonial-header:after {
-        font-size: 1.75rem;
+        font-size: 3.15rem;
     
     }
     
     p.testimonial-quote {
-        font-size:1.25rem;
+        font-size:2.25rem;
         line-height: 1.2;
         margin: 5px auto;
         padding-bottom:10px;
     }
     
     span.testimonial-author {
-        font-size:1.25rem;
+        font-size:2.25rem;
         line-height: 1.2;
         padding-left:43px;
     }

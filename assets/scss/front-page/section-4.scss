@@ -1,0 +1,98 @@
+#section4 {
+    display: flex;
+    flex-direction:row;
+}
+
+.content-wrap2 {
+    display:flex;
+}
+
+.content2 {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.local{
+    color: $blue;
+    font-size: 2.25rem;
+    line-height: 1.2em;
+    font-family: $headerFont;
+    font-weight: 800;
+    text-align: center;
+    margin:50px 30px 30px 30px;
+}
+
+.content2 h2 {
+    text-align: center;
+}
+  
+// .content2 p {
+//     font-size: 2.25rem;
+//     margin-top:20px;
+// }
+
+.ryanimg-container {
+    display:none;
+}
+
+.sidebar-wrap2 {
+    display:none;
+}
+
+@media (min-width: 769px) {
+    .ryanimg-container {
+        display:flex;
+        float:right;
+        width:25%;
+        max-width:300px;
+        margin: 0;
+        .ryanimg {
+            width:100%;
+            padding-bottom:164%;
+            background-image: linear-gradient(to bottom, fade-out($color: $white, $amount: .99) 80%, fade-out($color: $white, $amount: .9) 85%, fade-out($color: $white, $amount: .8) 90%, fade-out($color: $white, $amount: .6) 95%, fade-out($color: $white, $amount: .25) 97.5%,  fade-out($color: $white, $amount: .01)), url("../images/agents/ryan-pearson.png");
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+@media (min-width:1025px) {
+
+/*      Removing the image in sidebar - added as a float instead
+    img.ryanimg {
+        display:none;
+    }
+
+    .content-wrap2 {
+        display: flex;
+        flex-direction:column;
+        flex:1 1 75%;        
+    }
+
+    .content2 {
+        display:flex;
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .sidebar-wrap2 {
+        display:flex;
+        flex:1 1 25%;
+        padding:10px;
+    }
+    .sidebar2 {
+        display:flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .sidebar2 img {
+        margin:10px auto;
+        object-fit: scale-down;
+        flex:1 1 auto;
+    }*/
+
+}

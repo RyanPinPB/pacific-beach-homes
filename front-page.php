@@ -62,11 +62,11 @@
         </div>
     </section>
 
-    <section class="image-buttons-carousel">
+<!--     <section class="image-buttons-carousel">
         <div class="button-container pbsale"></div>
         <div class="button-container homeworth"></div>
         <div class="button-container learn"></div>
-    </section>
+    </section> -->
 
     <section id="section3">
         <div class="imagebutton pbsale lazy">
@@ -88,7 +88,10 @@
             <main class="content2">
                 <article>
                     <h2>Why Choose Pacific Beach Homes and Ryan Pearson?</h2>
-                    <img class="lazy ryanimg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/agents/ryan-pearson.png" alt="Ryan Pearson Pacific Beach realtor">
+                    <figure class="ryanimg-container">
+                        <div class="ryanimg"  alt="Ryan Pearson Pacific Beach realtor"></div>
+                    </figure>
+                    
                     <p class="buying-text2">
                         Ryan Pearson grew up on Law street in Pacific Beach, and went to Pacific Beach Elementary, Pacific Beach Middle School and Mission Bay High School. While Ryan is experienced in helping buyers and sellers all over San Diego County, he specializes in Pacific Beach and the coastal market. Whether you are thinking of buying your first home, a seasoned investor looking for the best deal on the market, or a Seller wondering what your options are, you can trust Ryan Pearson with your real estate needs.
                         <br><br>
@@ -190,30 +193,21 @@
                     <h3>What services does Pacific Beach Homes Provide?</h3>
                     <ul>
                         <li>Finding and scheduling the right homes to see</li>
-                        
                         <li>Analyzing homes – for occupying, investing, renting and selling</li>
-                        
                         <li>Connecting you with a great lender</li>
-                        
                         <li>Making an offer after understanding the market</li>
-                        
                         <li>Escrow – and explaining this process</li>
-                        
                         <li>Inspections – connections with inspectors and knowing when to get an inspection</li>
-                        
                         <li>Request for repairs</li>
-                        
                         <li>Appraisal</li>
-                        
                         <li>Getting ready to close and move into your new home!</li>
                     </ul>
                 </article>
                 <span class="calltoaction">Call Pacific Beach Homes at <a href="tel:8587408495">(858) 740-8495</a> for a free consultation today</span>
-                </main>
+            </main>
         </div>
         <div class="sidebar-wrap3">
-            <div class="sidebar3">
-            </div>
+            <div class="sidebar3"></div>
         </div>
     </section>
 </div>
