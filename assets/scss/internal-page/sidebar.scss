@@ -10,16 +10,16 @@
 #menu-sidebar li {
     padding:15px .75em;
     margin: 0 .75em;
-    border-top: rgba(0, 120, 163,.2) 1px solid;
+    border-top: fade-out($color: $blueAccent, $amount: .8) 1px solid;
 }
 
 #menu-sidebar li a {
-    font-family:coda,sans-serif;
+    font-family: $headerFont;
     font-size:1.5rem;
 }
 
 #menu-sidebar li a:hover {
-    color: rgba(0, 120, 163,1);
+    color: fade-out($color: $blueAccent, $amount: 0);
 }
 
 #menu-sidebar li:first-child {
@@ -40,7 +40,6 @@
 @media (min-width: 769px) {
 
     #menu-sidebar li a {
-        font-family:coda,sans-serif;
         font-size:1rem;
         line-height: 1rem;
     }

@@ -194,7 +194,7 @@ a.viewHomes {
     color:white;
     margin:25px auto 50px auto;
     font-size: 1rem;
-    font-family: coda;
+    font-family: $headerFont;
     transition: color .3s ease-in-out;
     box-shadow:1px 2px 4px rgba(0,0,0,.5);
 }
@@ -226,7 +226,7 @@ a.homeValuation {
     color:white;
     margin:25px auto 50px auto;
     font-size: 1rem;
-    font-family: coda;
+    font-family: $headerFont;
     transition: color .3s ease-in-out;
     box-shadow:1px 2px 4px rgba(0,0,0,.5);
 }

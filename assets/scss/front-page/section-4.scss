@@ -20,7 +20,7 @@
     font-family: $headerFont;
     font-weight: 800;
     text-align: center;
-    margin:50px 30px 30px 30px;
+    margin:50px 30px 0px 30px;
 }
 
 .content2 h2 {
@@ -41,19 +41,29 @@
 }
 
 @media (min-width: 769px) {
+    .local{
+        font-size: 3.6rem;
+        line-height: 1.2em;
+        margin:50px 50px 0px 50px;
+    }
+
     .ryanimg-container {
         display:flex;
         float:right;
         width:25%;
         max-width:300px;
         margin: 0;
-        .ryanimg {
+        .ryanimg.lazy {
             width:100%;
             padding-bottom:164%;
-            background-image: linear-gradient(to bottom, fade-out($color: $white, $amount: .99) 80%, fade-out($color: $white, $amount: .9) 85%, fade-out($color: $white, $amount: .8) 90%, fade-out($color: $white, $amount: .6) 95%, fade-out($color: $white, $amount: .25) 97.5%,  fade-out($color: $white, $amount: .01)), url("../images/agents/ryan-pearson.png");
+            background-image: url("https://ik.imagekit.io/y0qivtggs/ryan-pearson_VqsQlgZnN.png?tr=w-400,h-600,bl-30,q-50");
             background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        .ryanimg {
+            // background-image: linear-gradient(to bottom, fade-out($color: $white, $amount: .99) 80%, fade-out($color: $white, $amount: .9) 85%, fade-out($color: $white, $amount: .8) 90%, fade-out($color: $white, $amount: .6) 95%, fade-out($color: $white, $amount: .25) 97.5%,  fade-out($color: $white, $amount: .01)), url("../images/agents/ryan-pearson.png");
+            background-image: radial-gradient(circle at center, fade-out($color: $white, $amount: 1) 85%, $white 87%), url("../images/agents/ryan-pearson.png");
         }
     }
 }

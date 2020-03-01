@@ -2,17 +2,41 @@
 
 <a id="scroll"><span></span>Scroll</a>
 
-<section id="section1" class="stickyMenuStart">
-    <div class="selling-point sp1">
-        <h3>Local agents you can trust</h3><span>Talk with agents who live and work in Pacific Beach. Wondering if a home is a good deal? Overpriced? Ask a local agent. Get tips about the best homes available, the buying and selling process, and more.</span>
+<section id="section1" class="selling-points owl-carousel">
+    <div class="item selling-point sp1 flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Local agents you can trust</h3>
+            </div>
+            <div class="flip-card-back">
+                <span>Talk with agents who live and work in Pacific Beach. Wondering if a home is a good deal? Overpriced? Ask a local agent. Get tips about the best homes available, the buying and selling process, and more.</span>
+            </div>
+        </div>
     </div>
-    <div class="selling-point sp2">
-        <h3>Experts focused on PB</h3><span>Our agents are experts in Pacific Beach real estate with a proven track record. Read past client reviews and view our past sales history</span>
+
+    <div class="item selling-point sp2 flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Experts focused on PB</h3>
+            </div>
+            <div class="flip-card-back">
+                <span>Our agents are experts in Pacific Beach real estate with a proven track record. Read past client reviews and view our past sales history</span>
+            </div>
+        </div>
     </div>
-    <div class="selling-point sp3">
-        <h3>Find off market homes</h3><span>Find homes that you won't see on other sites. Off market homes consist of Seller's that are about to put their home on the market, or people that we've talked to who have some interest in selling. </span>
+
+    <div class="item selling-point sp3 flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Find off market homes</h3>
+            </div>
+            <div class="flip-card-back">
+                <span>Find homes that you won't see on other sites. Off market homes consist of Seller's that are about to put their home on the market, or people that we've talked to who have some interest in selling. </span>
+            </div>
+        </div>
     </div>
 </section>
+
 <div id="contact-flag">
     <a href="#footer" class="flag-text">contact us today</a>
 </div>
@@ -53,31 +77,25 @@
         <div class="sidebar-wrap">
             <div class="sidebar">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/volleyball.jpg" alt="Pacific Beach Volleyball">
-                <img class="lazy" src="https://ik.imagekit.io/y0qivtggs/pacific-beach-sunset__2QgRDVRpl.jpg?tr=w-400,h-600,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset.jpg" alt="Pacific Beach cliffs during sunset">
-                <img class="lazy" src="https://ik.imagekit.io/y0qivtggs/crystal-pier-drone_-25QyiIjm.jpg?tr=w-400,h-600,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone.jpg" alt="Pacific Beach Crystal Pier aerial">
-                <img class="lazy surfimg" src="https://ik.imagekit.io/y0qivtggs/surfing_MdZmFDH1go.jpg?tr=w-400,h-550,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing.jpg" alt="Pacific Beach Surfer in a barrel">
-                <img class="lazy wavesimg" src="https://ik.imagekit.io/y0qivtggs/waves_PVdcIIMpm.jpg?tr=w-400,h-300,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves.jpg" alt="waves in pacific beach">
-                <img class="lazy petcoparkimg" src="https://ik.imagekit.io/y0qivtggs/petco-park_y_9_zOB6Lq.jpg?tr=w-400,h-300,bl-30,q-50" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park.jpg" alt="Aerial image of Petco Park">
+                <img class="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset.jpg" alt="Pacific Beach cliffs during sunset">
+                <img class="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone.jpg" alt="Pacific Beach Crystal Pier aerial">
+                <img class="lazy surfimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing.jpg" alt="Pacific Beach Surfer in a barrel">
+                <img class="lazy wavesimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves.jpg" alt="waves in pacific beach">
+                <img class="lazy petcoparkimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park.jpg" alt="Aerial image of Petco Park">
             </div>
         </div>
     </section>
 
-<!--     <section class="image-buttons-carousel">
-        <div class="button-container pbsale"></div>
-        <div class="button-container homeworth"></div>
-        <div class="button-container learn"></div>
-    </section> -->
-
-    <section id="section3">
-        <div class="imagebutton pbsale lazy">
+    <section id="section3" class="image-buttons owl-carousel">
+        <div class="item imagebutton pbsale lazy">
             <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" target="blank">Pacific Beach real estate for sale</a>
         </div>
 
-        <div class="imagebutton homeworth lazy">
+        <div class="item imagebutton homeworth lazy">
             <a href="https://pearson.lajollaagent.com/home-valuation/" target="blank">How much is my home worth?</a>
         </div>
 
-        <div class="imagebutton learn lazy">
+        <div class="item imagebutton learn lazy">
             <a href="http://pacificbeachhomes.com/buying-a-home-in-pacific-beach/">Learn more about Pacific Beach</a>
         </div>
     </section>
@@ -103,61 +121,82 @@
                 </article>
             </main>
         </div>
-        <!--Commented out sidebar column and floated image (above) instead
-        <div class="sidebar-wrap2">
-            <div class="sidebar2">
-                <img src="https://pacificbeachhomes.com/wp-content/uploads/2018/11/Ryan-rendered.png" alt="Ryan Pearson Pacific Beach realtor">
-            </div>
-        </div>
-    -->
     </section>
 
     <h2 class="testimonials">Client Testimonials</h2>
+    <section class="testimonials owl-carousel">
+        <div class="item testimonial">
+            <q class="testimonial-header">Ryan Pearson was terrific!</q>
+            <p class="testimonial-quote">Warm, friendly, & knowledgeable. He was totally available and responded immediately to my questions; either phone or email. He was patient and showed me many condos all over San Diego for five months until I found my perfect home.  The home was a highly sought-after condo that came with multiple offers.  I was impressed by how Ryan was able to negotiate and win my home!  I highly recommend Ryan to any potential client.</p>
+            <span class="testimonial-author">Bea</span>
+        </div> 
+
+        <div class="item testimonial">
+            <q class="testimonial-header">I would recommend Ryan to anyone</q>
+            <p class="testimonial-quote">I worked with Ryan on my first home purchase, and I couldn't be happier with my experience and the house he found for me! We toured La Jolla, North Park, South Park and Golden Hill over the course of a few months, and we finally found a new development in Golden Hill that was exactly what I was looking for. I decided on an end unit with the highest elevation (and best views). We were first to act, so we managed to get it for $20k less than even the middle units, which was a great surprise! I can't thank Ryan enough for making this first home buying experience seamless. I would recommend Ryan to anyone looking for a knowledgeable San Diego real estate agent.</p>
+            <span class="testimonial-author">Jason</span>
+        </div> 
+
+        <div class="item testimonial">
+            <q class="testimonial-header">Ryan Pearson is a great real estate agent in Pacific Beach.</q>
+            <p class="testimonial-quote">Ryan helped us remodel and sell our home about a year ago. His knowledge of the market, contractors, negotiating and all of the contracts really helped. He was always respectful of our time and was very responsive and advised us well on what to remodel on our house before the sale. I would recommend Ryan for any real estate need in PB or San Diego. We also had a blast celebrating the sale and I look forward to my future real estate investments</p>
+            <span class="testimonial-author">Doug</span>
+        </div>
+
+        <div class="item testimonial">
+            <q class="testimonial-header">Really helpful in making real estate easy to understand</q>
+            <p class="testimonial-quote">Ryan Pearson helped me sell my townhome in Pacific Beach in March 2017 and it was a great experience. Ryan is a local in Pacific Beach and knows more about the area than most and is really helpful in making real estate easy to understand. Some words I would use to describe Ryan are kind, trustworthy and outgoing. I highly recommend using Ryan to help you achieve your real estate goals.</p>
+            <span class="testimonial-author">Matt</span>
+        </div> 
+    </section>
+
+
+    <!-- <h2 class="testimonials">Client Testimonials</h2>
     <div class="carousel-container">
         <section class="carousel" aria-label="Gallery">
             <ul class="carousel__viewport">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide current-slide">
                     <div class="carousel__snapper">
-                        <!-- <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a> -->
+                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
                         <div class="testimonial">
                             <q class="testimonial-header">Ryan Pearson was terrific!</q>
                             <p class="testimonial-quote">Warm, friendly, & knowledgeable. He was totally available and responded immediately to my questions; either phone or email. He was patient and showed me many condos all over San Diego for five months until I found my perfect home.  The home was a highly sought-after condo that came with multiple offers.  I was impressed by how Ryan was able to negotiate and win my home!  I highly recommend Ryan to any potential client.</p>
                             <span class="testimonial-author">Bea</span>
                         </div> 
-                        <!-- <a href="#carousel__slide2" class="carousel__next">Go to next slide</a> -->
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
                     </div>
                 </li>
                 <li id="carousel__slide2" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                        <!-- <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a> -->
+                        <!-- <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
                         <div class="testimonial">
                             <q class="testimonial-header">I would recommend Ryan to anyone</q>
                             <p class="testimonial-quote">I worked with Ryan on my first home purchase, and I couldn't be happier with my experience and the house he found for me! We toured La Jolla, North Park, South Park and Golden Hill over the course of a few months, and we finally found a new development in Golden Hill that was exactly what I was looking for. I decided on an end unit with the highest elevation (and best views). We were first to act, so we managed to get it for $20k less than even the middle units, which was a great surprise! I can't thank Ryan enough for making this first home buying experience seamless. I would recommend Ryan to anyone looking for a knowledgeable San Diego real estate agent.</p>
                             <span class="testimonial-author">Jason</span>
                         </div> 
-                        <!-- <a href="#carousel__slide3" class="carousel__next">Go to next slide</a> -->
+                        <!-- <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
                     </div>
                 </li>
                 <li id="carousel__slide3" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                        <!-- <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a> -->
+                        <!-- <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
                         <div class="testimonial">
                             <q class="testimonial-header">Ryan Pearson is a great real estate agent in Pacific Beach.</q>
                             <p class="testimonial-quote">Ryan helped us remodel and sell our home about a year ago. His knowledge of the market, contractors, negotiating and all of the contracts really helped. He was always respectful of our time and was very responsive and advised us well on what to remodel on our house before the sale. I would recommend Ryan for any real estate need in PB or San Diego. We also had a blast celebrating the sale and I look forward to my future real estate investments</p>
                             <span class="testimonial-author">Doug</span>
                         </div> 
-                        <!-- <a href="#carousel__slide4" class="carousel__next">Go to next slide</a> -->
+                        <!-- <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
                     </div>
                 </li>
                 <li id="carousel__slide4" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
-                        <!-- <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a> -->
+                        <!-- <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
                         <div class="testimonial">
                             <q class="testimonial-header">Really helpful in making real estate easy to understand</q>
                             <p class="testimonial-quote">Ryan Pearson helped me sell my townhome in Pacific Beach in March 2017 and it was a great experience. Ryan is a local in Pacific Beach and knows more about the area than most and is really helpful in making real estate easy to understand. Some words I would use to describe Ryan are kind, trustworthy and outgoing. I highly recommend using Ryan to help you achieve your real estate goals.</p>
                             <span class="testimonial-author">Matt</span>
                         </div> 
-                        <!-- <a href="#carousel__slide1" class="carousel__next">Go to first slide</a> -->
+                        <!-- <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
                     </div>
                 </li>
             </ul>
@@ -176,7 +215,7 @@
                         <button class="carousel__navigation-button">Go to slide 4</a>
                     </li>
                 </ol>
-            </aside>
+            </aside> -->
         </section>
     </div>
 

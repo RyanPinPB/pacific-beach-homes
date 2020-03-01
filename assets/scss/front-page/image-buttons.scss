@@ -1,25 +1,6 @@
-
-.image-buttons-carousel {
-    height:300px;
-    width: fit-content;
-    margin:20px 0px;
-    display:flex;
-    flex-direction: row;
-    overflow-x: hidden;
-}
-
 .button-container {
     width:100%;
     height:auto;
-}
-
-
-
-#section3 {
-    display:flex;
-    flex-direction:column;
-    flex:1 1 100%;
-    margin:5px;
 }
 
 .imagebutton {
@@ -32,37 +13,36 @@
     height:300px;
     justify-content: center;
     align-items: center;
-    margin:5px 0px 5px 0px;
     white-space: normal;
 }
 
 .imagebutton a{
-    background: rgba(0, 120, 163,.95);
-    background:linear-gradient( rgba(0, 120, 163,.95),rgba(0, 174, 239,.95));
+    background: fade-out($color: $blueAccent, $amount: .05);
+    background:linear-gradient( fade-out($color: $blueAccent, $amount: .05),fade-out($color: $blue, $amount: .05));
     padding:20px 30px 20px 30px;
     opacity:1;
     border-radius:50px;
-    box-shadow: 1px 10px 10px $black;
+    box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .5);
     margin:20px;
     text-decoration:none;
-    color:white;
+    color:$white;
     font-weight:700;
     font-size: 1.6rem;
 }
 
 .imagebutton a:hover{
     background:$blueAccent;
-    box-shadow: 1px 10px 10px $black;
+    box-shadow: 1px 5px 10px fade-out($color: $black, $amount: .1);
     text-decoration: none;
 }
 
 .imagebutton a:active{
-    background:rgba(0, 120, 163,.80);
-    box-shadow: 1px 5px 5px $black;
+    background: fade-out($color: $blueAccent, $amount: .2);
+    box-shadow: 1px 2px 4px fade-out($color: $black, $amount: .5);
 }
 
 .pbsale.lazy {
-    background-image: none;
+    background-image: url("../images/button/house-with-pool-lazy.jpg");
 }
 
 .pbsale {
@@ -70,7 +50,7 @@
 }
 
 .homeworth.lazy {
-    background-image: none;
+    background-image: url("../images/button/crystal-pier-lazy.jpg");
 }
 
 .homeworth {
@@ -78,7 +58,7 @@
 }
 
 .learn.lazy {
-    background-image: none;
+    background-image: url("../images/button/crystal-pier-aeriel-lazy.jpg");
 }
 
 .learn {
@@ -86,25 +66,21 @@
 }
 
 @media (min-width: 769px) {
-
-    #section3 {
-        flex-direction: row;
+    .active .imagebutton {
+        box-shadow: 5px 5px 10px fade-out($color: $black, $amount: .5);
     }
 
     .imagebutton {
-        margin:5px;
+        margin:25px 0px;
         height:400px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,.5);
         transition: transform .3s ease-in-out;
         &:hover {
             transform:scale(1.02);
-            box-shadow: 8px 8px 13px rgba(0,0,0,.4);
+            box-shadow: 8px 8px 13px fade-out($color: $black, $amount: .6);
             a {
-                box-shadow: 1px 10px 10px fade-out($color: $black, $amount: .3);
+                box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .3);
             }
         }
-
-
     }
 
     .imagebutton a{

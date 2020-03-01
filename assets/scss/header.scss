@@ -1,6 +1,6 @@
 #masthead {
     position:fixed;
-    bottom:0;
+    top:0;
     background: rgba(0, 120, 163,0);
     display: flex;
     flex-direction: row;
@@ -14,8 +14,8 @@
     
 #masthead.is-hidden {
     opacity: 0;
-    transform: translate(0, 160px);
-    -webkit-transform: translate(0, 160px);
+    transform: translate(0, -160px);
+    -webkit-transform: translate(0, -160px);
     transition: transform .3s,background .3s,color .3s,opacity 0 .3s;
     -webkit-transition: -webkit-transform .3s,background .3s,color .3s,opacity 0 .3s;
 }
@@ -29,8 +29,14 @@
 }
 
 #masthead.blueNav {
-    background: $blueAccent;
+    background:  -webkit-linear-gradient(80deg ,$blue, $blueAccent);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+    // border: 2px solid fade-out($color: $white, $amount: .7);
+    // border-top: 2px solid $white;
+    a.mobile-button {
+        // background: radial-gradient(circle at center, $blue, $blueAccent 70%);
+        border-right: 2px solid fade-out($color: $white, $amount: 0);
+    }
 }
 
 .site-branding {
@@ -80,6 +86,11 @@ a.mobile-button {
     justify-content: center;
     flex: 1 1 auto;
     height: 80px;
+    transition: opacity .8s;
+}
+
+a.mobile-button.hidden {
+    opacity: 0;
 }
 
 .mobile-icon-container {
@@ -107,17 +118,18 @@ a.mobile-button {
     background-color:rgba(255,255,255,1);
 }
 
-.frontBanner {
-    background-image: url('../images/backgrounds/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    position: relative;
-    width:100%;
-    z-index: 3;
-}
+// critical asset - loading with inline style
+// .frontBanner {
+//     background-image: url('../images/backgrounds/background.jpg');
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     min-height: 100vh;
+//     height: calc(var(--vh, 1vh) * 100);
+//     position: relative;
+//     width:100%;
+//     z-index: 3;
+// }
 
 .banner-top {
     background-image: url('../images/backgrounds/background-top.png');
@@ -159,7 +171,7 @@ a.mobile-button {
 	line-height: 1;
 	position:absolute;
 	text-align: center;
-	top:15%;
+	top:23%;
 	left:0;
     width:100%;
 }
@@ -191,10 +203,10 @@ a.mobile-button {
 
 @media (min-width:400px) {
     
-    .banner-text {
-        // color: rgba(255, 255, 255, 1);
-        // font-size: 6.3rem;
-    }
+    // .banner-text {
+    //     // color: rgba(255, 255, 255, 1);
+    //     // font-size: 6.3rem;
+    // }
   
 }
 
@@ -214,11 +226,6 @@ a.mobile-button {
 
 @media (min-width: 769px) {
 
-    #masthead {
-        top: 0;
-        bottom: unset;
-    }
-
     #masthead.is-hidden {
         opacity: 0;
         transform: translate(0,-160px);
@@ -233,6 +240,10 @@ a.mobile-button {
         -webkit-transform: translate(0,0);
         transition: transform .3s,background .3s,color .3s,opacity 0 .3s;
         -webkit-transition: -webkit-transform .3s,background .3s,color .3s;
+    }
+
+    #masthead.blueNav {
+        background:  -webkit-linear-gradient(95deg ,$blue, $blueAccent);
     }
 
     .site-branding {
