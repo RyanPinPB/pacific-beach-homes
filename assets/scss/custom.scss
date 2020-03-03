@@ -13,6 +13,12 @@ body {
     font-family: $bodyFont;
 }
 
+.site-content {
+    position: relative;
+    background: $white;
+    z-index:3;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -75,6 +81,29 @@ ul {
     margin: 0 0 0 3em;
 }
 
+.fade-in {
+    opacity:0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.slide-up {
+    -ms-transform: translateY(75%);
+    -webkit-transform: translateY(75%);
+    transform: translateY(75%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+}
+
+.slide-up.appear {
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
 
 /* Media Queries */
 @media (min-width:400px) {

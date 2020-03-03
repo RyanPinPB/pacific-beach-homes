@@ -57,13 +57,13 @@
     background-image: url("../images/button/crystal-pier.jpg");
 }
 
-.learn.lazy {
-    background-image: url("../images/button/crystal-pier-aeriel-lazy.jpg");
-}
+// .learn.lazy {
+//     background-image: url("../images/button/crystal-pier-aeriel-lazy.jpg");
+// }
 
-.learn {
-    background-image: url("../images/button/crystal-pier-aeriel.jpg");
-}
+// .learn {
+//     background-image: url("../images/button/crystal-pier-aeriel.jpg");
+// }
 
 @media (min-width: 769px) {
     .active .imagebutton {
@@ -75,8 +75,7 @@
         height:400px;
         transition: transform .3s ease-in-out;
         &:hover {
-            transform:scale(1.02);
-            box-shadow: 8px 8px 13px fade-out($color: $black, $amount: .6);
+            transform:scale(1.01);
             a {
                 box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .3);
             }

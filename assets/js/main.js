@@ -77,57 +77,86 @@ class App {
     }
 
 
+
     /** =======================================================================================
-        Fade banner text and scroll-down icon on scroll parallax affect
+        Fadein and slide up animation
     ========================================================================================= */
 
-    /* document.addEventListener('scroll', function() {
-        let currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        if (currScrollPos2 > 1) {
-            document.querySelector('.banner-text').style.opacity = -currScrollPos2 / 175 + 1.75;
-            document.getElementById('scroll').style.opacity = -currScrollPos2 / 100 + 1;
-        }
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+      const faders = document.querySelectorAll('.fade-in');
+  
+      if ("IntersectionObserver" in window) {
+  
+          const appearOptions = {
+              threshold: 0,
+              rootMargin: "0px 0px 60px 0px"
+          };
+  
+          const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+              entries.forEach(entry => {
+                  if(!entry.isIntersecting) {
+                      return;
+                  } else {
+                      entry.target.classList.add('appear');
+                      appearOnScroll.unobserve(entry.target);
+                  }
+              })
+          }, appearOptions);
+  
+          faders.forEach(fader => {
+              appearOnScroll.observe(fader);
+          });
+  
+  
+          const sliders = document.querySelectorAll(".slide-up");
+  
+          sliders.forEach(slider => {
+              appearOnScroll.observe(slider);
+          });
+  
+      } else {
+          while(faders.length > 0) {
+              faders[0].classList.add('appear');
+          }
       }
-    ); */
-
-    // parallax scroll speed on banner
-    /* function background_image_parallax($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.45;
-        multiplier = 1 - multiplier;
-        let $doc = $(document);
-        $object.css({"background-attatchment" : "fixed"});
-          $(window).scroll(function(){
-            let from_top = $doc.scrollTop(),
-                bg_css = '0px ' +(multiplier * from_top) + 'px';
-            $object.css({"background-position" : bg_css });
-        });
-    };
-      
-    background_image_parallax($("#banner")); */
-
+  
+  })
 
     /** =======================================================================================
-        Activate sticky nav bar
-        When the user scrolls the page, execute activateStickyMenu after passing banner section
+        Fade banner text and parallax affect
     ========================================================================================= */
 
-/*     window.onscroll = function() {activateStickyMenu()};
-
-    let header = document.getElementById("masthead");
-    let endOfBanner = document.getElementById("content");
-
-    let distanceToContent = endOfBanner.offsetTop;
-
-    function activateStickyMenu() {
-        if (window.pageYOffset > distanceToContent) {
-            header.classList.add("blueNav");
-        } else {
-            header.classList.remove("blueNav");
-        }
-    } */
-
-
-
+    // if($(window).width() > 768) {
+      if(document.querySelector('.banner-text')) {
+        document.addEventListener('scroll', function() {
+            let currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            if (currScrollPos2 > 1) {
+                document.querySelector('.banner-text').style.opacity = -currScrollPos2 / 150 + 1.04;
+            }
+          }
+        );
+      }
+  
+      function background_image_parallax($object, multiplier){
+          multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.15;
+          multiplier = 1 - multiplier;
+  
+          $object.css({"background-attatchment" : "fixed"});
+              $(window).scroll(function(){
+              let from_top = $(document).scrollTop(),
+              translateY = '0' +(multiplier * from_top).toFixed(2);
+              let translateX = 0;
+              $object.css({'transform': 'translate3d(' + translateX +'px, ' +   translateY + 'px, 0)' }); 
+          });
+      };
+  
+      // background_image_parallax($(".frontBanner"));
+      // background_image_parallax($(".banner-top"));
+  
+      background_image_parallax($(".banner-text"), .4);
+  // }
 
     /** ==================================================================================================
       Hide / show the master navigation menu only after scrolling up - will need jquery library as written
@@ -167,18 +196,6 @@ class App {
       lastScroll = currentScroll;
     });
 
-    /** ========================================================================
-    Sizing banner on initial vertical height to prevent jumping on mobile scroll
-    ========================================================================== */
-
-    // let vh = window.innerHeight * 0.01;
-
-    // let header = document.getElementById('banner');
-    // // let headerInt = document.getElementById('banner-internal');
-    // if(header.classList.contains('frontBanner')) {
-    //   header.style.setProperty('--vh', `${vh}px`);
-    // }
-
     /** =======================================================================================
         Owl Carousels
     ========================================================================================= */
@@ -211,14 +228,6 @@ class App {
       }
     });
 
-    // $('.play').on('click',function(){
-    //     owlSP.trigger('play.owl.autoplay',[1000])
-    // })
-    // $('.stop').on('click',function(){
-    //     owlSP.trigger('stop.owl.autoplay')
-    // })
-
-
 
     var owlIB = $('.image-buttons');
     owlIB.owlCarousel({
@@ -243,193 +252,33 @@ class App {
         1025:{
           items:2,
           margin:10,
-          stagePadding: 10
-        },
-        1350:{
-          items:3,
-          margin:10,
           stagePadding: 10,
           autoplay:false,
           touchDrag: false,
           mouseDrag: false,
           pullDrag: false,
           loop: false
-
-        }
+        },
       }
     });
-
-    // $('.play').on('click',function(){
-    //     owlIB.trigger('play.owl.autoplay',[1000])
-    // })
-    // $('.stop').on('click',function(){
-    //     owlIB.trigger('stop.owl.autoplay')
-    // })
 
 
     var owlTest = $('.testimonials');
     owlTest.owlCarousel({
       items:1,
       loop:true,
-      dots: false,
-      // autoplay:true,
-      // autoplayTimeout:5000,
-      // autoplayHoverPause:true,
-      // autoplaySpeed: 1000,
-      // responsive:{
-      //   0:{
-      //     items:1,
-      //     margin:10,
-      //     stagePadding: 10
-      //   },
-      //   769:{
-      //     items:1,
-      //     margin:10,
-      //     stagePadding: 10
-      //   },
-      //   1025:{
-      //     items:2,
-      //     margin:10,
-      //     stagePadding: 10
-      //   },
-      //   1350:{
-      //     items:3,
-      //     margin:10,
-      //     stagePadding: 10,
-      //     autoplay:false,
-      //     touchDrag: false,
-      //     mouseDrag: false,
-      //     pullDrag: false,
-      //     loop: false
-
-      //   }
-      // }
+      dots: true,
+      nav: false,
+      items: 1,
+      margin: 10,
+      stagePadding: 10,
+      responsive:{
+        769:{
+          nav: true,
+          rewindNav : true,
+        },
+      }
     });
-
-    // $('.play').on('click',function(){
-    //     owlTest.trigger('play.owl.autoplay',[1000])
-    // })
-    // $('.stop').on('click',function(){
-    //     owlTest.trigger('stop.owl.autoplay')
-    // })
-
-    /** ================================================================
-    Make homepage testimonial slider interactive
-    ================================================================= */
-    // if(document.querySelector('.carousel-container')) {
-    //   const track = document.querySelector('.carousel__viewport');
-    //   const slides = Array.from(track.children);
-    //   // const currentSlide = track.querySelector('.current-slide');
-    //   // const nextButton = document.querySelector('.carousel__next');
-    //   // const prevButton = document.querySelector('.carousel__prev');
-
-    //   const slideWidth = slides[0].getBoundingClientRect().width;
-
-    //   function updateSlideClass(track, currentSlide , targetSlide) {
-    //     currentSlide.classList.remove('current-slide');
-    //     targetSlide.parentNode.classList.add('current-slide');
-    //   }
-
-    //   // **uncomment this if you activate next and previous buttons on side of carrousel **
-    //   // ******* when user clicks left, move slides to the left *******
-      
-    //   // prevButton.addEventListener('click', e => {
-    //   //   const currentSlide = track.querySelector('.current-slide');
-    //   //   const prevSlide = currentSlide.previousElementSibling;
-
-    //   //   moveToSlide(track, currentSlide, targetSlide);
-    //   // });
-
-
-    //   // ***** when user clicks right, move slides to the right ******
-
-    //   // nextButton.addEventListener('click', e => {
-    //   //   const currentSlide = track.querySelector('.current-slide');
-    //   //   const nextSlide = currentSlide.nextElementSibling;
-
-    //   //   moveToSlide(track, currentSlide, targetSlide);
-    //   // });
-
-    //   // ****** when user clicks nav button, move to that slide *******
-
-    //   const dotsNav = document.querySelector('.carousel__navigation-list')
-    //   const dots = Array.from(dotsNav.children);
-    //   const currentSlide = track.querySelector('.current-slide');
-    //   // const nextSlide = currentSlide.nextElementSibling;
-    //   // const prevSlide = currentSlide.previousElementSibling;
-
-    //   dotsNav.addEventListener('click', e => {
-    //       const targetDot = e.target.closest('button');
-
-    //       if(!targetDot) return;
-
-    //       const currentSlide = track.querySelector('.current-slide');
-    //       const currentDot = dotsNav.querySelector('.current-slide');
-    //       const targetIndex = dots.findIndex(dot => dot.firstElementChild === targetDot);
-    //       const currentIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
-    //       const targetSlide = slides[targetIndex];
-    //       let distanceToMove = (-1)*slideWidth*(targetIndex);
-
-    //       currentDot.classList.remove('current-slide');
-
-    //       updateSlideClass(track, currentSlide, targetSlide.firstElementChild);
-
-    //       targetDot.classList.add('current-slide');
-
-    //       slides.forEach(slide => {
-    //         slide.style.transform = 'translateX(' + distanceToMove + 'px)';
-    //       })
-
-    //   });
-
-    //   // change currentDot on swipe/slide/flick of carousel - turned off because of scroll left/right back-button issues.
-
-    //   /* let carouselObserver = new IntersectionObserver(function(slides, observer) {
-
-    //     slides.forEach( slide => {
-    //       if(!slide.isIntersecting) {
-
-    //         if(slide.target.classList.contains('current-slide')) {
-    //           const prevIndex = dots.findIndex(dot => dot.firstElementChild.classList.contains('current-slide'));
-    //           slide.target.classList.remove('current-slide');
-    //           dots[prevIndex].firstElementChild.classList.remove('current-slide');
-    //         } else {
-    //           return;
-    //         }
-
-    //       } else {
-    //         if (!slide.target.classList.contains('current-slide')) {
-    //           slide.target.classList.add('current-slide');
-
-    //           const target = slide.target;
-
-    //           const allSlides = document.querySelectorAll('.carousel__slide');
-
-    //           let newIndex;
-    //           let i;
-    //           for(i=0; i < allSlides.length; i++) {
-    //             if (allSlides[i] === target) {
-    //               newIndex = i;
-    //             };
-    //           }
-
-    //           dots[newIndex].firstElementChild.classList.add('current-slide');
-
-    //         } else {
-    //           return;
-    //         }
-
-    //       }
-    //     })
-    //   }, {
-    //       threshold: 1
-    //       // rootMargin: "0px 0px 500px 0px"
-    //   });
-
-    //   slides.forEach(function(slide) {
-    //     carouselObserver.observe(slide);
-    //   }); */
-    // }
 
     /** ================================================================
     Lazy load images 500px before in viewport

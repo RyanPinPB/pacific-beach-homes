@@ -34,7 +34,7 @@
     .content {
         display:flex;
         flex-direction: column;
-        padding:1.8rem;
+        margin: 20px;
     }
 
     .sidebar-wrap {
@@ -60,6 +60,10 @@
 }
 
 @media (min-width:1025px) {
+
+    .content {
+        margin: 20px 40px;
+    }
 
     img.petcoparkimg {
         display:none;

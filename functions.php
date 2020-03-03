@@ -133,6 +133,7 @@ function pacificbeachhomes_scripts() {
 	endif;
 
 	wp_enqueue_style( 'owl-default-style', get_template_directory_uri() . '/assets/vendors/owl-carousel/owl.carousel.min.css' );
+	// wp_enqueue_style( 'animation', get_template_directory_uri() . '/assets/vendors/owl-carousel/animate.css' );
 
 	wp_deregister_script('jquery');
 

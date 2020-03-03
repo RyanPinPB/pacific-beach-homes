@@ -13,7 +13,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125122385-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -24,12 +23,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Coda:400,800&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
 	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/favicon.png">
-	<!-- <link rel="manifest" href="/manifest.json" async> -->
 	<?php wp_head(); ?>
 </head>
 
@@ -123,13 +120,12 @@
 					</figure>
 					<div class="mobile-text">SELL</div>
 				</a>
-				<div class="menu-icon">
-					<div class="hamburgerContainer">
+				<a class="menu-icon">
+					<figure class="hamburgerContainer">
 						<div class="hamburger"></div>
-					</div>
-					<div class="hamburgertext">MENU</div>
-				</div>
-
+					</figure>
+					<div class="hamburgertext" style="color:rgba(255,255,255,1);">MENU</div>
+				</a>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 		
@@ -144,19 +140,19 @@
 				height: calc(var(--vh, 1vh) * 100);
 				position: relative;
 				width:100%;
-				z-index: 3;"
+				z-index: 4;"
 			>
 		<?php else: ?>
 			<section id="banner" class="internal">
 		<?php endif; ?>
 			
-		<?php if ( is_front_page() ) : ?>
-			<span class="banner-text">Welcome to Pacific Beach</span>
-			<div class="banner-top"></div>
-		<?php else:  ?>
-			<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
-		<?php endif; ?>
-		</section>
+			<?php if ( is_front_page() ) : ?>
+				<span class="banner-text">Welcome to Pacific Beach</span>
+				<div class="banner-top"></div>
+			<?php else:  ?>
+				<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
+			<?php endif; ?>
+			</section>
 
 		<?php if ( is_front_page() ) : ?>
 			<div id="content" class="site-content">
