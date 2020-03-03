@@ -1,14 +1,4 @@
-// #section1 {
-//     width:100%;
-//     display: inline-flex;
-//     flex-direction: row;
-//     min-height:250px;
-//     justify-content: space-evenly;
-//     align-items:stretch;
-//     align-content: stretch;
-// }
-
-.selling-points {
+.selling-points.owl-carousel {
     position: relative;
     z-index: 3;
 }
@@ -88,12 +78,6 @@
 } 
 
 @media (min-width: 769px) {
-
-    // .selling-point {
-    //     display:inline-flex;
-    //     width:33%;
-    //     z-index: 3;
-    // }
 
     .selling-point h3 {
         padding:0px 20px 0px 20px;
