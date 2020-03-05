@@ -156,6 +156,7 @@ class App {
       // background_image_parallax($(".banner-top"));
   
       background_image_parallax($(".banner-text"), .4);
+      background_image_parallax($(".zip-code"), .2);
   // }
 
     /** ==================================================================================================

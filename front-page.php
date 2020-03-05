@@ -47,6 +47,7 @@
 
     <section id="section2">
         <div class="content-wrap">
+            <span class="zip-code">92109</span>
             <main class="content">
                 <h1>Pacific Beach Homes for Sale</h1>
                 <article>
@@ -57,7 +58,7 @@
                     <br><br>
                     But you want to look anyway.
                     <br><br>
-                    You get what you pay for. Pacific Beach real estate is some of the most desired in the world. So yes, the prices are relatively high compared to the rest of the world. The median sales price for the first half of 2019 was $1,325,000 for houses and $535,000 for condos. But the demand has historically been so high that vacancy rates are extremely low and market appreciation has historically been positive. For a 5 year example, the median sales price for the first half of 2014 was $934,750 for houses and $439,000 for condos. This means that Pacific Beach homes tend to be great investments. Read more about the <a href="https://pacificbeachhomes.com/pacific-beach-real-estate-market/">Pacific Beach real estate market</a> here.
+                    You get what you pay for. Pacific Beach real estate is some of the most desired in the world. So yes, the prices are relatively high compared to the rest of the world. The median sales price for 2019 was $1,345,000 for houses and $605,000 for condos. But the demand has historically been so high that vacancy rates are extremely low and market appreciation has historically been positive. For a 5 year example, the median sales price for 2014 was $954,000 for houses and $472,750 for condos. This means that Pacific Beach homes tend to be great investments. Read more about the <a href="https://pacificbeachhomes.com/pacific-beach-real-estate-market/">Pacific Beach real estate market</a> here.
                     <br><br>
                     If you’re planning on <a href="https://pacificbeachhomes.com/buying-a-home-in-pacific-beach/">buying a home in Pacific Beach</a>, take a look at current prices by clicking on the Buy button in the menu above and then clicking on a property. You can use the mortgage calculator (near the bottom of a property page) to estimate what your monthly expenses for a home in Pacific Beach will be.
                     </p>
@@ -144,6 +145,11 @@
                 <q class="testimonial-header">Really helpful in making real estate easy to understand</q>
                 <p class="testimonial-quote">Ryan Pearson helped me sell my townhome in Pacific Beach in March 2017 and it was a great experience. Ryan is a local in Pacific Beach and knows more about the area than most and is really helpful in making real estate easy to understand. Some words I would use to describe Ryan are kind, trustworthy and outgoing. I highly recommend using Ryan to help you achieve your real estate goals.</p>
                 <span class="testimonial-author">Matt</span>
+            </div>
+            <div class="item testimonial">
+                <q class="testimonial-header">House in Pacific Beach had received multiple offers and I won!</q>
+                <p class="testimonial-quote">Ryan helped me purchase a house in Pacific Beach that had received multiple offers and I won! He was able to help me facilitate the whole process while I was working out of town on the East coast. The house is just several blocks from the beach in Northern Pacific Beach and the house has already gone up over $200,000 in value! Ryan helped negotiate the price and repairs and I'm loving the Pacific Beach lifestyle!</p>
+                <span class="testimonial-author">Joe</span>
             </div> 
         </div>
     </section>

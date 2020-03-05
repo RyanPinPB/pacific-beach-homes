@@ -132,14 +132,17 @@ span.follow {
     fill:rgba(29, 161, 242, 1);
 }
 
-
-svg {
-    width:45px;
-    cursor:pointer;
-}
-
-svg:hover {
-    fill:$orange !important;
+.footer-text-container {
+    .social-icons {
+        svg {
+            width:45px;
+            cursor:pointer;
+        }
+        
+        svg:hover {
+            fill:$orange !important;
+        }
+    }
 }
 
 div.grecaptcha-badge {
@@ -285,6 +288,18 @@ div.grecaptcha-badge {
     .footerForm textarea,
     .footerForm button {
         box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+    }
+
+    .footerForm {
+
+        .frm_error_style {
+            font-size:15px;
+            font-weight:700;
+        }
+        .frm_error {
+            font-size:15px;
+            font-weight:700;
+        }
     }
 
 }
