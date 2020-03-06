@@ -1,5 +1,6 @@
 #menu-sidebar {
     margin: 0 0;
+    list-style: none;
 }
 
 .widget-title {
@@ -11,6 +12,7 @@
     padding:15px .75em;
     margin: 0 .75em;
     border-top: fade-out($color: $blueAccent, $amount: .8) 1px solid;
+    line-height: 1;
 }
 
 #menu-sidebar li a {

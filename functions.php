@@ -83,6 +83,13 @@ if ( ! function_exists( 'pacificbeachhomes_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'pacificbeachhomes_setup' );
 
+
+if ( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+	acf_add_options_sub_page('Contact Info');
+}
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -113,6 +120,16 @@ function pacificbeachhomes_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	// register_sidebar( array(
+	// 	'name'          => 'Footer contact info',
+	// 	'id'            => 'footer_contact_info',
+	// 	'description'   => 'Add phone number and email info',
+	// 	'before_widget' => '',
+	// 	'after_widget'  => '',
+	// 	'before_title'  => '',
+	// 	'after_title'   => '',
+	// ));
 }
 add_action( 'widgets_init', 'pacificbeachhomes_widgets_init' );
 
