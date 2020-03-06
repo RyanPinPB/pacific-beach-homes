@@ -9,6 +9,11 @@
  * @package PacificBeachHomes
  */
 
+if (get_field('banner_text')) {
+    $banner_text = get_field('banner_text');
+}
+
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -147,7 +152,7 @@
 		<?php endif; ?>
 			
 			<?php if ( is_front_page() ) : ?>
-				<span class="banner-text">Welcome to Pacific Beach</span>
+				<span class="banner-text"><?= $banner_text ?></span>
 				<div class="banner-top"></div>
 			<?php else:  ?>
 				<!-- <span class="banner-text-internal stickyMenuStart"></span> -->

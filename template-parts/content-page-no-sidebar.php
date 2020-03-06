@@ -1,6 +1,6 @@
 <?php
-/**
- * Template Name: Sell Template
+/*
+ * Template Name: No sidebar
  * 
  * Template part for displaying the "buy" template page content in page.php
  *
@@ -28,14 +28,7 @@ get_header();
                         'after'  => '</div>',
                     ) );
                     ?>
-                    
-                    <h3>
-                        <a href="#footer">Schedule a consultation with us today to help make this process as easy and fast as you want</a>
-                    </h3>
-                    <a class="homeValuation" href="https://pearson.lajollaagent.com/home-valuation/" target="blank" rel="noopener noreferrer">How much is my home worth?</a>
-
                 </div><!-- .entry-content -->
-
                 <?php if ( get_edit_post_link() ) : ?>
                     <footer class="entry-footer">
                         <?php
@@ -72,6 +65,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
-

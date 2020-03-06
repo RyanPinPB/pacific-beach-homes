@@ -17,8 +17,6 @@ get_header();
         <?php
 		while ( have_posts() ) :
 			the_post();
-
-            // get_template_part( 'template-parts/content', 'page' );
             ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-content">
@@ -63,7 +61,6 @@ get_header();
 
                     <a class="viewHomes" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes for sale in Pacific Beach</a>
 
-                    
                     <?php
                     the_content();
 
@@ -72,8 +69,6 @@ get_header();
                         'after'  => '</div>',
                     ) );
                     ?>
-
-
 
                     <a class="viewHomes" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes for sale in Pacific Beach</a>
 
@@ -114,8 +109,6 @@ get_header();
                             </div>
                         </div>
                     </div>
-
-
 
                 </div><!-- .entry-content -->
 
