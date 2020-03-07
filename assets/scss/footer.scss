@@ -51,12 +51,51 @@ iframe {
     display:none;
 }
 
+.mc4wp-form-fields {
+    color: $black;
+    max-width:1000px;
+    margin: auto;
+    font-family: $bodyFont;
+    p {
+        font-size:1.6rem;
+        line-height:1.2;
+        margin:0px;
+    }
+    label {
+        color: $white;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    input {
+        box-shadow: 0px 5px 10px fade-out($color: $black, $amount: .5)
+    }
+    input[type=email] {
+        font-size: 1.8rem;
+        padding: 5px 20px;
+        font-family: $bodyFont;
+        &:focus,
+        &:active {
+            outline: $orange solid 3px;
+        }
+    }
+    input[type=submit] {
+        font-weight:700;
+        padding:10px 20px;
+        margin: 10px 0px 30px 0px;
+        cursor: pointer;
+        &:hover {
+            background: fade-out($color: $orange, $amount: .1)
+        }
+    }
+}
+
 .footer-text-container {
     padding:50px 0px;
 }
 
 span.footer-text {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height:1em;
 }
 
