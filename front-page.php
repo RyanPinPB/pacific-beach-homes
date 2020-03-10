@@ -29,8 +29,6 @@ if (get_field('email_address', 'option')) {
 
 get_header() ?>
 
-<a id="scroll"><span></span>Scroll</a>
-
 <section id="section1" class="selling-points owl-carousel">
     <?php foreach($selling_points as $selling_point) { echo
     '<div class="item selling-point sp1 flip-card">

@@ -157,6 +157,8 @@ if (get_field('banner_text')) {
 			<?php else:  ?>
 				<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
 			<?php endif; ?>
+
+			<a id="scroll"><span></span>Scroll</a>
 			</section>
 
 		<?php if ( is_front_page() ) : ?>
