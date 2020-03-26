@@ -55,6 +55,10 @@ div.overlay a:hover {
     opacity:1;
 }
 
+.properties {
+    background-image: url(../images/properties/propertiesBlockOne.png);
+}
+
 .prop1 {
     background-image: url(../images/properties/prop1.png);
 }
@@ -116,54 +120,68 @@ div.overlay a:hover {
 }
 
 @media (min-width: 769px) {
+    // .properties {
+    //     display: flex;
+    //     flex-direction:row;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     height:175px;
+    //     margin-bottom: 50px;
+    // }
+
+    .propertiesContianer {
+        width: 95%;
+        margin: auto;
+    }
+    
     .properties {
         display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-        align-items: center;
-        height:175px;
-        margin-bottom: 50px;
+        width: 100%;
+        padding-bottom: 26%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
-@media (min-width: 840px) {
-    .properties {
-        height:200px;
-    }
-}
+// @media (min-width: 840px) {
+//     .properties {
+//         height:200px;
+//     }
+// }
 
-@media (min-width: 950px) {
-    .properties {
-        height:225px;
-    }
-}
+// @media (min-width: 950px) {
+//     .properties {
+//         height:225px;
+//     }
+// }
 
 @media (min-width: 1025px) {
-    .properties {
-        height:250px;
-    }
+    // .properties {
+    //     height:250px;
+    // }
     a.overlay a {
         font-size: 1.25rem;
         padding:10px 10px;
     }
 }
 
-@media (min-width: 1200px) {
-    .properties {
-        height:275px;
-    }
-}
+// @media (min-width: 1200px) {
+//     .properties {
+//         height:275px;
+//     }
+// }
 
-@media (min-width: 1300px) {
-    .properties {
-        height:300px;
-    }
-}
+// @media (min-width: 1300px) {
+//     .properties {
+//         height:300px;
+//     }
+// }
 
 @media (min-width: 1350px) {
-    .properties {
-        height:200px;
-    }
+    // .properties {
+    //     height:200px;
+    // }
 
     div.overlay a {
         font-size: 1.35rem;
@@ -171,17 +189,17 @@ div.overlay a:hover {
     }
 }
 
-@media (min-width: 1450px) {
-    .properties {
-        height:225px;
-    }
-}
+// @media (min-width: 1450px) {
+//     .properties {
+//         height:225px;
+//     }
+// }
 
-@media (min-width: 1650px) {
-    .properties {
-        height:250px;
-    }
-}
+// @media (min-width: 1650px) {
+//     .properties {
+//         height:250px;
+//     }
+// }
 
 a.viewHomes {
     display:flex;
@@ -192,10 +210,10 @@ a.viewHomes {
     padding:15px;
     border-radius: 20px;
     color:white;
-    margin:25px auto 50px auto;
+    margin: 50px auto;
     font-size: 1.8rem;
     font-family: $headerFont;
-    transition: color .3s ease-in-out;
+    transition: all .3s ease-in-out;
     box-shadow:1px 2px 4px rgba(0,0,0,.5);
 }
 

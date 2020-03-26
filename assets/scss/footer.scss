@@ -37,7 +37,7 @@ span.line1 {
 span.line2,
 span.line3,
 span.line4 {
-    font-size:2.15rem;
+    font-size: 1.5rem;
     font-weight:400;
     color:$blueAccent;
     line-height: 1.5em;
@@ -67,6 +67,10 @@ iframe {
         white-space: nowrap;
     }
 
+    // .mail-button {
+    //     display: flex;
+    // }
+
     input {
         box-shadow: 0px 5px 10px fade-out($color: $black, $amount: .5)
     }
@@ -74,6 +78,8 @@ iframe {
         font-size: 1.8rem;
         padding: 5px 20px;
         font-family: $bodyFont;
+        width: 100%;
+        max-width:300px;
         &:focus,
         &:active {
             outline: $orange solid 3px;
@@ -198,8 +204,17 @@ div.grecaptcha-badge {
     }
 }
 
-@media (min-width:450px) {
-
+@media (min-width:400px) {
+    span.line2,
+    span.line3,
+    span.line4 {
+        font-size:2.15rem;
+    }
+    // .mc4wp-form-fields {
+    //     label {
+    //         flex-direction: row;
+    //     }
+    // }
 }
 
 @media (min-width: 769px) {
