@@ -154,11 +154,10 @@ if (get_field('banner_text')) {
 			<?php if ( is_front_page() ) : ?>
 				<span class="banner-text"><?= $banner_text ?></span>
 				<div class="banner-top"></div>
+				<a id="scroll"><span></span>Scroll</a>
 			<?php else:  ?>
 				<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
 			<?php endif; ?>
-
-			<a id="scroll"><span></span>Scroll</a>
 			</section>
 
 		<?php if ( is_front_page() ) : ?>
