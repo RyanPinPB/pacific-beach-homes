@@ -15,11 +15,15 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'pacificbeachhomes' ); ?></h1>
+					<div class="not-found-container" style="position: relative; width: 75%; min-width:300px; max-width:600px; margin: 20px auto;">
+						<div class="not-found-image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/other/laugh.png'); background-size: cover; background-position: center; width:100%; padding-bottom:66%;"></div>
+						<h2 class="not-found-text" style="position:absolute; color: white; bottom: 0; font-size: 20px; font-weight:700; text-align:center; text-shadow: 0px 0px 2px black; margin: 0px; ">"I need a house with 4 bedrooms, close to the beach, for under $350,000"</h2>
+					</div>
+					<h1 class="page-title"><?php esc_html_e( 'Sorry! We can&rsquo;t find what you are looking for.', 'pacificbeachhomes' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'pacificbeachhomes' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below, or a search?', 'pacificbeachhomes' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -57,4 +61,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
+get_sidebar();
 get_footer();

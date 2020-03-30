@@ -86,43 +86,68 @@ class App {
     document.addEventListener("DOMContentLoaded", function() {
 
       const faders = document.querySelectorAll('.fade-in');
+      const sliders = document.querySelectorAll(".slide-up");
+      const posts = document.querySelectorAll('.post-title');
   
       if ("IntersectionObserver" in window) {
   
-          const appearOptions = {
-              threshold: 0,
-              rootMargin: "0px 0px 60px 0px"
-          };
-  
-          const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-              entries.forEach(entry => {
-                  if(!entry.isIntersecting) {
-                      return;
-                  } else {
-                      entry.target.classList.add('appear');
-                      appearOnScroll.unobserve(entry.target);
-                  }
-              })
-          }, appearOptions);
-  
-          faders.forEach(fader => {
-              appearOnScroll.observe(fader);
-          });
-  
-  
-          const sliders = document.querySelectorAll(".slide-up");
-  
-          sliders.forEach(slider => {
-              appearOnScroll.observe(slider);
-          });
+        const appearOptions = {
+          threshold: 0,
+          rootMargin: "0px 0px 60px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+          entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+              return;
+            } else {
+              entry.target.classList.add('appear');
+              appearOnScroll.unobserve(entry.target);
+            }
+          })
+        }, appearOptions);
+
+        faders.forEach(fader => {
+          appearOnScroll.observe(fader);
+        });
+
+        sliders.forEach(slider => {
+          appearOnScroll.observe(slider);
+        });
+
+
+
+        const blogLineOptions = {
+          threshold: .5,
+          // rootMargin: "0px 0px 60px 0px"
+        };
+
+        const showBlogLine = new IntersectionObserver(function(entries, showBlogLine) {
+          entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+              return;
+            } else {
+              entry.target.classList.add('visible');
+              showBlogLine.unobserve(entry.target);
+            }
+          })
+        }, blogLineOptions);
+
+        posts.forEach(post => {
+          showBlogLine.observe(post);
+        });
+
   
       } else {
-          while(faders.length > 0) {
-              faders[0].classList.add('appear');
-          }
+        while(faders.length > 0) {
+          faders[0].classList.add('appear');
+        }
+        while(sliders.length > 0) {
+          sliders[0].classList.add('appear');
+        }
       }
   
-  })
+    })
 
     /** =======================================================================================
         Fade banner text and parallax affect

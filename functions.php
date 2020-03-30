@@ -83,7 +83,7 @@ if ( ! function_exists( 'pacificbeachhomes_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'pacificbeachhomes_setup' );
 
-
+// creates 'options' section in wp admin menu and puts advanced custom fields inside of this section
 if ( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	acf_add_options_sub_page('Contact Info');
@@ -112,9 +112,19 @@ add_action( 'after_setup_theme', 'pacificbeachhomes_content_width', 0 );
  */
 function pacificbeachhomes_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'pacificbeachhomes' ),
+		'name'          => esc_html__( 'Sidebar Pages', 'pacificbeachhomes' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'pacificbeachhomes' ),
+		'description'   => esc_html__( 'Add widgets here that will show up on pages', 'pacificbeachhomes' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Posts', 'pacificbeachhomes' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here that will show up on posts', 'pacificbeachhomes' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
