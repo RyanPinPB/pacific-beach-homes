@@ -14,11 +14,13 @@
 
 ?>
 <aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'pacificbeachhomes' ); ?>">
-<?php
-if ( has_category() ) {
-	dynamic_sidebar( 'sidebar-2' );
-}else{ 
-	dynamic_sidebar( 'sidebar-1' );
-}
-?>
+	<div class="sidebar-container">
+		<?php
+		if ( has_category() ) {
+			dynamic_sidebar( 'sidebar-2' );
+		}else{ 
+			dynamic_sidebar( 'sidebar-1' );
+		}
+		?>
+	</div>
 </aside> <!-- #secondary -->
