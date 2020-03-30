@@ -11,6 +11,8 @@
             padding:15px .75em;
             margin: 0 .75em;
             border-top: fade-out($color: $blueAccent, $amount: .8) 1px solid;
+            font-family: $headerFont;
+            font-size:1.5rem;
             line-height: 1;
         }
         li a {
@@ -74,7 +76,7 @@
         position: -ms-sticky;
         position: -o-sticky;
         position: sticky;
-        top: 350px;
+        top: 500px;
     }
 
     .widget_search {
@@ -83,7 +85,7 @@
         position: -ms-sticky;
         position: -o-sticky;
         position: sticky;
-        top: 550px;
+        top: 850px;
     }
 
     .widget-title {
