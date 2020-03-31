@@ -44,7 +44,7 @@
 }
 
 .site-branding a{
-    max-width: 235px;
+    max-width: 400px;
     height: auto;
     max-height:80px;
     cursor: pointer;
@@ -261,8 +261,7 @@ a.mobile-button.hidden {
         text-decoration: none;
         color: $white;
         font-weight: 700;
-        letter-spacing: 1.25px;
-        // text-transform: uppercase;
+        letter-spacing: .5px;
         &:hover {
             transform:scale(1.03);
             // color: $white; // fade-out($white, $amount: .15); using color naimation below
