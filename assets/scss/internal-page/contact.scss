@@ -1,0 +1,41 @@
+.contact-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-icon {
+    margin:30px;
+}
+
+.contact-icon-link {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    height: 175px;
+    color: $orange;
+    transition: .3s color ease-in-out;
+    &:hover {
+        color: $blueAccent;
+        text-decoration: none;
+    }
+}
+
+.contact-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-icon-title {
+    font-weight:700;
+    font-family:$headerFont;
+}
+
+@media (min-width: 769px) {
+    .contact-text {
+        font-size: 24px;
+    }
+}

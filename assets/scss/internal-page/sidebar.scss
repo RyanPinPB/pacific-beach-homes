@@ -35,24 +35,12 @@
         width: 100%;
         max-width: 400px;
     }
-    input {
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-        line-height: 1.5;
-        padding: 10px;
-    }
     .search-field{ 
         width: 100%;
     }
     .search-submit {
         cursor:pointer;
         margin-left: 10px;
-    }
-    input:hover {
-        outline: fade-out($color: $orange, $amount: .7) solid 3px;
-    }
-    input:active,
-    input:focus {
-        outline: $orange solid 3px;
     }
 }
 
