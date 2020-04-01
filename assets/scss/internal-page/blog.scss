@@ -52,3 +52,7 @@
         background:linear-gradient( fade-out($color: $blueAccent, $amount: .3),fade-out($color: $blueAccent, $amount: .3));
     }
 }
+
+.comments-list {
+    list-style: none;
+}
