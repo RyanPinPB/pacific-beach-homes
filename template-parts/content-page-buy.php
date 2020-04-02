@@ -20,55 +20,6 @@ get_header();
             ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-content">
-
-                    <!-- <div class="properties">
-                        <div class="propContainer">
-                            <div class="prop1">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop2">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop3">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop4">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop5">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="propertiesContainer">
-                        <div class="properties lazy">
-                            <div class="overlay">
-                                <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <a class="viewHomes" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes for sale in Pacific Beach</a>
-
                     <?php
                     the_content();
 
@@ -78,46 +29,7 @@ get_header();
                     ) );
                     ?>
 
-                    <a class="viewHomes" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes for sale in Pacific Beach</a>
-
-                    <!-- <div class="properties">
-                        <div class="propContainer">
-                            <div class="prop6 lazy">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop7 lazy">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop8 lazy">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop9 lazy">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propContainer">
-                            <div class="prop10 lazy">
-                                <div class="overlay">
-                                    <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" target="blank">View homes</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
+                    <a class="viewHomes" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" rel="nofollow" target="blank">View homes for sale in Pacific Beach</a>
                 </div><!-- .entry-content -->
 
                 <?php if ( get_edit_post_link() ) : ?>

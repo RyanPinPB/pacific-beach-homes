@@ -32,7 +32,7 @@ get_header();
                     <h3>
                         <a href="#footer">Schedule a consultation with us today to help make this process as easy and fast as you want</a>
                     </h3>
-                    <a class="homeValuation" href="https://pearson.lajollaagent.com/home-valuation/" target="blank" rel="noopener noreferrer">How much is my home worth?</a>
+                    <a class="homeValuation" href="https://pearson.lajollaagent.com/home-valuation/" target="blank" rel="nofollow">How much is my home worth?</a>
 
                 </div><!-- .entry-content -->
 
