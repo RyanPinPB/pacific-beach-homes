@@ -2,7 +2,7 @@
 
 .mobileMenu {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 0;
     position: fixed; /* Stay in place */
     z-index: 19; /* Sit on top of everything but the Hamburger */
@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom:120px;
+    margin-bottom:23px;
     a {
         padding: 8px;
         svg {
@@ -172,18 +172,13 @@ a.menu-icon {
 
 /* Media Queries */
 @media (min-width:375px) {
-/*     .menu-icon {
-        top:4px;
-        right:5px;
-        width:80px;
-        height:80px;
-        cursor: pointer;
-        z-index: 20;
-    } */
 
 }
 
 @media (min-width:450px) {
+    .menu-icon.active .hamburger {
+        transform: translate3d(25%, 21px, 0);
+    }
 
     .mobileMenu-header {
         display: flex;
