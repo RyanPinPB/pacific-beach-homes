@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom:23px;
+    margin-bottom:15px;
     a {
         padding: 8px;
         svg {
@@ -101,6 +101,9 @@ a.menu-icon {
     height: 80px;
     cursor: pointer;
     z-index: 20;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .hamburgerContainer {
@@ -156,7 +159,7 @@ a.menu-icon {
 .menu-icon.active .hamburger {
     background: rgba(0,0,0,0);
     box-shadow:0px 2px 5px rgba(0,0,0,0);
-    transform: translate3d(25%, 13px, 0);
+    transform: translate3d(25%, 14px, 0);
 }
 
 .menu-icon.active .hamburger:before {

@@ -41,8 +41,10 @@ class App {
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
-    
-    // Hamburger Menu mobileMenu onclick
+
+    /** =======================================================================================
+    Hamburger Menu
+    ========================================================================================= */
     let hamburgerMenu = document.querySelector('.mobileMenu');
     let hamburgerIcon = document.querySelector('.menu-icon');
     let hamburgerText = document.querySelector('.hamburgertext');
