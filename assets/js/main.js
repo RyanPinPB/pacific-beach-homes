@@ -326,8 +326,32 @@ class App {
       }
     });
 
+    $('.owl-carousel').each(function() {
+        //Find each set of dots in this carousel
+      $(this).find('.owl-prev').each(function() {
+        //Add one to index so it starts from 1
+        $(this).attr('aria-label', 'previous testimonial');
+      });
+    });
+
+    $('.owl-carousel').each(function() {
+        //Find each set of dots in this carousel
+      $(this).find('.owl-next').each(function() {
+        //Add one to index so it starts from 1
+        $(this).attr('aria-label', 'next testimonial');
+      });
+    });
+
+    $('.owl-carousel').each(function() {
+        //Find each set of dots in this carousel
+      $(this).find('.owl-dot').each(function(index) {
+        //Add one to index so it starts from 1
+        $(this).attr('aria-label', 'testimonial ' + (index + 1));
+      });
+    });
+
     /** ================================================================
-    Lazy load images 800px before in viewport
+    Lazy load images 500px before in viewport
     ================================================================= */
 
     document.addEventListener("DOMContentLoaded", function() {
@@ -345,7 +369,7 @@ class App {
               }
             });
           }, {
-              rootMargin: "0px 0px 800px 0px"
+              rootMargin: "0px 0px 500px 0px"
           });
       
           lazyloadImages.forEach(function(image) {
@@ -363,7 +387,7 @@ class App {
             lazyloadThrottleTimeout = setTimeout(function() {
               let scrollTop = window.pageYOffset;
               lazyloadImages.forEach(function(img) {
-                  if(img.offsetTop < (window.innerHeight + scrollTop + 800)) {
+                  if(img.offsetTop < (window.innerHeight + scrollTop + 500)) {
                     img.src = img.dataset.src;
                     img.classList.remove('lazy');
                   }

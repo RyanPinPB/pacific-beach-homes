@@ -61,19 +61,12 @@ get_header() ?>
         </div>
         <div class="sidebar-wrap">
             <div class="sidebar">
-                <div class="lazy volleyball"></div>
-                <div class="lazy sunset"></div>
-                <div class="lazy pier"></div>
-                <div class="lazy surfimg"></div>
-                <div class="lazy wavesimg"></div>
-                <div class="lazy pier-sunset"></div>
-
-                <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/volleyball.jpg" alt="Pacific Beach Volleyball">
-                <img class="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/pacific-beach-sunset.jpg" alt="Pacific Beach cliffs during sunset">
-                <img class="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/crystal-pier-drone.jpg" alt="Pacific Beach Crystal Pier aerial">
-                <img class="lazy surfimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/surfing.jpg" alt="Pacific Beach Surfer in a barrel">
-                <img class="lazy wavesimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/waves.jpg" alt="waves in pacific beach">
-                <img class="lazy petcoparkimg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park-lazy.jpg" data-src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sidebar/petco-park.jpg" alt="Aerial image of Petco Park"> -->
+                <div class="lazy volleyball" role="img" aria-label="Volleyball in Mission Beach" title="Volleyball in Mission Beach"></div>
+                <div class="lazy sunset" role="img" aria-label="Sunset view of Northern Pacific Beach" title="Sunset view of Northern Pacific Beach"></div>
+                <div class="lazy pier" role="img" aria-label="Aeriel photo of Crystal Pier" title="Aeriel photo of Crystal Pier"></div>
+                <div class="lazy surfimg" role="img" aria-label="Surfer catching barrel in Pacific Beach" title="Surfer catching barrel in Pacific Beach"></div>
+                <div class="lazy wavesimg" role="img" aria-label="Waves in Pacific Beach" title="Waves in Pacific Beach"></div>
+                <div class="lazy pier-sunset" role="img" aria-label="Crystal Pier sunset" title="Crystal Pier sunset"></div>
             </div>
         </div>
     </section>
