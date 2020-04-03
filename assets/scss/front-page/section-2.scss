@@ -61,38 +61,94 @@
         padding:10px;
         background:linear-gradient( $blueAccent,$white);
     }
+
     .sidebar {
         display:flex;
         flex-direction: column;
         margin:0 auto;
+        width: 100%;
     }
 
-    .sidebar img {
-        margin:10px auto;
-        width:100%;
+    .sidebar div {
+        margin:100px auto;
         flex:1 1 auto;
-        object-fit: scale-down;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100%;
+    }
+
+    .volleyball {
+        background-image: url('../images/sidebar/volleyball.jpg');
+    }
+
+    .sunset.lazy {
+        background-image: url('../images/sidebar/pacific-beach-sunset-lazy.jpg');
+    }
+
+    .sunset {
+        background-image: url('../images/sidebar/pacific-beach-sunset.jpg');
+    }
+
+    .pier-sunset.lazy {
+        background-image: url('../images/sidebar/crystal-pier-sunset-lazy.jpg');
+    }
+    .pier-sunset {
+        background-image: url('../images/sidebar/crystal-pier-sunset.jpg');
+    }
+
+    .surfimg.lazy {
+        background-image: url('../images/sidebar/surfing-lazy.jpg');
+    }
+
+    .surfimg {
+        background-image: url('../images/sidebar/surfing.jpg');
     }
 
 }
 
-@media (min-width:1025px) {
+@media (min-width:769px) and (max-width:1350px) {
+    .pier.lazy {
+        background-image: url('../images/sidebar/crystal-pier-drone-lazy.jpg');
+    }
 
+    .pier {
+        background-image: url('../images/sidebar/crystal-pier-drone.jpg');
+    }
+}
+
+@media (min-width:769px) and (max-width:1600px) {
+    .wavesimg.lazy {
+        background-image: url('../images/sidebar/waves-lazy.jpg');
+    }
+
+    .wavesimg {
+        background-image: url('../images/sidebar/waves.jpg');
+    }
+}
+
+@media (min-width:1025px) {
     .content {
         margin: 20px 40px;
     }
 
-    img.petcoparkimg {
-        display:none;
+    .sidebar div {
+        margin:50px auto;
     }
 }
 
 @media (min-width:1350px) {
-    img.surfimg {
+    .pier {
         display:none;
     }
-    
-    img.wavesimg {
+
+    .sidebar div {
+        margin:10px auto;
+    }
+}
+
+@media (min-width:1600px) {
+    .wavesimg {
         display:none;
     }
 }
