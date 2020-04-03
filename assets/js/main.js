@@ -4,7 +4,10 @@ if ( module.hot ) {
 }
 
 // import hambugerMenu from './hamburger-menu';
+
+// import '../vendors/owl-carousel/owl.carousel.min.css';
 import '../scss/app.scss';
+import '../vendors/owl-carousel/owl.carousel.min.js';
 
 class App {
   constructor() {
