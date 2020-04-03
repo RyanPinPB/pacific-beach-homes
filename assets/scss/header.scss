@@ -77,6 +77,9 @@ a.mobile-button {
     flex: 1 1 auto;
     height: 80px;
     transition: opacity .8s;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 a.mobile-button.hidden {
@@ -108,19 +111,6 @@ a.mobile-button.hidden {
     background-color:rgba(255,255,255,1);
 }
 
-// critical asset - loading with inline style
-// .frontBanner {
-//     background-image: url('../images/backgrounds/background.jpg');
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     min-height: 100vh;
-//     height: calc(var(--vh, 1vh) * 100);
-//     position: relative;
-//     width:100%;
-//     z-index: 3;
-// }
-
 .banner-top {
     background-image: url('../images/backgrounds/background-top.png');
     background-position: center;
@@ -138,8 +128,6 @@ a.mobile-button.hidden {
     background-size: cover;
     background-repeat: no-repeat;
     height:200px;
-    // min-height: 35vh;
-    // height: calc(var(--vh, 1vh) * 35);
     position: relative;
     width:100%;
     z-index: 3;

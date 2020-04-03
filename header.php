@@ -31,7 +31,6 @@ if (get_field('banner_text')) {
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
-	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/favicon.png">
 	<?php wp_head(); ?>
 </head>
 
