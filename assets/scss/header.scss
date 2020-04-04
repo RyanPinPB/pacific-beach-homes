@@ -111,27 +111,33 @@ a.mobile-button.hidden {
     background-color:rgba(255,255,255,1);
 }
 
-.banner-top {
-    background-image: url('../images/backgrounds/background-top.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width:100%;
-    height:100%;
-    z-index: 5;
-}
+// .banner-top {
+    // background-image: url('../images/backgrounds/background-top.png');
+    // background-image: -webkit-image-set(url('../images/backgrounds/background-top.webp')1x );
 
-#banner.internal {
-    background-image: url('../images/backgrounds/backgroundInternal.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:200px;
-    position: relative;
-    width:100%;
-    z-index: 3;
-}
+    // background-image: url('/assets/images/backgrounds/background.jpg'); 
+    // background-image: -webkit-image-set(url('/assets/images/backgrounds/background.webp')1x );
+
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // position: absolute;
+    // width:100%;
+    // height:100%;
+    // z-index: 5;
+// }
+
+// #banner.internal {
+    // background-image: url('../images/backgrounds/backgroundInternal.jpg');
+    // background-image: -webkit-image-set(url('../images/backgrounds/backgroundInternal.webp')1x );
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // height:200px;
+    // position: relative;
+    // width:100%;
+    // z-index: 3;
+// }
 
 .container-banner-text {
     position: absolute;

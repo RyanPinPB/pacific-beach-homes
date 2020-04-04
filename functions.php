@@ -139,9 +139,7 @@ add_action( 'widgets_init', 'pacificbeachhomes_widgets_init' );
 function pacificbeachhomes_scripts() {
 	
 	// wp_enqueue_style( 'pacificbeachhomes-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'pacificbeachhomes-navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], '20151215', true );
-	wp_enqueue_script( 'pacificbeachhomes-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	
 	if ( $_SERVER['SERVER_NAME'] === 'localhost' || strpos($_SERVER['SERVER_NAME'], '.local') !== false ) :
 		$path = '//127.0.0.1:3000';
 	else :
@@ -151,7 +149,9 @@ function pacificbeachhomes_scripts() {
 
 	// wp_enqueue_style( 'owl-default-style', get_template_directory_uri() . '/assets/vendors/owl-carousel/owl.carousel.min.css' );
 	// wp_enqueue_style( 'animation', get_template_directory_uri() . '/assets/vendors/owl-carousel/animate.css' );
-
+	wp_enqueue_script( 'pacificbeachhomes-navigation', get_template_directory_uri() . '/assets/js/navigation.js', [], '20151215', true );
+	wp_enqueue_script( 'pacificbeachhomes-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	
 	wp_deregister_script('jquery');
 
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', [], null, true);
