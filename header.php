@@ -41,7 +41,7 @@ if (get_field('banner_text')) {
 		<header id="masthead" class="site-header header is-visible">
 			<div class="site-branding">
 			<a href="https://pacificbeachhomes.com/" class="custom-logo-link" rel="home">
-				<svg class="custom-logo" alt="Pacific Bach Homes logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 400 70" width="400pt" height="70pt"><defs><clipPath id="_clipPath_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L"><rect width="400" height="70"/></clipPath></defs><g clip-path="url(#_clipPath_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L)"><rect width="400" height="70" style="fill:rgb(8,8,8)" fill-opacity="0"/><text transform="matrix(1,0,0,1,2.508,38.55)" style="font-family:'Poppins';font-weight:400;font-size:41px;font-style:normal;letter-spacing:-2;fill:#ffffff;stroke:none;">Pacific Beach Homes</text><text transform="matrix(1,0,0,1,102.52,61)" style="font-family:'Poppins';font-weight:700;font-size:20px;font-style:normal;font-variant-ligatures:none;letter-spacing:7;fill:#f07c00;stroke:none;">REAL ESTATE</text><line x1="97" y1="54" x2="7" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="393" y1="54" x2="303" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g></svg>
+				<svg class="custom-logo" alt="Pacific Bach Homes logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 400 70" width="400pt" height="70pt"><defs><clipPath id="_clipPath1_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L"><rect width="400" height="70"/></clipPath></defs><g clip-path="url(#_clipPath1_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L)"><rect width="400" height="70" style="fill:rgb(8,8,8)" fill-opacity="0"/><text transform="matrix(1,0,0,1,2.508,38.55)" style="font-family:'Poppins';font-weight:400;font-size:41px;font-style:normal;letter-spacing:-2;fill:#ffffff;stroke:none;">Pacific Beach Homes</text><text transform="matrix(1,0,0,1,102.52,61)" style="font-family:'Poppins';font-weight:700;font-size:20px;font-style:normal;font-variant-ligatures:none;letter-spacing:7;fill:#f07c00;stroke:none;">REAL ESTATE</text><line x1="97" y1="54" x2="7" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="393" y1="54" x2="303" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g></svg>
 			</a>
 			</div><!-- .site-branding -->
 
@@ -59,7 +59,7 @@ if (get_field('banner_text')) {
 					<div class="mobileMenu-header">
 						<div class="site-branding">
 							<a href="https://pacificbeachhomes.com/" class="custom-logo-link" rel="home">
-								<svg class="custom-logo" alt="Pacific Bach Homes logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 400 70" width="400pt" height="70pt"><defs><clipPath id="_clipPath_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L"><rect width="400" height="70"/></clipPath></defs><g clip-path="url(#_clipPath_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L)"><rect width="400" height="70" style="fill:rgb(8,8,8)" fill-opacity="0"/><text transform="matrix(1,0,0,1,2.508,38.55)" style="font-family:'Poppins';font-weight:400;font-size:41px;font-style:normal;letter-spacing:-2;fill:#ffffff;stroke:none;">Pacific Beach Homes</text><text transform="matrix(1,0,0,1,102.52,61)" style="font-family:'Poppins';font-weight:700;font-size:20px;font-style:normal;font-variant-ligatures:none;letter-spacing:7;fill:#f07c00;stroke:none;">REAL ESTATE</text><line x1="97" y1="54" x2="7" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="393" y1="54" x2="303" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g></svg>
+								<svg class="custom-logo" alt="Pacific Bach Homes logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 400 70" width="400pt" height="70pt"><defs><clipPath id="_clipPath2_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L"><rect width="400" height="70"/></clipPath></defs><g clip-path="url(#_clipPath2_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L)"><rect width="400" height="70" style="fill:rgb(8,8,8)" fill-opacity="0"/><text transform="matrix(1,0,0,1,2.508,38.55)" style="font-family:'Poppins';font-weight:400;font-size:41px;font-style:normal;letter-spacing:-2;fill:#ffffff;stroke:none;">Pacific Beach Homes</text><text transform="matrix(1,0,0,1,102.52,61)" style="font-family:'Poppins';font-weight:700;font-size:20px;font-style:normal;font-variant-ligatures:none;letter-spacing:7;fill:#f07c00;stroke:none;">REAL ESTATE</text><line x1="97" y1="54" x2="7" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="393" y1="54" x2="303" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g></svg>
 							</a>
 						</div><!-- .site-branding -->
 					</div>
@@ -135,17 +135,21 @@ if (get_field('banner_text')) {
 		
 		
 		<?php if ( is_front_page() ) : ?>
-			<section id="banner" class="frontBanner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.jpg'); background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.webp')1x );background-position:center;background-size:cover;background-repeat:no-repeat;min-height:100vh;height:calc(var(--vh, 1vh) * 100);position:relative;width:100%;z-index:4;">
+			<section id="banner" class="frontBanner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.jpg');background-position:center;background-size:cover;background-repeat:no-repeat;height:100vh;height:calc(var(--vh,1vh)*100);position:relative;width:100%;z-index:4;">
 			<?php else: ?>
-			<section id="banner" class="internal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.jpg');background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.webp')1x );background-position: center;background-size: cover;background-repeat: no-repeat;height:200px;position: relative;width:100%;z-index: 3;">
+			<section id="banner" class="internal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.jpg');background-position:center;background-size:cover;background-repeat:no-repeat;height:200px;position:relative;width:100%;z-index:3;">
 		<?php endif; ?>
 			
 			<?php if ( is_front_page() ) : ?>
 				<span class="banner-text"><?= $banner_text ?></span>
-				<div class="banner-top" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.png');background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.webp')1x );background-position:center;background-size:cover;background-repeat:no-repeat;position:absolute;width:100%;height:100%;z-index:5;"></div>
+				<div class="banner-top" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.png');background-position:center;background-size:cover;background-repeat:no-repeat;position:absolute;width:100%;height:100%;z-index:5;"></div>
 				<a id="scroll"><span></span>Scroll</a>
 			<?php else:  ?>
-				<!-- <span class="banner-text-internal stickyMenuStart"></span> -->
+				<!-- <span class="banner-text-internal stickyMenuStart" style="
+			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.webp')1x ); 
+			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.webp')1x );
+			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.webp')1x );
+				"></span>-->
 			<?php endif; ?>
 			</section>
 

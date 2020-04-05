@@ -44,7 +44,13 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation(
+				array(
+					'prev_text' => __('Older blogs', 'pacificbeachhomes'),
+					'next_text' => __('Newer blogs', 'pacificbeachhomes'),
+					'screen_reader_text' => __('Posts navigation', 'pacificbeachhomes')
+				)
+			);
 
 		else :
 

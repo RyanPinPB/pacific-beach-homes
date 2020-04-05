@@ -53,6 +53,61 @@
     }
 }
 
+.site-main .posts-navigation {
+    margin: 55px 0px 0px;
+    padding: 30px 10px 0px;
+    border-top:2px solid fade-out($color: $orange, $amount: .8);
+    .nav-links {
+        text-transform: uppercase;
+        .nav-previous {
+            position: relative;
+            text-align: right;
+            float: right;
+            a {
+                padding-right:15px;
+                &:hover {
+                    text-decoration: none;
+                    color: $orange;
+                }
+                &::after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-left: 8px solid $orange;
+                    position: absolute;
+                    top: 5px;
+                    right: 0px;
+                }
+            }
+        }
+        .nav-next {
+            position: relative;
+            text-align: left;
+            float: left;
+            a {
+                padding-left:15px;
+                &:hover {
+                    text-decoration: none;
+                    color: $orange;
+                }
+                &::after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-right: 8px solid $orange;
+                    position: absolute;
+                    top: 5px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+
 .comment-list {
     list-style: none;
 }
