@@ -28,7 +28,6 @@ if (get_field('banner_text')) {
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
 	<?php wp_head(); ?>
@@ -145,11 +144,7 @@ if (get_field('banner_text')) {
 				<div class="banner-top" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.png');background-position:center;background-size:cover;background-repeat:no-repeat;position:absolute;width:100%;height:100%;z-index:5;"></div>
 				<a id="scroll"><span></span>Scroll</a>
 			<?php else:  ?>
-				<!-- <span class="banner-text-internal stickyMenuStart" style="
-			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.webp')1x ); 
-			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.webp')1x );
-			background-image: -webkit-image-set(url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.webp')1x );
-				"></span>-->
+				<!-- <span class="banner-text-internal stickyMenuStart"></span>-->
 			<?php endif; ?>
 			</section>
 

@@ -23,7 +23,7 @@
     .site-branding {
         display: flex;
         justify-content: center;
-        margin: 23px auto;
+        margin: 23px auto 0px;
         a {
             width: 75%;
             max-width:300px;
@@ -88,7 +88,8 @@
 /* When the height of the screen is less than 450 pixels, change the font-size of the links so they don't overlap */
 @media screen and (max-height: 450px) {
     #menu-mobile a {
-        font-size: 3.6rem}
+        padding: 5px;
+        font-size: 1.6rem}
 }
 
 // sized for small screens here, breakpoint of 375 pixels below in media query
