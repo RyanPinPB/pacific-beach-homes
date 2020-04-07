@@ -197,7 +197,7 @@ class App {
           });
       };
   
-      // background_image_parallax($(".frontBanner"));
+      // background_image_parallax($(".front-banner"));
       // background_image_parallax($(".banner-top"));
   
       background_image_parallax($(".banner-text"), .4);

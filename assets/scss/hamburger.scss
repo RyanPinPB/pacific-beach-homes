@@ -1,20 +1,19 @@
 /* The hamburger menu Overlay (background) */
 
 .mobileMenu {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: calc(var(--vh, 1vh) * 100);
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 19; /* Sit on top of everything but the Hamburger */
+    position: fixed;
+    z-index: 19;
     left: 0;
     top: 0;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: fade-out($color: $blueAccent, $amount: .1); /* Orange w/opacity */
-    overflow: hidden; /* Disable horizontal scroll */
-    transition: .8s; /* 2 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0,0,0);
+    background-color: fade-out($color: $blueAccent, $amount: .1);
+    overflow: hidden;
+    transition: .8s;
 }
 
 .mobileMenu-header {
@@ -117,7 +116,7 @@ a.menu-icon {
 }
 
 .hamburger {
-    position: relative; //changed from absolute
+    position: relative;
     background:white;
     width:40px;
     height:3px;
@@ -190,7 +189,7 @@ a.menu-icon {
         .site-branding {
             display: flex;
             justify-content: center;
-            margin: 23px auto;
+            margin: 23px auto 0px;
             a {
                 width: 75%;
                 max-width:400px;

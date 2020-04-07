@@ -134,14 +134,14 @@ if (get_field('banner_text')) {
 		
 		
 		<?php if ( is_front_page() ) : ?>
-			<section id="banner" class="frontBanner" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background.jpg');background-position:center;background-size:cover;background-repeat:no-repeat;height:100vh;height:calc(var(--vh,1vh)*100);position:relative;width:100%;z-index:4;">
+			<section id="banner" class="front-banner">
 			<?php else: ?>
-			<section id="banner" class="internal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/backgroundInternal.jpg');background-position:center;background-size:cover;background-repeat:no-repeat;height:200px;position:relative;width:100%;z-index:3;">
+			<section id="banner" class="internal-banner">
 		<?php endif; ?>
 			
 			<?php if ( is_front_page() ) : ?>
 				<span class="banner-text"><?= $banner_text ?></span>
-				<div class="banner-top" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/backgrounds/background-top.png');background-position:center;background-size:cover;background-repeat:no-repeat;position:absolute;width:100%;height:100%;z-index:5;"></div>
+				<div class="banner-top"></div>
 				<a id="scroll"><span></span>Scroll</a>
 			<?php else:  ?>
 				<!-- <span class="banner-text-internal stickyMenuStart"></span>-->
