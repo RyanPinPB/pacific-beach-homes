@@ -18,6 +18,8 @@ if (get_field('banner_text')) {
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- <link rel="preconnect" href="https://www.google-tagmanager.com" crossorigin> -->
+	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125122385-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -33,7 +35,6 @@ if (get_field('banner_text')) {
 	<?php wp_head(); ?>
 	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>
 	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>
-	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-regular.woff2" as="font" crossorigin>
 </head>
 
 <body <?php body_class(); ?>>

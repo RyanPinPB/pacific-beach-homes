@@ -167,10 +167,10 @@ class App {
         Fade banner text and parallax affect
     ========================================================================================= */
 
-    setTimeout(function(){ 
-      const bannerText = document.querySelector('.banner-text');
-      bannerText.style.transition = 'unset';
-    }, 1000);
+    // setTimeout(function(){ 
+    //   const bannerText = document.querySelector('.banner-text');
+    //   bannerText.style.transition = 'unset';
+    // }, 1000);
 
     // if($(window).width() > 768) {
       if(document.querySelector('.banner-text')) {
