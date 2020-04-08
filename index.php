@@ -46,8 +46,8 @@ get_header();
 
 			the_posts_navigation(
 				array(
-					'prev_text' => __('Older blogs', 'pacificbeachhomes'),
-					'next_text' => __('Newer blogs', 'pacificbeachhomes'),
+					'prev_text' => __('Older posts', 'pacificbeachhomes'),
+					'next_text' => __('Newer posts', 'pacificbeachhomes'),
 					'screen_reader_text' => __('Posts navigation', 'pacificbeachhomes')
 				)
 			);

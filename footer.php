@@ -94,7 +94,6 @@ if (get_field('mailchimp_shortcode', 'option')) {
 	</footer><!-- #footer -->
 
 </div><!-- #page -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 <?php wp_footer(); ?>
 
 </body>

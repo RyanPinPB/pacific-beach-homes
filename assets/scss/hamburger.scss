@@ -69,23 +69,17 @@
     font-family: $headerFont;
     color: fade-out($color: $white, $amount: 0);
     white-space: nowrap;
-    /* transition: 0.8s; */ /* Transition effects on hover (color) */
+    justify-content: center;
 }
 
 #menu-mobile a:hover,
 #menu-mobile a:active,
 #menu-mobile a:focus {
     color: $orange;
-}
-  
-/* When you mouse over the navigation links, change their color */
-/* .mobileMenu a:hover, .mobileMenu a:focus {
-    color: $blue;
-} */
-  
+}  
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links so they don't overlap */
-@media screen and (max-height: 450px) {
+@media (max-height: 450px) {
     #menu-mobile a {
         padding: 5px;
         font-size: 1.6rem}

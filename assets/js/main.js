@@ -3,22 +3,18 @@ if ( module.hot ) {
 	module.hot.accept();
 }
 
-// import hambugerMenu from './hamburger-menu';
-
-// import '../vendors/owl-carousel/owl.carousel.min.css';
 import '../scss/app.scss';
-import '../vendors/owl-carousel/owl.carousel.min.js';
+// import '../vendors/owl-carousel/owl.carousel.min.js';
+
+jQuery.event.special.touchstart = {
+  setup: function( _, ns, handle ){
+    this.addEventListener("touchstart", handle, { passive: true });
+  }
+};
 
 class App {
   constructor() {
-    // set vars
-    // this.$header = document.querySelector('.header');
-    // this.el = {
-    //   header: 
-    // };
-
-    // this.el.header = document.querySelector('.header');
-    
+    // set vars    
     this.hamburgerMenu = document.querySelector('.mobileMenu');
     this.hamburgerIcon = document.querySelector('.menu-icon');
     this.hamburgerText = document.querySelector('.hamburgertext');
@@ -96,8 +92,6 @@ class App {
       })
     }
 
-
-
     /** =======================================================================================
         Fadein and slide up animation
     ========================================================================================= */
@@ -172,6 +166,11 @@ class App {
     /** =======================================================================================
         Fade banner text and parallax affect
     ========================================================================================= */
+
+    setTimeout(function(){ 
+      const bannerText = document.querySelector('.banner-text');
+      bannerText.style.transition = 'unset';
+    }, 1000);
 
     // if($(window).width() > 768) {
       if(document.querySelector('.banner-text')) {

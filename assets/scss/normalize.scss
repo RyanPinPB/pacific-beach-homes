@@ -515,7 +515,7 @@ input[type="submit"] {
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: $orange;
-	color: fade-out($color: $white, $amount: .2);
+	color: fade-out($color: $white, $amount: 0);
 	font-size: 1.8rem;
 	line-height: 1;
 	font-family: $bodyFont;

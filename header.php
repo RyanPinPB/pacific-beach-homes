@@ -31,6 +31,8 @@ if (get_field('banner_text')) {
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
 	<?php wp_head(); ?>
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>

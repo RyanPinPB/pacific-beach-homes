@@ -245,15 +245,6 @@ a.mobile-button.hidden {
     z-index:3;
 }
 
-.container-banner-text {
-    position: absolute;
-    top:40%;
-    text-align: center;
-    width:100%;
-    opacity: 0;
-    transition: opacity .3s ease-in-out .3s;
-}
-
 .banner-text {
     color: var(--white);
     font-family: var(--headerFont);
@@ -266,7 +257,7 @@ a.mobile-button.hidden {
     top:23%;
     left:0;
     width:100%;
-    transition: font-size .3s ease-in-out, opacity .3s ease-in-out .3s;
+    transition: font-size .3s ease-in-out, opacity .6s ease-in-out .3s;
     opacity: 0;
 }
 

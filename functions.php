@@ -153,12 +153,11 @@ function pacificbeachhomes_scripts() {
 	wp_enqueue_script( 'pacificbeachhomes-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
 	wp_deregister_script('jquery');
-
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', [], null, true);
 
-	// wp_enqueue_script( 'owl-js', get_template_directory_uri() . '/assets/vendors/owl-carousel/owl.carousel.min.js', [], null, true );
+	wp_enqueue_script( 'owl-js', get_template_directory_uri() . '/assets/vendors/owl-carousel/owl.carousel.min.js', ['jquery'], null, true );
 
-	wp_enqueue_script( 'main', $path . '/assets/js/main.bundle.js', [], null, true );
+	wp_enqueue_script( 'main', $path . '/assets/js/main.bundle.js', ['jquery'], null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
