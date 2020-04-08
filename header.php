@@ -31,8 +31,9 @@ if (get_field('banner_text')) {
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
 	<?php wp_head(); ?>
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>
+	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>
+	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-regular.woff2" as="font" crossorigin>
 </head>
 
 <body <?php body_class(); ?>>
