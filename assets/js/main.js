@@ -355,7 +355,7 @@ class App {
     ================================================================= */
 
     document.addEventListener("DOMContentLoaded", function() {
-        let lazyloadImages;    
+        let lazyloadImages;
       
         if ("IntersectionObserver" in window) {
           lazyloadImages = document.querySelectorAll(".lazy");
