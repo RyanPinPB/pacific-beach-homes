@@ -4,8 +4,9 @@ if ( module.hot ) {
 }
 
 import '../scss/app.scss';
-// import '../vendors/owl-carousel/owl.carousel.min.js';
+import '../vendors/owl-carousel/owl.carousel.min.js';
 
+//make event listeners pasive
 jQuery.event.special.touchstart = {
   setup: function( _, ns, handle ){
     this.addEventListener("touchstart", handle, { passive: true });
@@ -33,6 +34,7 @@ class App {
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    document.documentElement.style.setProperty('--vho', `${vh}px`);
 
     // We listen to the resize event
     window.addEventListener('resize', () => {
@@ -166,7 +168,7 @@ class App {
     /** =======================================================================================
         Fade banner text and parallax affect
     ========================================================================================= */
-
+    // fade-in text after load
     // setTimeout(function(){ 
     //   const bannerText = document.querySelector('.banner-text');
     //   bannerText.style.transition = 'unset';

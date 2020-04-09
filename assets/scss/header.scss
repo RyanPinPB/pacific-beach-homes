@@ -125,7 +125,7 @@ a.mobile-button.hidden {
     background-size:cover;
     background-repeat:no-repeat;
     height:100vh;
-    height:calc(var(--vh,1vh)*100);
+    height:calc(var(--vho,1vh)*100);
     position:relative;
     width:100%;
     z-index:4;

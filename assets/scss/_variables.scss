@@ -11,6 +11,7 @@
          url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* roboto-italic - latin */
 @font-face {
@@ -24,6 +25,7 @@
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-italic.woff') format('woff'), /* Modern Browsers */
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-italic.svg#Roboto') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 /* roboto-700 - latin */
 @font-face {
@@ -37,6 +39,7 @@
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-700.woff') format('woff'), /* Modern Browsers */
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
         url('/wp-content/themes/pacific-beach-homes/assets/fonts/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+    font-display: swap;
 }
 
 //variables
