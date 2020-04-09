@@ -26,6 +26,7 @@
         a {
             width: 75%;
             max-width:300px;
+            max-height:40px;
         }
     }
 }
@@ -41,6 +42,7 @@
             fill: $white;
             width: 100%;
             max-width: 35px;
+            max-height: 35px;
         }
     }
 }
@@ -187,6 +189,7 @@ a.menu-icon {
             a {
                 width: 75%;
                 max-width:400px;
+                max-height:52.5px;
             }
         }
     }
