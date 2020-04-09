@@ -44,6 +44,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    transform: rotateY(0);
 }
 
 .flip-card-back {
