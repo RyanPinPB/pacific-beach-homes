@@ -107,7 +107,7 @@ get_header() ?>
         <div class="content-wrap3">
             <div class="content3">
                 <?= $service_content ?>
-                <span class="calltoaction">Call Pacific Beach Homes at <a href="tel:<?= $phone_number ?>">(858) 740-8495</a> for a free consultation today</span>
+                <span class="calltoaction">Call us for a free consultation</span>
             </div>
         </div>
         <div class="sidebar-wrap3">
