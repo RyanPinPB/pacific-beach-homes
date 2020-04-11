@@ -16,7 +16,9 @@
 <aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'pacificbeachhomes' ); ?>">
 	<div class="sidebar-container">
 		<?php
-		if ( has_category() ) {
+		if ( is_404() ) {
+			dynamic_sidebar( 'sidebar-1' );
+		}elseif ( has_category() ) {
 			dynamic_sidebar( 'sidebar-2' );
 		}else{ 
 			dynamic_sidebar( 'sidebar-1' );
