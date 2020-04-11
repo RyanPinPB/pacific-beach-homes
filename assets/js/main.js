@@ -104,6 +104,7 @@ class App {
       const faders = document.querySelectorAll('.fade-in');
       const sliders = document.querySelectorAll(".slide-up");
       const posts = document.querySelectorAll('.post-title');
+      const testimonials = document.querySelectorAll('.testimonial-page-item');
   
       if ("IntersectionObserver" in window) {
   
@@ -151,6 +152,21 @@ class App {
 
         posts.forEach(post => {
           showBlogLine.observe(post);
+        });
+
+        const showTestimonialLine = new IntersectionObserver(function(entries, showTestimonialLine) {
+          entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+              return;
+            } else {
+              entry.target.classList.add('visible');
+              showTestimonialLine.unobserve(entry.target);
+            }
+          })
+        }, blogLineOptions);
+
+        testimonials.forEach(testimonial => {
+          showTestimonialLine.observe(testimonial);
         });
 
   
