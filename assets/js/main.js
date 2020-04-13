@@ -104,7 +104,7 @@ class App {
       const faders = document.querySelectorAll('.fade-in');
       const sliders = document.querySelectorAll(".slide-up");
       const posts = document.querySelectorAll('.post-title');
-      const testimonials = document.querySelectorAll('.testimonial-page-item');
+      const testimonials = document.querySelectorAll('.testimonials-page-item');
   
       if ("IntersectionObserver" in window) {
   
@@ -154,6 +154,11 @@ class App {
           showBlogLine.observe(post);
         });
 
+        const testimonialLineOptions = {
+          threshold: .2,
+          // rootMargin: "0px 0px 60px 0px"
+        };
+
         const showTestimonialLine = new IntersectionObserver(function(entries, showTestimonialLine) {
           entries.forEach(entry => {
             if(!entry.isIntersecting) {
@@ -163,7 +168,7 @@ class App {
               showTestimonialLine.unobserve(entry.target);
             }
           })
-        }, blogLineOptions);
+        }, testimonialLineOptions);
 
         testimonials.forEach(testimonial => {
           showTestimonialLine.observe(testimonial);

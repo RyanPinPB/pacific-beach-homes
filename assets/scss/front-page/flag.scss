@@ -2,54 +2,6 @@
     display:none;
 }
 
-
-@media (min-width: 769px) {
-
-    // #contact-flag {
-    //     position:fixed;
-    //     top:50%;
-    //     left:0;
-    //     width:175px;
-    //     height:100px;
-    //     background:rgba(240, 124, 0,1);
-    //     box-shadow: 1px 15px 15px rgba(0,0,0,.3);
-    //     z-index: 2;
-    //     display:flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     transition: all .3 ease-in-out;
-    //     &:hover {
-    //             box-shadow: 1px 15px 15px fade-out($color: $orange, $amount: .5);
-    //     }
-    // }
-    
-    // .flag-text {
-    //     color:rgba(255,255,255,1);
-    //     font-size: 2.2rem;
-    //     font-weight:700;
-    //     padding:10px;
-    //     text-align: center;
-    //     transition:all .3s ease-in-out;
-    // }
-    
-    // .flag-text:hover {
-    //     color:rgba(255,255,255,.9);
-    //     font-size: 2.7rem;
-    //     font-weight:800;
-    //     padding:8px;
-    //     text-align: center;
-    //     text-decoration: none;
-    // }
-}
-
-@media (min-width:1025px) {
-    // #contact-flag {
-    //     left:unset;
-    //     right:0;
-
-    // }
-}
-
 @media (min-width:1800px) {
 
     #contact-flag {
@@ -69,11 +21,6 @@
                 box-shadow: 1px 15px 15px fade-out($color: $orange, $amount: .5);
         }
     }
-    // #contact-flag {
-    //     left:unset;
-    //     right:0;
-
-    // }
 
     .flag-text {
         color:rgba(255,255,255,1);

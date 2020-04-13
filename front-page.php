@@ -52,7 +52,7 @@ get_header() ?>
 
 <div class="mid-wrap clearfix">
 
-    <section id="section2">
+    <section class="content-pb-intro">
         <div class="content-wrap">
             <span class="zip-code">92109</span>
             <main class="content">
@@ -71,7 +71,7 @@ get_header() ?>
         </div>
     </section>
 
-    <section id="section3" class="image-buttons owl-carousel">
+    <section class="image-buttons owl-carousel">
         <div class="item imagebutton pbsale lazy">
             <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" target="blank">Pacific Beach real estate for sale</a>
         </div>
@@ -82,7 +82,7 @@ get_header() ?>
     </section>
 
     <span class="local slide-up">Ryan Pearson is a local, born and raised in Pacific Beach, and is actively invested in the community.</span>
-    <section id="section4">
+    <section class="content-choose-pbh">
         <div class="content-wrap2">
             <div class="content2">
                 <?= $ryan_content ?>
@@ -103,7 +103,7 @@ get_header() ?>
         </div>
     </section>
 
-    <section id="section5">
+    <section class="content-services">
         <div class="content-wrap3">
             <div class="content3">
                 <?= $service_content ?>

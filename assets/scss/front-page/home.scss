@@ -7,15 +7,15 @@
     flex-direction: column;
 }
 
-@import './section-2';
+@import './content-pb-intro';
 
 @import './image-buttons';
 
-@import './section-4';
+@import './content-choose-pbh';
 
 @import './testimonials';
 
-@import './section-5';
+@import './content-services';
 
 .calltoaction{
     color:$orange;
