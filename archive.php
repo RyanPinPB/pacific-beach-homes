@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-
+	<script>document.querySelector('.banner-text-internal').innerText = 'BLOG';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

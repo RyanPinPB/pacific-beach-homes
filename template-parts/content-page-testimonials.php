@@ -16,7 +16,7 @@ if (get_field('testimonials')) {
 <?php
 get_header();
 ?>
-    <script>document.querySelector('.banner-text-internal').innerText = 'TESTIMONIALS';</script>
+    <script>document.querySelector('.banner-text-internal').innerText = 'REVIEWS';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
