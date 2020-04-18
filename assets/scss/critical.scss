@@ -290,18 +290,19 @@ a.mobile-button.hidden {
 }
 
 .banner-text-internal {
+    position:absolute;
+    top:65%;
+    left:0;
     color: var(--white);
     font-family: var(--headerFont);
-    font-size: 4.2rem;
+    font-size: 15rem;
     font-weight: 400;
-    padding:0px 10px;
-    margin:auto;
-    line-height: 1.25em;
-    position:absolute;
-    text-align: center;
-    top:45%;
-    left:0;
+	text-align: center;
+    transform: translate3d(0,-50%,0);
     width:100%;
+    opacity:.1;
+    text-shadow: 0 0 5px var(--black);
+    overflow:hidden;
 }
 
 .mobileMenu {

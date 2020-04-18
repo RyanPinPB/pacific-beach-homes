@@ -16,10 +16,10 @@
 
 get_header();
 ?>
-
+	<script>document.querySelector('.banner-text-internal').innerText = 'BLOG';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main blog">
-		<h1>Pacific Beach Homes Blog</h1>
+		<h1>Pacific Beach Homes Real Estate Blog</h1>
 		<?php
 		if ( have_posts() ) :
 

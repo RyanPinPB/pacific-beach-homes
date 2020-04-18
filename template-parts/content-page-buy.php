@@ -11,6 +11,7 @@
 
 get_header();
 ?>
+    <script>document.querySelector('.banner-text-internal').innerText = 'BUY';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

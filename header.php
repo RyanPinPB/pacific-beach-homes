@@ -161,7 +161,7 @@ if (get_field('mailchimp_shortcode', 'option')) {
 				<div class="banner-top"></div>
 				<a id="scroll"><span></span>Scroll</a>
 			<?php else:  ?>
-				<!-- <span class="banner-text-internal stickyMenuStart"></span>-->
+				<span class="banner-text-internal stickyMenuStart"></span>
 			<?php endif; ?>
 			</section>
 
