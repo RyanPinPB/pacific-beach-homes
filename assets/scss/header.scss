@@ -184,16 +184,16 @@ a.mobile-button.hidden {
 
 .banner-text-internal {
     position:absolute;
-    top:65%;
+    top:67%;
     left:0;
     color: var(--white);
     font-family: var(--headerFont);
-    font-size: 15rem;
+    font-size: 11rem;
     font-weight: 400;
 	text-align: center;
     transform: translate3d(0,-50%,0);
     width:100%;
-    opacity:.1;
+    opacity:.2;
     text-shadow: 0 0 5px var(--black);
     overflow:hidden;
 }
@@ -314,6 +314,11 @@ a.mobile-button.hidden {
         min-height: 25vh;
     }
 
+    .banner-text-internal {
+        top:65%;
+        font-size: 15rem;
+    }
+
 }
 
 @media (min-width:1025px) {
@@ -331,5 +336,9 @@ a.mobile-button.hidden {
 @media (min-width:1350px) {
     .internal-banner {
         min-height: 30vh;
+    }
+    .banner-text-internal {
+        top:65%;
+        font-size: 20rem;
     }
 }
