@@ -11,6 +11,7 @@
 
 get_header();
 ?>
+<style> @media (min-width:1350px) {.internal-page .content-area {margin-left: 40px;}}</style>
     <script>document.querySelector('.banner-text-internal').innerText = 'PB';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

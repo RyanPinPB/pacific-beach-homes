@@ -150,6 +150,14 @@ a#scroll {
     -webkit-transition: -webkit-transform .3s,background .3s,color .3s;
 }
 
+.nav-container {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .site-branding {
     margin-right: auto;
     display: none;
@@ -291,16 +299,16 @@ a.mobile-button.hidden {
 
 .banner-text-internal {
     position:absolute;
-    top:65%;
+    top:67%;
     left:0;
     color: var(--white);
     font-family: var(--headerFont);
-    font-size: 15rem;
+    font-size: 11rem;
     font-weight: 400;
 	text-align: center;
     transform: translate3d(0,-50%,0);
     width:100%;
-    opacity:.1;
+    opacity:.2;
     text-shadow: 0 0 5px var(--black);
     overflow:hidden;
 }
@@ -452,9 +460,14 @@ a.menu-icon {
         min-height: 25vh;
     }
 
+    .banner-text-internal {
+        top:65%;
+        font-size: 15rem;
     }
 
-    @media (min-width:1025px) {
+}
+
+@media (min-width:1025px) {
 
     .menu-main-container li {
         font-size: 2.7rem;
@@ -464,10 +477,21 @@ a.menu-icon {
         font-size: 8.1rem;
     }
 
-    }
+}
 
-    @media (min-width:1350px) {
+@media (min-width:1350px) {
     .internal-banner {
         min-height: 30vh;
+    }
+    .banner-text-internal {
+        top:65%;
+        font-size: 20rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .nav-container {
+        max-width:1600px;
+        margin:auto;
     }
 }

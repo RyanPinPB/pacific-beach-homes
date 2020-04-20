@@ -31,7 +31,7 @@ get_header() ?>
 
 <section id="section1" class="selling-points owl-carousel">
     <?php foreach($selling_points as $selling_point) { echo
-    '<div class="item selling-point sp1 flip-card">
+    '<div class="item selling-point '. $selling_point['selling_point_class'] .' flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
                 <h3>' . $selling_point['selling_point_headline'] . '</h3>
