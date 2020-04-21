@@ -195,7 +195,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 add_filter( 'author_link', 'new_author_link', 10, 1 );
 
 function new_author_link( $link ) {      
-    $link = 'https://pacificbeachhomes.com/contact-us/';
+    $link = 'https://pacificbeachhomes.com/ryan-pearson/';
 
     return $link;           
 }

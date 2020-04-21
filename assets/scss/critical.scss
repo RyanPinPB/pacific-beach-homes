@@ -293,8 +293,8 @@ a.mobile-button.hidden {
     top:23%;
     left:0;
     width:100%;
-    transition: font-size .3s ease-in-out;
-    // opacity: 0;
+    transition: font-size .3s ease-in-out 0s, opacity .6s ease-in-out .3s;
+    opacity: 0;
 }
 
 .banner-text-internal {
