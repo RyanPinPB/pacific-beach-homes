@@ -97,8 +97,6 @@ class App {
     /** =======================================================================================
         Fadein and slide up animation
     ========================================================================================= */
-
-
     document.addEventListener("DOMContentLoaded", function() {
 
       const faders = document.querySelectorAll('.fade-in');
@@ -189,50 +187,43 @@ class App {
     /** =======================================================================================
         Fade banner text and parallax affect
     ========================================================================================= */
-    // fade-in text after load
-    if (!document.querySelector('.banner-text')) {
-      return;
-    } else {
+    // after fade-in banner text, remove transitions so parralax works cleanly
+    if (document.querySelector('.banner-text')) {
       setTimeout(function(){ 
         const bannerText = document.querySelector('.banner-text');
         bannerText.style.transition = 'unset';
       }, 1000);
     }
 
-    // if($(window).width() > 768) {
-      if(document.querySelector('.banner-text')) {
-        document.addEventListener('scroll', function() {
-            let currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            if (currScrollPos2 > 1) {
-                document.querySelector('.banner-text').style.opacity = -currScrollPos2 / 150 + 1.04;
-            }
+    if(document.querySelector('.banner-text')) {
+      document.addEventListener('scroll', function() {
+          let currScrollPos2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+          if (currScrollPos2 > 1) {
+              document.querySelector('.banner-text').style.opacity = -currScrollPos2 / 150 + 1.04;
           }
-        );
-      }
-  
-      function background_image_parallax($object, multiplier){
-          multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.15;
-          multiplier = 1 - multiplier;
-  
-          $object.css({"background-attatchment" : "fixed"});
-              $(window).scroll(function(){
-              let from_top = $(document).scrollTop(),
-              translateY = '0' +(multiplier * from_top).toFixed(2);
-              let translateX = 0;
-              $object.css({'transform': 'translate3d(' + translateX +'px, ' +   translateY + 'px, 0)' }); 
-          });
-      };
-  
-      // background_image_parallax($(".front-banner"));
-      // background_image_parallax($(".banner-top"));
-  
-      background_image_parallax($(".banner-text"), .4);
-      background_image_parallax($(".zip-code"), .2);
-  // }
+        }
+      );
+    }
 
-    /** ==================================================================================================
-      Hide / show the master navigation menu only after scrolling up - will need jquery library as written
-    ==================================================================================================== */   
+    function background_image_parallax($object, multiplier){
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.15;
+      multiplier = 1 - multiplier;
+
+      $object.css({"background-attatchment" : "fixed"});
+        $(window).scroll(function(){
+        let from_top = $(document).scrollTop(),
+        translateY = '0' +(multiplier * from_top).toFixed(2);
+        let translateX = 0;
+        $object.css({'transform': 'translate3d(' + translateX +'px, ' +   translateY + 'px, 0)' }); 
+      });
+    };
+
+    background_image_parallax($(".banner-text"), .4);
+    background_image_parallax($(".zip-code"), .2);
+
+    /** ======================================================================================================
+      Hide nav / show the master navigation menu only after scrolling up - will need jquery library as written
+    ======================================================================================================= */   
 
     const nav = document.querySelector("#masthead");
     const visible = "is-visible";
@@ -379,8 +370,6 @@ class App {
     /** ==================================================================================================
      Enable smooth scrolling for anchor link navigation
     ==================================================================================================== */   
-
-
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
