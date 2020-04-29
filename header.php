@@ -46,7 +46,6 @@ if (get_field('mailchimp_shortcode', 'option')) {
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- <link rel="preconnect" href="https://www.google-tagmanager.com" crossorigin> -->
 	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125122385-1"></script>
 	<script>
