@@ -192,6 +192,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//changes the Blog's author link to go to ryan's custom page
 add_filter( 'author_link', 'new_author_link', 10, 1 );
 
 function new_author_link( $link ) {      
@@ -199,3 +200,22 @@ function new_author_link( $link ) {
 
     return $link;           
 }
+
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+//preload style sheets to defer stylesheets
+function add_rel_preload($html, $handle, $href, $media) {
+    
+    if (is_admin())
+        return $html;
+
+     $html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+    return $html;
+}
+add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );

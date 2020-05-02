@@ -189,8 +189,9 @@ class App {
     ========================================================================================= */
     // after fade-in banner text, remove transitions so parralax works cleanly
     if (document.querySelector('.banner-text')) {
-      setTimeout(function(){ 
-        const bannerText = document.querySelector('.banner-text');
+      const bannerText = document.querySelector('.banner-text');
+      // bannerText.style.opacity = '1';
+      setTimeout(function(){
         bannerText.style.transition = 'unset';
       }, 1000);
     }
