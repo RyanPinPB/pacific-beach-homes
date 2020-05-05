@@ -24,10 +24,11 @@ if (get_field('agent_background')) {
     $agent_background = get_field('agent_background');
 }
 ?>
-<style>.agents-page-container{display:flex;flex-direction:column;margin:auto;width:100%;max-width:1600px}.agent-pic-container{width:90%;max-width:350px;margin:auto;height:auto}.agent-page-header{display:flex;flex-direction:column;width:100%}.agent-details{display:flex;flex-direction:column;justify-content:center;align-items:center}.agent-title{margin:0;padding:0px 55px;text-align:center;}.agent-page-body{display:flex;flex-direction:column}.agent-page-col-2{display:flex;flex-direction:column;align-items:center}@media (min-width:1025px){.site-main .entry-content{margin-top:55px}.site-content.internal-page{padding:0 55px}.agents-page-container{flex-direction:row;flex-wrap:wrap}.agent-page-header{flex-direction:row;width:100%}.agent-details{display:flex;flex:1 1 75%;justify-content:center;align-items:center}.agent-pic-container{flex:1 1 25%;max-width:300px}.agent-page-body{display:flex;flex-direction:row-reverse}.agent-page-col-1{flex:1 1 75%;padding-left:55px}.agent-page-col-2{flex:1 1 25%;max-width:300px;margin-top:55px}.agent-background{border-right:solid 5px var(--orange);padding-right:20px}}@media (min-width:1350px){.internal-page .content-area{margin-left:40px}}</style>
 <?php
 get_header();
 ?>
+<style>.agents-page-container{display:flex;flex-direction:column;margin:auto;width:100%;max-width:1600px}.agent-pic-container{width:90%;max-width:350px;margin:auto;height:auto}.agent-page-header{display:flex;flex-direction:column;width:100%}.agent-details{display:flex;flex-direction:column;justify-content:center;align-items:center}.agent-title{margin:0;padding:0px 55px;text-align:center;}.agent-page-body{display:flex;flex-direction:column}.agent-page-col-2{display:flex;flex-direction:column;align-items:center}@media (min-width:1025px){.site-main .entry-content{margin-top:55px}.site-content.internal-page{padding:0 55px}.agents-page-container{flex-direction:row;flex-wrap:wrap}.agent-page-header{flex-direction:row;width:100%}.agent-details{display:flex;flex:1 1 75%;justify-content:center;align-items:center}.agent-pic-container{flex:1 1 25%;max-width:300px}.agent-page-body{display:flex;flex-direction:row-reverse}.agent-page-col-1{flex:1 1 75%;padding-left:55px}.agent-page-col-2{flex:1 1 25%;max-width:300px;margin-top:55px}.agent-background{border-right:solid 5px var(--orange);padding-right:20px}}@media (min-width:1350px){.internal-page .content-area{margin-left:40px}}</style>
+
     <script>document.querySelector('.banner-text-internal').innerText = 'AGENT';</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -50,7 +51,7 @@ get_header();
                 <div class="agents-page-container">
                     <div class="agent-page-header">
                         <figure class="agent-pic-container">
-                            <img class="agent-pic" src="<?=$agent_image?>" style="width:100%;" />
+                            <img class="agent-pic" src="<?=$agent_image?>" style="width:100%;" alt="<?=$agent_name?> agent photo"/>
                         </figure>
                         <div class="agent-details">
                             <h1 class="agent-name"><?=$agent_name?></h1>
