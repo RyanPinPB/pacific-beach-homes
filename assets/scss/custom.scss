@@ -48,7 +48,8 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
   
-h2 {
+h2,
+.schema-faq-question {
     font-size: 3.6rem;
     color: $orange;
     margin: 40px 10px 30px 10px;
