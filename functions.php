@@ -199,15 +199,15 @@ remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 //deregister plugin styles
-add_action('wp_print_styles', 'my_deregister_styles', 100);
+// add_action('wp_print_styles', 'my_deregister_styles', 100);
 
-function my_deregister_styles() {
-  wp_deregister_style('dashicons');
-  wp_deregister_style('admin-bar');
-  wp_deregister_style('frm_fonts');
-  wp_deregister_style('wp-block-library');
-  wp_deregister_style('yoast-seo-adminbar');
-}
+// function my_deregister_styles() {
+//   wp_deregister_style('dashicons');
+//   wp_deregister_style('admin-bar');
+//   wp_deregister_style('frm_fonts');
+//   wp_deregister_style('wp-block-library');
+//   wp_deregister_style('yoast-seo-adminbar');
+// }
 
 
 //enqueue style in footer instead of head
