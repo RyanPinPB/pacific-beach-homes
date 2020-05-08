@@ -27,7 +27,8 @@ if ( ! function_exists( 'pacificbeachhomes_posted_on' ) ) :
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
 			esc_html_x( 'Posted on %s', 'post date', 'pacificbeachhomes' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+			'<span rel="bookmark">' . $time_string . '</span>'
+			/*'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'*/
 		);
 
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
