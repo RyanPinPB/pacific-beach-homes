@@ -162,6 +162,7 @@ if (get_field('mailchimp_shortcode', 'option')) {
 				<span class="banner-text"><?= $banner_text ?></span>
 				<div class="banner-top"></div>
 				<a id="scroll"><span></span>Scroll</a>
+				<div class="fade-to-black"></div>
 			<?php else:  ?>
 				<span class="banner-text-internal stickyMenuStart"></span>
 			<?php endif; ?>
