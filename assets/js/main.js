@@ -206,7 +206,7 @@ class App {
     if (document.querySelector('.zip-code')) {
       const zipCode = document.querySelector('.zip-code');
       zipCode.style.opacity = '1';
-      document.querySelector('.fade-to-black').style.opacity = '1';
+      document.querySelector('.fade-to-black').style.height = '10%';
     }
 
     /** =======================================================================================
