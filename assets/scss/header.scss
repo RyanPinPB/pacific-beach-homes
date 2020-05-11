@@ -216,6 +216,8 @@ a.mobile-button.hidden {
     rgba(0, 0, 0, 0.95) 80%,
     rgba(0, 0, 0, 1) 100%
   );
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @media (min-width: 769px) {
