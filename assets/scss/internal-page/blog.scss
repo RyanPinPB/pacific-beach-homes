@@ -1,117 +1,166 @@
-
 .post-title {
-    color: $orange;
+  color: $orange;
 }
 
 .post-title:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .post-title::before {
-    content: "";
-    display: block;
-    background-color: transparent;
-    height: 6px;
-    width: 0px;
-    margin: 30px 5px;
-    background-image: radial-gradient($blue 50%, transparent 55%, transparent 100%), radial-gradient($blueAccent 50%, transparent 55%, transparent 100%), radial-gradient($blue 50%, transparent 55%, transparent 100%), linear-gradient(-90deg, transparent 0, transparent 32px, $blue 32px, $blueAccent 100%);
-    background-size: 8px 8px, 8px 8px, 8px 8px, 100% 2px;
-    background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
-    background-position: right -1px center, right 10px center, right 20px center, right center;
-    -moz-transition: 1s ease-in-out all 0.1s;
-    -webkit-transition: 1s ease-in-out all 0.1s;
-    transition: 1s ease-in-out all 0.1s;
+  content: '';
+  display: block;
+  background-color: transparent;
+  height: 6px;
+  width: 0px;
+  margin: 30px 5px;
+  background-image: radial-gradient(
+      $blue 50%,
+      transparent 55%,
+      transparent 100%
+    ),
+    radial-gradient($blueAccent 50%, transparent 55%, transparent 100%),
+    radial-gradient($blue 50%, transparent 55%, transparent 100%),
+    linear-gradient(
+      -90deg,
+      transparent 0,
+      transparent 32px,
+      $blue 32px,
+      $blueAccent 100%
+    );
+  background-size: 8px 8px, 8px 8px, 8px 8px, 100% 2px;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+  background-position: right -1px center, right 10px center, right 20px center,
+    right center;
+  -moz-transition: 1s ease-in-out all 0.1s;
+  -webkit-transition: 1s ease-in-out all 0.1s;
+  transition: 1s ease-in-out all 0.1s;
 }
 
 .post-title.visible::before {
-    width: 230px;
+  width: 230px;
 }
 
-
-
 .more-link {
-    background: fade-out($color: $blueAccent, $amount: .05);
-    background:linear-gradient( fade-out($color: $blueAccent, $amount: .05),fade-out($color: $blue, $amount: .05));
-    padding:15px 50px;
-    border-radius:50px;
-    box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .5);
-    margin:20px;
-    margin-bottom: 40px;
+  background: fade-out($color: $blueAccent, $amount: 0.05);
+  background: linear-gradient(
+    fade-out($color: $blueAccent, $amount: 0.05),
+    fade-out($color: $blue, $amount: 0.05)
+  );
+  padding: 15px 50px;
+  border-radius: 50px;
+  box-shadow: 1px 4px 8px fade-out($color: $black, $amount: 0.5);
+  margin: 20px;
+  margin-bottom: 40px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  &:hover {
+    background: linear-gradient(
+      fade-out($color: $blueAccent, $amount: 0),
+      fade-out($color: $blueAccent, $amount: 0)
+    );
     color: $white;
-    text-transform: uppercase;
-    text-decoration:none;
-    color:$white;
-    font-weight:700;
-    font-size: 1.6rem;
-    &:hover {
-        background:linear-gradient( fade-out($color: $blueAccent, $amount: 0),fade-out($color: $blueAccent, $amount: 0));
-        color: $white;
-        text-decoration: none;
-    }
-    &:active {
-        background:linear-gradient( fade-out($color: $blueAccent, $amount: .3),fade-out($color: $blueAccent, $amount: .3));
-    }
+    text-decoration: none;
+  }
+  &:active {
+    background: linear-gradient(
+      fade-out($color: $blueAccent, $amount: 0.3),
+      fade-out($color: $blueAccent, $amount: 0.3)
+    );
+  }
 }
 
 .site-main .posts-navigation {
-    margin: 55px 0px 0px;
-    padding: 30px 10px 0px;
-    border-top:2px solid fade-out($color: $orange, $amount: .8);
-    .nav-links {
-        text-transform: uppercase;
-        .nav-previous {
-            position: relative;
-            text-align: right;
-            float: right;
-            a {
-                padding-right:15px;
-                &:hover {
-                    text-decoration: none;
-                    color: $orange;
-                }
-                &::after {
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    border-top: 8px solid transparent;
-                    border-bottom: 8px solid transparent;
-                    border-left: 8px solid $orange;
-                    position: absolute;
-                    top: 5px;
-                    right: 0px;
-                }
-            }
+  margin: 55px 0px 0px;
+  padding: 30px 10px 0px;
+  border-top: 2px solid fade-out($color: $orange, $amount: 0.8);
+  .nav-links {
+    text-transform: uppercase;
+    .nav-previous {
+      position: relative;
+      text-align: right;
+      float: right;
+      a {
+        padding-right: 15px;
+        &:hover {
+          text-decoration: none;
+          color: $orange;
         }
-        .nav-next {
-            position: relative;
-            text-align: left;
-            float: left;
-            a {
-                padding-left:15px;
-                &:hover {
-                    text-decoration: none;
-                    color: $orange;
-                }
-                &::after {
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    border-top: 8px solid transparent;
-                    border-bottom: 8px solid transparent;
-                    border-right: 8px solid $orange;
-                    position: absolute;
-                    top: 5px;
-                    left: 0px;
-                }
-            }
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 8px solid $orange;
+          position: absolute;
+          top: 5px;
+          right: 0px;
         }
+      }
     }
+    .nav-next {
+      position: relative;
+      text-align: left;
+      float: left;
+      a {
+        padding-left: 15px;
+        &:hover {
+          text-decoration: none;
+          color: $orange;
+        }
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-right: 8px solid $orange;
+          position: absolute;
+          top: 5px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+.site-main {
+  .post-navigation {
+    .nav-links {
+      .nav-previous,
+      .nav-next {
+        padding: 10px;
+        margin: 4px;
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+        width: 45%;
+        text-align: center;
+        // a {
+        //   padding: 10px;
+        //   margin: 4px;
+        //   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+        //   text-align: center;
+        // }
+      }
+    }
+  }
+}
+
+.other-posts {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 10px;
+  font-size: 2.4rem;
+  color: $orange;
 }
 
 .comment-list {
-    list-style: none;
+  list-style: none;
 }
 
 .comments-title {
-    color: $blueAccent;
+  color: $blueAccent;
 }
