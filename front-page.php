@@ -73,11 +73,11 @@ get_header() ?>
 
     <section class="image-buttons owl-carousel">
         <div class="item imagebutton pbsale lazy">
-            <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" rel="nofollow" target="blank">Pacific Beach real estate for sale</a>
+            <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" rel="nofollow" target="_blank">Pacific Beach real estate for sale</a>
         </div>
 
         <div class="item imagebutton homeworth lazy">
-            <a href="https://pearson.lajollaagent.com/home-valuation/" rel="nofollow" target="blank">How much is my home worth?</a>
+            <a href="https://pearson.lajollaagent.com/home-valuation/" rel="nofollow" target="_blank">How much is my home worth?</a>
         </div>
     </section>
 
