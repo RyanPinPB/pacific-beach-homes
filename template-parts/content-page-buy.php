@@ -30,7 +30,7 @@ get_header();
                     ) );
                     ?>
 
-                    <a class="site-button" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" rel="nofollow" target="_blank">View homes for sale in Pacific Beach</a>
+                    <a class="site-button" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" rel="nofollow noopener" target="_blank">View homes for sale in Pacific Beach</a>
                 </div><!-- .entry-content -->
 
                 <?php if ( get_edit_post_link() ) : ?>
