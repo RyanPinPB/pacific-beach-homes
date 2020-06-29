@@ -1,305 +1,302 @@
 .site-footer {
-    text-align:center;
-    background:linear-gradient( $white,$blue);
-    margin:auto;
-    padding:20px 10px 0px 10px;
-    position:relative;
-	z-index:3;
-	box-sizing: content-box;
+  text-align: center;
+  background: linear-gradient($white, $blue);
+  margin: auto;
+  padding: 20px 10px 0px 10px;
+  position: relative;
+  z-index: 3;
+  box-sizing: content-box;
 }
 
 .footer-top-col-1 {
-    display:flex;
-    flex-direction:column;
-    flex:1 1 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
 }
 
 .footer-name {
-    font-family: $headerFont;
-    font-weight: 700;
+  font-family: $headerFont;
+  font-weight: 700;
 }
 
 .footer-name-second-line {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 span.footer-name,
 span.footer-phone,
 span.footer-email,
 span.footer-location {
-    font-size: 1.7rem;
-    font-weight:400;
-    color:$blueAccent;
-    line-height: 1;
-    padding-bottom:20px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: $blueAccent;
+  line-height: 1;
+  padding-bottom: 20px;
 }
 
 .footer-top-col-1 iframe {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-top-col-2 {
-    display:none;
+  display: none;
 }
 
 .mc4wp-form-fields {
-    color: $black;
-    max-width:1000px;
-    margin: auto;
-    font-family: $bodyFont;
-    p {
-        font-size:1.6rem;
-        line-height:1.2;
-        margin:0px;
-    }
-    label {
-        color: $white;
-        font-weight: 700;
-        white-space: nowrap;
-    }
+  color: $black;
+  max-width: 1000px;
+  margin: auto;
+  font-family: $bodyFont;
+  p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0px;
+  }
+  label {
+    color: $white;
+    font-weight: 700;
+    white-space: nowrap;
+  }
 
-    input {
-        box-shadow: 0px 5px 10px fade-out($color: $black, $amount: .5)
+  input {
+    box-shadow: 0px 5px 10px fade-out($color: $black, $amount: 0.5);
+  }
+  input[type='email'] {
+    font-size: 1.8rem;
+    padding: 5px 20px;
+    font-family: $bodyFont;
+    width: 100%;
+    max-width: 300px;
+    &:focus,
+    &:active {
+      outline: $orange solid 3px;
     }
-    input[type=email] {
-        font-size: 1.8rem;
-        padding: 5px 20px;
-        font-family: $bodyFont;
-        width: 100%;
-        max-width:300px;
-        &:focus,
-        &:active {
-            outline: $orange solid 3px;
-        }
+  }
+  input[type='submit'] {
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 10px 0px 30px 0px;
+    cursor: pointer;
+    &:hover {
+      background: fade-out($color: $orange, $amount: 0.1);
     }
-    input[type=submit] {
-        font-weight:700;
-        padding:10px 20px;
-        margin: 10px 0px 30px 0px;
-        cursor: pointer;
-        &:hover {
-            background: fade-out($color: $orange, $amount: .1)
-        }
-    }
+  }
 }
 
 .footer-bottom-container {
-    padding:50px 0px;
+  padding: 50px 0px;
 }
 
 .made-by {
-    font-size: 1.6rem;
-    line-height:1em;
+  font-size: 1.6rem;
+  line-height: 1em;
 }
 
 .made-by a {
-    color: $black;
+  color: $black;
 }
 
 .made-by a:hover {
-    color:$white;
-    text-decoration: none;
+  color: $white;
+  text-decoration: none;
 }
 
 .follow {
-    color:$orange;
-    font-weight:700;
-    white-space: nowrap;
+  color: $white;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .social-icons {
-    margin-top:10px;
-    svg {
-        fill: $black;
-    }
+  margin-top: 10px;
+  svg {
+    fill: $black;
+  }
 }
 
-
 .footer-bottom-container:hover .yelp {
-    fill:rgba(211, 35, 35, 1);
+  fill: rgba(211, 35, 35, 1);
 }
 
 .footer-bottom-container:hover .google {
-    fill: url(#google-gradient);
+  fill: url(#google-gradient);
 }
 
 .footer-bottom-container:hover .facebook {
-    fill:rgba(65, 114, 184, 1);
+  fill: rgba(65, 114, 184, 1);
 }
 
 .footer-bottom-container:hover .instagram {
-    fill: url(#ig-gradient);
+  fill: url(#ig-gradient);
 }
 
 .footer-bottom-container:hover .linkedin {
-    fill:rgba(0, 119, 181, 1);
+  fill: rgba(0, 119, 181, 1);
 }
 
 .footer-bottom-container:hover .twitter {
-    fill:rgba(29, 161, 242, 1);
+  fill: rgba(29, 161, 242, 1);
 }
 
 .footer-bottom-container {
-    .social-icons {
-        svg {
-            width:45px;
-            cursor:pointer;
-        }
-        
-        svg:hover {
-            fill:$orange !important;
-        }
+  .social-icons {
+    svg {
+      width: 45px;
+      cursor: pointer;
     }
+
+    svg:hover {
+      fill: $orange !important;
+    }
+  }
 }
 
 div.grecaptcha-badge {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 
 /* Media Queries */
-@media (min-width:374px) {
-    .social-icons {
-        a {
-            padding: 0px 5px;
-        }
+@media (min-width: 374px) {
+  .social-icons {
+    a {
+      padding: 0px 5px;
     }
+  }
 }
 
-@media (min-width:450px) {
-    span.footer-name,
-    span.footer-phone,
-    span.footer-email,
-    span.footer-location {
-        font-size: 2.25rem;
-    }
+@media (min-width: 450px) {
+  span.footer-name,
+  span.footer-phone,
+  span.footer-email,
+  span.footer-location {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 769px) {
-    .site-footer {
-        padding: 100px 25px 0px 15px;
-    }
+  .site-footer {
+    padding: 100px 25px 0px 15px;
+  }
 
-    .footer-top-container {
-        display:inline-flex;
-        flex-direction: row;
-        width: 100%;
-        max-width:1050px;
-    }
+  .footer-top-container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1050px;
+  }
 
-    .footer-top-col-1 {
-        display:flex;
-        flex-direction:column;
-        flex:1 1 50%;   
-    }
+  .footer-top-col-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+  }
 
-    span.footer-name,
-    span.form-cta  {
-        font-family: $headerFont;
-        font-size: 3rem;
-        line-height: 1.2;
-        font-weight: 700;
-        padding-top: 0;
-        margin-bottom:0;
-    }
+  span.footer-name,
+  span.form-cta {
+    font-family: $headerFont;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 
-    span.form-cta {
-        color: $orange;
-        padding-bottom: 10px;
-    }
+  span.form-cta {
+    color: $orange;
+    padding-bottom: 10px;
+  }
 
-    .footer-top-col-2 {
-        display:flex;
-        flex-direction: column;
-        flex:1 1 50%;
-        padding-left: 25px;
-    }
+  .footer-top-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding-left: 25px;
+  }
 
-    .footerForm fieldset {
-        padding: 0px;
-        width:100%;
-        margin:auto;
-        border:none;
-    }
+  .footerForm fieldset {
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    border: none;
+  }
 
-    .footerForm legend,
-    .footerForm label {
-        display:none;
-    }
+  .footerForm legend,
+  .footerForm label {
+    display: none;
+  }
 
-    .footerForm input {
-        width:100%;
-        padding:10px;
-        margin:10px auto;
-        font-size: 2.7rem;
-        font-family: $bodyFont;
-    }
-    
-    .footerForm textarea {
-        font-size: 2.7rem;
-        width:100%;
-        height:220px;
-        padding:10px;
-        margin:10px auto;
-        font-family: $bodyFont;
-    }
-    
-    .footerForm button[type=submit] {
-        font-size:1.8rem;
-        font-weight: 700;
-        padding:20px;
-        margin:10px auto;
-        background:$orange;
-        color:$white;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .footerForm input:focus,
-    .footerForm button[type=submit]:focus,
-    .footerForm textarea:focus {
-        outline: $orange solid 3px;
-    }
-    
-    .footerForm button[type=submit]:hover {
-        background:radial-gradient( $orange, fade-out($orange, .25));
-    }
-    
-    .footerForm button[type=submit]:active {
-        background:radial-gradient( $orange,fade-out($orange, .75));
-    }
+  .footerForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 2.7rem;
+    font-family: $bodyFont;
+  }
 
-    .footerForm input,
-    .footerForm textarea,
-    .footerForm button {
-        box-shadow: 0px 5px 10px rgba(0,0,0,.5);
-    }
+  .footerForm textarea {
+    font-size: 2.7rem;
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: $bodyFont;
+  }
 
-    .footerForm {
-        .frm_error_style {
-            font-size:15px;
-            font-weight:700;
-        }
-        .frm_error {
-            font-size:15px;
-            font-weight:700;
-        }
+  .footerForm button[type='submit'] {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 20px;
+    margin: 10px auto;
+    background: $orange;
+    color: $white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .footerForm input:focus,
+  .footerForm button[type='submit']:focus,
+  .footerForm textarea:focus {
+    outline: $orange solid 3px;
+  }
+
+  .footerForm button[type='submit']:hover {
+    background: radial-gradient($orange, fade-out($orange, 0.25));
+  }
+
+  .footerForm button[type='submit']:active {
+    background: radial-gradient($orange, fade-out($orange, 0.75));
+  }
+
+  .footerForm input,
+  .footerForm textarea,
+  .footerForm button {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .footerForm {
+    .frm_error_style {
+      font-size: 15px;
+      font-weight: 700;
     }
+    .frm_error {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
 }
 
-@media (min-width:1025px) {
-    span.footer-name,
-    span.form-cta  {
-        font-size: 3.6rem;
-    }
-    .footer-top-col-1 {
-        padding-right: 25px;
-    }
-    .footer-top-col-2 {
-        padding-left: 50px;
-    }
+@media (min-width: 1025px) {
+  span.footer-name,
+  span.form-cta {
+    font-size: 3.6rem;
+  }
+  .footer-top-col-1 {
+    padding-right: 25px;
+  }
+  .footer-top-col-2 {
+    padding-left: 50px;
+  }
 }
 
-@media (min-width:1350px) {
-
+@media (min-width: 1350px) {
 }
