@@ -45,6 +45,34 @@ if (get_field('mailchimp_shortcode', 'option')) {
     $mailchimp_shortcode = get_field('mailchimp_shortcode', 'option');
 }
 
+if (get_field('owner_name', 'option')) {
+    $owner_name = get_field('owner_name', 'option');
+}
+
+if (get_field('owner_license', 'option')) {
+    $owner_license = get_field('owner_license', 'option');
+}
+
+if (get_field('office_name', 'option')) {
+    $office_name = get_field('office_name', 'option');
+}
+
+if (get_field('office_address_one', 'option')) {
+    $office_address_one = get_field('office_address_one', 'option');
+}
+
+if (get_field('office_address_two', 'option')) {
+    $office_address_two = get_field('office_address_two', 'option');
+}
+
+if (get_field('office_phone', 'option')) {
+    $office_phone = get_field('office_phone', 'option');
+}
+
+if (get_field('office_license', 'option')) {
+    $office_license = get_field('office_license', 'option');
+}
+
 ?>
 
 	</div><!-- #content -->
@@ -67,6 +95,28 @@ if (get_field('mailchimp_shortcode', 'option')) {
 		</div>
 		<div class="footer-bottom-container">
 			<div><?= $mailchimp_shortcode ?></div>
+			<div class="footer-site-map">
+				<div class="site-map-col-1">
+				<?php dynamic_sidebar( 'footer-menu' ); ?>
+				</div>
+				<div class="site-map-col-2">
+				<?php dynamic_sidebar( 'footer-resources' ); ?>
+				</div>
+				<div class="site-map-col-3">
+					<h4 class="site-map-col-3-title">About Us:</h4>
+					<span class="owner-information">Owner Info:</span>
+					<a href="/ryan-pearson"><?=$owner_name?></a>
+					<a href="tel:<?=$phone_number?>" class="owner-phone"><?=$phone_number?></a>
+					<span>CA DRE License #<?=$owner_license?></span>
+					<span class="office-information">Office Info:</span>
+					<span class="office-name"><?=$office_name?></span>
+					<span class="office-address-line-1"><?=$office_address_one?></span>
+					<span class="office-address-line-2"><?=$office_address_two?></span>
+					<a href="tel:<?=$office_phone?>" class="office-phone"><?=$office_phone?></a>
+					<span class="office-license">CA DRE License #<?=$office_license?></span>
+				</span>
+				</div>
+			</div>
 			<span class="made-by"><a href="https://ryanpearson.website" rel="noopener" target="_blank">Ryan Pearson made this website.</a> <span class="follow">Follow us:</span></span>
 			<div class="social-icons">
 				<a href="<?=$yelp_link?>" title="Visit our Yelp page" aria-label="Visit our Yelp page" rel="noopener" target="_blank"><svg class="yelp" alt="Yelp icon" role="img" width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Yelp</title><path d="M21.111 18.226c-.141.969-2.119 3.483-3.029 3.847-.311.124-.611.094-.85-.09-.154-.12-.314-.365-2.447-3.827l-.633-1.032c-.244-.37-.199-.857.104-1.229.297-.359.732-.494 1.111-.35.02.012 1.596.531 1.596.531 3.588 1.179 3.705 1.224 3.857 1.338.227.186.332.475.285.813h.006zm-7.191-5.267c-.254-.386-.25-.841.012-1.155l.998-1.359c2.189-2.984 2.311-3.141 2.459-3.245.256-.171.57-.179.871-.032.869.422 2.623 3.029 2.729 4.029v.034c.029.341-.105.618-.346.784-.164.105-.314.166-4.393 1.156-.645.164-1.004.254-1.215.329l.029-.03c-.404.12-.854-.074-1.109-.479l-.035-.032zm-2.504-1.546c-.195.061-.789.245-1.519-.938 0 0-4.931-7.759-5.047-7.998-.07-.27.015-.574.255-.82.734-.761 4.717-1.875 5.76-1.621.34.088.574.301.656.604.06.335.545 7.536.615 9.149.066 1.38-.525 1.565-.72 1.624zm.651 7.893c-.011 3.774-.019 3.9-.081 4.079-.105.281-.346.469-.681.53-.96.164-3.967-.946-4.594-1.69-.12-.164-.195-.328-.21-.493-.016-.12 0-.24.045-.346.075-.195.18-.345 2.88-3.51l.794-.944c.271-.345.75-.45 1.199-.271.436.165.706.54.676.945v1.68l-.028.02zm-8.183-2.414c-.295-.01-.56-.187-.715-.48-.111-.215-.189-.57-.238-1.002-.137-1.301.029-3.264.419-3.887.183-.285.45-.436.745-.426.195 0 .369.061 4.229 1.65l1.13.449c.404.15.654.57.63 1.051-.03.465-.298.824-.694.93l-1.605.51c-3.59 1.155-3.709 1.185-3.898 1.17l-.003.035zm14.977 7.105h-.004l-.005.003.009-.003z"/></svg></a>
@@ -101,6 +151,9 @@ if (get_field('mailchimp_shortcode', 'option')) {
 				<a href="<?=$linkedin_link?>" title="Visit our linkedin page" aria-label="Visit our LinkedIn page" rel="noopener" target="_blank"><svg class="linkedin" alt="Linkedin icon" role="img" width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
 				
 				<a href="<?=$facebook_link?>" title="Visit our Facebook page" aria-label="Visit our Facebook page" rel="noopener" target="_blank"><svg class="facebook" alt="Facebook icon" role="img" width="45" height="45" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg></a>
+			</div>
+			<div class="footer-disclaimer">
+			This information is deemed reliable but not guaranteed. You should rely on this information only to decide whether or not to further investigate a particular property. BEFORE MAKING ANY OTHER DECISION, YOU SHOULD PERSONALLY INVESTIGATE THE FACTS (e.g. square footage and lot size) with the assistance of an appropriate professional. You may use this information only to identify properties you may be interested in investigating further. All uses except for personal, non- commercial use in accordance with the foregoing purpose are prohibited. Redistribution or copying of this information, any photographs or video tours is strictly prohibited. This information is derived from the Internet Data Exchange (IDX) service provided by San Diego MLS. Displayed property listings may be held by a brokerage firm other than the broker and/or agent responsible for this display. The information and any photographs and video tours and the compilation from which they are derived is protected by copyright. Compilation © <?= date("Y"); ?> San Diego MLS.</div>
 			</div>
 		</div>
 	</footer><!-- #footer -->

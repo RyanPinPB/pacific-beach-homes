@@ -48,8 +48,8 @@ if (get_field('mailchimp_shortcode', 'option')) {
 <head>
 	<!-- <link rel="preconnect" href="https://www.google-tagmanager.com" crossorigin> -->
 	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>
-	<link rel="preload" href="/wp-content/themes/pacific-beach-homes/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>
+	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>' ?>
+	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>' ?>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125122385-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -76,6 +76,11 @@ if (get_field('mailchimp_shortcode', 'option')) {
 						<svg class="custom-logo" alt="Pacific Bach Homes logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 400 70" width="400pt" height="70pt"><defs><clipPath id="_clipPath1_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L"><rect width="400" height="70"/></clipPath></defs><g clip-path="url(#_clipPath1_ESp8F6J77eH8Fpsol2h8oRRj6tGaHl0L)"><rect width="400" height="70" style="fill:rgb(8,8,8)" fill-opacity="0"/><text transform="matrix(1,0,0,1,2.508,38.55)" style="font-family:'Poppins';font-weight:400;font-size:41px;font-style:normal;letter-spacing:-2px;fill:#ffffff;stroke:none;">Pacific Beach Homes</text><text transform="matrix(1,0,0,1,102.52,61)" style="font-family:'Poppins';font-weight:700;font-size:20px;font-style:normal;font-variant-ligatures:none;letter-spacing:7px;fill:#f07c00;stroke:none;">REAL ESTATE</text><line x1="97" y1="54" x2="7" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/><line x1="393" y1="54" x2="303" y2="54" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(240,124,0)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/></g></svg>
 					</a>
 				</div><!-- .site-branding -->
+				<div class="office-branding">
+					<a href="/" class="office-logo-container">
+						<?= '<img src="' . get_template_directory_uri() . '/assets/images/logos/office-logo.jpg" alt="Premier Realty Associates" class="office-logo">' ?>
+					</a>
+				</div>
 
 				<nav id="site-navigation" class="main-navigation">
 					<!-- laptop and desktop menu -->

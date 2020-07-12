@@ -85,6 +85,18 @@ span.footer-location {
 
 .footer-bottom-container {
   padding: 50px 0px;
+  max-width: 1050px;
+  margin: auto;
+  .social-icons {
+    svg {
+      width: 45px;
+      cursor: pointer;
+    }
+
+    svg:hover {
+      fill: $orange !important;
+    }
+  }
 }
 
 .made-by {
@@ -108,7 +120,7 @@ span.footer-location {
 }
 
 .social-icons {
-  margin-top: 10px;
+  margin: 10px auto 30px;
   svg {
     fill: $black;
   }
@@ -138,17 +150,61 @@ span.footer-location {
   fill: rgba(29, 161, 242, 1);
 }
 
-.footer-bottom-container {
-  .social-icons {
-    svg {
-      width: 45px;
-      cursor: pointer;
-    }
-
-    svg:hover {
-      fill: $orange !important;
+.footer-site-map {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  text-align: start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--orange);
+    margin: 0px;
+  }
+  ul {
+    margin: 0;
+    color: var(--white);
+    font-size: 1.4rem;
+    li a {
+      color: var(--white);
+      font-size: 1.4rem;
     }
   }
+
+  .site-map-col-1,
+  .site-map-col-2,
+  .site-map-col-3 {
+    padding: 10px 5px;
+  }
+
+  .site-map-col-3 {
+    display: flex;
+    flex-direction: column;
+    span,
+    a {
+      display: block;
+      color: var(--black);
+    }
+    a {
+      color: var(--white);
+    }
+    .office-information,
+    .owner-information {
+      font-weight: 700;
+    }
+    .office-information {
+      padding-top: 15px;
+    }
+  }
+}
+
+.footer-disclaimer {
+  font-size: 1rem;
+  text-align: start;
+  color: var(--black);
 }
 
 div.grecaptcha-badge {
@@ -282,6 +338,10 @@ div.grecaptcha-badge {
       font-size: 15px;
       font-weight: 700;
     }
+  }
+
+  .footer-site-map {
+    justify-content: space-around;
   }
 }
 

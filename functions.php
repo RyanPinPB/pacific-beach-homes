@@ -130,6 +130,27 @@ function pacificbeachhomes_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Menu', 'pacificbeachhomes' ),
+		'id'            => 'footer-menu',
+		'description'   => esc_html__( 'Add menu that will show up in footer column', 'pacificbeachhomes' ),
+		'before_widget' => '<section class="footer-menu">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="footer-menu-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Resources', 'pacificbeachhomes' ),
+		'id'            => 'footer-resources',
+		'description'   => esc_html__( 'Add resources that will show up in footer column', 'pacificbeachhomes' ),
+		'before_widget' => '<section class="footer-resources">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="footer-resources-title">',
+		'after_title'   => '</h4>',
+	) );
+
 }
 add_action( 'widgets_init', 'pacificbeachhomes_widgets_init' );
 
@@ -213,7 +234,7 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 //enqueue style in footer instead of head
 function prefix_add_footer_styles() {
 	if ( $_SERVER['SERVER_NAME'] === 'localhost' || strpos($_SERVER['SERVER_NAME'], '.local') !== false ) :
-		$path = '//127.0.0.1:3000';
+		$path = '//127.0.0.1:3000' ;
 	else :
 		$path = get_stylesheet_directory_uri();
 	endif;
