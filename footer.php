@@ -106,14 +106,14 @@ if (get_field('office_license', 'option')) {
 					<h4 class="site-map-col-3-title">About Us:</h4>
 					<span class="owner-information">Owner Info:</span>
 					<a href="/ryan-pearson"><?=$owner_name?></a>
-					<a href="tel:<?=$phone_number?>" class="owner-phone"><?=$phone_number?></a>
 					<span>CA DRE License #<?=$owner_license?></span>
+					<a href="tel:<?=$phone_number?>" class="owner-phone"><?=$phone_number?></a>
 					<span class="office-information">Office Info:</span>
 					<span class="office-name"><?=$office_name?></span>
+					<span class="office-license">CA DRE License #<?=$office_license?></span>
 					<span class="office-address-line-1"><?=$office_address_one?></span>
 					<span class="office-address-line-2"><?=$office_address_two?></span>
 					<a href="tel:<?=$office_phone?>" class="office-phone"><?=$office_phone?></a>
-					<span class="office-license">CA DRE License #<?=$office_license?></span>
 				</span>
 				</div>
 			</div>

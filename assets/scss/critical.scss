@@ -176,14 +176,17 @@ a#scroll {
   align-items: center;
 }
 
-.site-branding {
-  margin-right: auto;
+.branding {
   display: none;
-  align-items: center;
-  margin: 10px;
 }
 
-.site-branding a {
+.site-branding {
+  display: none;
+  align-items: center;
+}
+
+.custom-logo-link {
+  display: flex;
   max-width: 400px;
   height: auto;
   max-height: 80px;
@@ -191,13 +194,41 @@ a#scroll {
   transition: transform 0.3s ease-in-out;
 }
 
-.site-branding a .custom-logo {
+.custom-logo-link:hover {
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+.custom-logo {
   max-width: 100%;
   height: auto;
 }
 
+.office-logo-link {
+  display: flex;
+}
+
 .office-branding {
   display: none;
+  align-items: center;
+}
+
+.office-logo-link {
+  max-width: 400px;
+  height: auto;
+  max-height: 80px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.office-logo-link:hover {
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+.office-logo {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-navigation {
@@ -422,10 +453,35 @@ a.menu-icon {
     transition: opacity 1s ease-in-out 0.5s;
   }
 
+  .branding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 550px;
+    margin: 10px;
+  }
+
+  .site-branding {
+    display: flex;
+    flex: 0 1 55%;
+    justify-content: flex-start;
+    opacity: 1;
+  }
+
+  .office-branding {
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: flex-end;
+    opacity: 1;
+  }
+
   .main-navigation {
     margin: 10px;
     margin-right: 15px;
     justify-content: flex-end;
+    white-space: nowrap;
+    width: unset;
   }
 
   a.mobile-button {
