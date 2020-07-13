@@ -200,7 +200,7 @@ class App {
       document.querySelector('.banner-text');
       setTimeout(function () {
         bannerText.style.transition = 'unset';
-      }, 1000);
+      }, 2000);
     }
 
     if (document.querySelector('.zip-code')) {

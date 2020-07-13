@@ -334,7 +334,7 @@ a.mobile-button.hidden {
   top: 23%;
   left: 0;
   width: 100%;
-  transition: font-size 0.3s ease-in-out, opacity 1s ease-in-out;
+  transition: font-size 0.3s ease-in-out, opacity 1s ease-in-out 1.5s;
   opacity: 0;
 }
 
@@ -445,14 +445,6 @@ a.menu-icon {
     -webkit-transition: -webkit-transform 0.3s, background 0.3s, color 0.3s;
   }
 
-  .site-branding {
-    display: flex;
-    margin: 10px;
-    margin-left: 15px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out 0.5s;
-  }
-
   .branding {
     display: flex;
     flex-direction: row;
@@ -466,14 +458,16 @@ a.menu-icon {
     display: flex;
     flex: 0 1 55%;
     justify-content: flex-start;
-    opacity: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.5s;
   }
 
   .office-branding {
     display: flex;
     flex: 0 1 40%;
     justify-content: flex-end;
-    opacity: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out 1s;
   }
 
   .main-navigation {
