@@ -1,98 +1,44 @@
 .content-services {
-    display: flex;
-    flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 
 .content-wrap3 {
-    display:flex;
-    width:100%;
-    background: url("../images/backgrounds/cubes.png") repeat;
+  display: flex;
+  width: 100%;
+  // background: url("../images/backgrounds/cubes.png") repeat;
 }
 
 .content3 {
-    display:flex;
-    flex-direction: column;
-    margin:10px;
-    ul li::before {
-        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: $orange; /* Change the color */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-flex; /* Needed to add space between the bullet and the text */
-        width: 1em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  ul li::before {
+    content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $orange;
+    font-weight: bold;
+    display: inline-flex;
+    width: 1em;
+    margin-left: -1em;
+  }
 }
-
-
-
-// .content3 h2 {
-//     color: rgba(240, 124, 0,1);
-//     text-align: center;
-//     margin-top:20px;
-//     line-height: 1;
-// }
-  
-// .content3 p {
-//     font-size: 2.25rem;
-//     margin-top:20px;
-// }
-
-// .content3 ul{
-//     list-style: disc;
-//     font-size: 2.25rem;
-//     line-height: 2.5rem;
-// }
-
-// .content3 ul li{
-//     padding: 5px 7.5px 7.5px 0px;
-// }
 
 @media (min-width: 769px) {
+  .content-wrap3 {
+    padding-top: 70px;
+  }
 
-/* removed the map iframe and moved it to the footer - sidebar is blank so added a background cube pattern instead of sidebar
-    .content-wrap3 {
-        display: flex;
-        flex-direction:column;
-        flex:1 1 75%;    
-        background: url("https://pacificbeachhomes.com/wp-content/uploads/2019/10/cubes.png") repeat, radial-gradient(circle, rgba(240, 124, 0,1) 5%, white 95%);   
-    }
-
-    .content3 {
-        display:flex;
-        flex-direction: column;
-        padding:1rem;
-    }
-
-    .sidebar-wrap3 {
-        display:flex;
-        order:-1;
-        flex:1 1 25%;
-        padding:10px;
-        background: url("https://pacificbeachhomes.com/wp-content/uploads/2019/10/cubes.png") repeat, radial-gradient(circle, rgba(240, 124, 0,1) 20%, white 80%);
-        /*background-image: repeating-linear-gradient( -45deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 15px, transparent 15px, transparent 30px);
-        background-color:rgba(240, 124, 0,1);
-    }
-    .sidebar3 {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin:0 auto;
-    }
-
-    .sidebar3 iframe {
-        margin:10px auto;
-        max-width:100%;
-        flex:1 1 auto;
-        max-height: 700px;
-    }
-*/
-
+  .content3 h2 {
+    color: rgba(240, 124, 0, 1);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1;
+  }
 }
 
-@media (min-width:1025px) {
-    .content3 {
-        width:80%;
-        margin:40px auto;
-    }
+@media (min-width: 1025px) {
+  .content3 {
+    width: 80%;
+    margin: 40px auto;
+  }
 }
