@@ -137,8 +137,8 @@ function pacificbeachhomes_widgets_init() {
 		'description'   => esc_html__( 'Add menu that will show up in footer column', 'pacificbeachhomes' ),
 		'before_widget' => '<section class="footer-menu">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="footer-menu-title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<strong class="footer-menu-title">',
+		'after_title'   => '</strong>',
 	) );
 
 	register_sidebar( array(
@@ -147,8 +147,8 @@ function pacificbeachhomes_widgets_init() {
 		'description'   => esc_html__( 'Add resources that will show up in footer column', 'pacificbeachhomes' ),
 		'before_widget' => '<section class="footer-resources">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="footer-resources-title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<strong class="footer-resources-title">',
+		'after_title'   => '</strong>',
 	) );
 
 }

@@ -103,7 +103,7 @@ if (get_field('office_license', 'option')) {
 				<?php dynamic_sidebar( 'footer-resources' ); ?>
 				</div>
 				<div class="site-map-col-3">
-					<h4 class="site-map-col-3-title">About Us:</h4>
+					<strong class="site-map-col-3-title">About Us:</strong>
 					<span class="owner-information">Owner Info:</span>
 					<a href="/ryan-pearson"><?=$owner_name?></a>
 					<span>CA DRE License #<?=$owner_license?></span>

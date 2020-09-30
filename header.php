@@ -50,6 +50,9 @@ if (get_field('mailchimp_shortcode', 'option')) {
 	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>' ?>
 	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>' ?>
+	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/roboto-v20-latin-regular.woff2" as="font" crossorigin>' ?>
+	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/roboto-v20-latin-italic.woff2" as="font" crossorigin>' ?>
+	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/roboto-v20-latin-700.woff2" as="font" crossorigin>' ?>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125122385-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
