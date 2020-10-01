@@ -72,11 +72,11 @@ get_header() ?>
     </section>
 
     <section class="image-buttons owl-carousel">
-        <div class="item imagebutton pbsale lazy">
+        <div class="item imagebutton pbsale lazy" role="img" aria-label="Oceanfront house in Pacific Beach" title="Oceanfront house in Pacific Beach">
             <a href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&sort=importdate&status=A&utm_source=OTHERWEB&utm_campaign=PacificBeachHomes&mdv=5&mpv=5&utm_medium=referral" rel="nofollow noopener" target="_blank">Pacific Beach real estate for sale</a>
         </div>
 
-        <div class="item imagebutton homeworth lazy">
+        <div class="item imagebutton homeworth lazy" role="img" aria-label="View of Crystal Pier from Northern Pacific Beach boardwalk" title="View of Crystal Pier from Northern Pacific Beach boardwalk">
             <a href="https://pearson.lajollaagent.com/home-valuation/" rel="nofollow noopener" target="_blank">How much is my home worth?</a>
         </div>
     </section>

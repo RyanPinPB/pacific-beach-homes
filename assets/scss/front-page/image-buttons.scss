@@ -1,64 +1,68 @@
 .image-buttons {
-    position:relative;
+  position: relative;
 }
 
 .button-container {
-    width:100%;
-    height:auto;
+  width: 100%;
+  height: auto;
 }
 
 .imagebutton {
-    display:flex;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width:100%;
-    text-align: center;
-    height:300px;
-    justify-content: center;
-    align-items: center;
-    white-space: normal;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  white-space: normal;
 }
 
-.imagebutton a{
-    background: fade-out($color: $blueAccent, $amount: .05);
-    background:linear-gradient( fade-out($color: $blueAccent, $amount: .05),fade-out($color: $blue, $amount: .05));
-    padding:20px 30px 20px 30px;
-    opacity:1;
-    border-radius:50px;
-    box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .5);
-    margin:20px;
-    text-decoration:none;
-    color:$white;
-    font-weight:700;
-    font-size: 1.6rem;
+.imagebutton a {
+  background: fade-out($color: $blueAccent, $amount: 0.05);
+  background: linear-gradient(
+    fade-out($color: $blueAccent, $amount: 0.05),
+    fade-out($color: $blue, $amount: 0.05)
+  );
+  padding: 20px 30px 20px 30px;
+  opacity: 1;
+  border-radius: 50px;
+  box-shadow: 1px 4px 8px fade-out($color: $black, $amount: 0.5);
+  margin: 20px;
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.imagebutton a:hover{
-    background:$blueAccent;
-    box-shadow: 1px 5px 10px fade-out($color: $black, $amount: .1);
-    text-decoration: none;
+.imagebutton a:hover {
+  background: $blueAccent;
+  box-shadow: 1px 5px 10px fade-out($color: $black, $amount: 0.1);
+  text-decoration: none;
 }
 
-.imagebutton a:active{
-    background: fade-out($color: $blueAccent, $amount: .2);
-    box-shadow: 1px 2px 4px fade-out($color: $black, $amount: .5);
+.imagebutton a:active {
+  background: fade-out($color: $blueAccent, $amount: 0.2);
+  box-shadow: 1px 2px 4px fade-out($color: $black, $amount: 0.5);
 }
 
 .pbsale.lazy {
-    background-image: url("../images/button/house-with-pool-lazy.jpg");
+  background-image: url('../images/button/oceanfront-house-lazy.jpg');
 }
 
 .pbsale {
-    background-image: url("../images/button/house-with-pool.jpg");
+  background-image: url('../images/button/oceanfront-house.jpg');
 }
 
 .homeworth.lazy {
-    background-image: url("../images/button/crystal-pier-lazy.jpg");
+  background-image: url('../images/button/crystal-pier-lazy.jpg');
 }
 
 .homeworth {
-    background-image: url("../images/button/crystal-pier.jpg");
+  background-image: url('../images/button/crystal-pier.jpg');
 }
 
 // .learn.lazy {
@@ -70,24 +74,23 @@
 // }
 
 @media (min-width: 769px) {
-    .active .imagebutton {
-        box-shadow: 5px 5px 10px fade-out($color: $black, $amount: .5);
-    }
+  .active .imagebutton {
+    box-shadow: 0px 3px 6px fade-out($color: $black, $amount: 0.5);
+  }
 
-    .imagebutton {
-        margin:25px 0px;
-        height:400px;
-        transition: transform .3s ease-in-out;
-        &:hover {
-            transform:scale(1.01);
-            a {
-                box-shadow: 1px 4px 8px fade-out($color: $black, $amount: .3);
-            }
-        }
+  .imagebutton {
+    margin: 25px 0px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      a {
+        box-shadow: 1px 4px 8px fade-out($color: $black, $amount: 0.3);
+      }
     }
+  }
 
-    .imagebutton a{
-        font-size: 1.8rem;
-    }
-
+  .imagebutton a {
+    font-size: 1.8rem;
+  }
 }
