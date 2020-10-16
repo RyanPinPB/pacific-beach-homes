@@ -74,8 +74,6 @@ get_header();
 
 <?php
 get_sidebar();
-
-get_footer();
 ?>
 
 <script>document.querySelector('.banner-text-internal').innerText = 'SELL';
@@ -90,3 +88,11 @@ function closeAlert() {
     <a href="#footer" class="alert-content" style="margin:auto;height:40px;display:flex;justify-content:center;align-items:center;"><button type="button" onclick="closeAlert()" style="border:none;display:flex;justify-content:center;color:white;font-size:1.8rem;background:var(--blue);border-radius:20px;padding:10px 20px;">FREE CONSULTATION</button></a>
     <button type="button" onclick="closeAlert()" class="alert-close" style="height:40px;width:40px;border-radius:50%;font-size:1.5rem;box-shadow:unset;color:rgba(255,255,255,.5);">X</button>
 </div>
+<style>
+    .alert-content:hover {
+        text-decoration:none;
+    }
+</style>
+
+<?php
+get_footer();
