@@ -79,18 +79,83 @@ get_sidebar();
 <script>document.querySelector('.banner-text-internal').innerText = 'SELL';
 setTimeout(() => {
     document.querySelector('.sell-alert').style.transform = "translateY(0%)"
-}, 20000);
+}, 1000);
 function closeAlert() {
     document.querySelector('.sell-alert').style.transform = "translateY(100%)"
 }
 </script>
-<div class="sell-alert" style="position:fixed;z-index:1000;box-shadow:0px 0px 4px 2px rgba(0,0,0,.5);bottom:0;left:0;display:flex;padding:20px;justify-content:flex-end;align-content:center;width:100%;background:var(--orange);transform:translateY(100%);transition:transform .3s ease-in-out;">
-    <a href="#footer" class="alert-content" style="margin:auto;height:40px;display:flex;justify-content:center;align-items:center;"><button type="button" onclick="closeAlert()" style="border:none;display:flex;justify-content:center;color:white;font-size:1.8rem;background:var(--blue);border-radius:20px;padding:10px 20px;">FREE CONSULTATION</button></a>
-    <button type="button" onclick="closeAlert()" class="alert-close" style="height:40px;width:40px;border-radius:50%;font-size:1.5rem;box-shadow:unset;color:rgba(255,255,255,.5);">X</button>
+<div class="sell-alert">
+    <a aria-label="Call Pacific Beach Homes" href="tel:8587408495" class="alert-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>
+    </a>
+    <a href="#footer" class="alert-content">
+        <button class="sell-alert-cta" type="button" onclick="closeAlert()">FREE CONSULTATION</button>
+    </a>
+    <button type="button" onclick="closeAlert()" class="alert-close">X</button>
 </div>
 <style>
+    .sell-alert {
+        position:fixed;
+        z-index:1000;
+        box-shadow:0px 0px 4px 2px rgba(0,0,0,.5);
+        bottom:0;
+        left:0;
+        display:flex;
+        padding:20px 10px 40px 10px;
+        justify-content:flex-end;
+        align-content:center;
+        width:100%;
+        background:var(--orange);
+        transform:translateY(100%);
+        transition:transform .3s ease-in-out;
+    }
+    .alert-phone {
+        height:40px;
+        width:40px;
+    }
+    .alert-phone svg {
+        height:40px;
+        width:40px;
+        border-radius:50%;
+        background:var(--blue);
+        fill:var(--white);
+    }
+    .alert-content {
+        margin:auto;
+        height:40px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
     .alert-content:hover {
         text-decoration:none;
+    }
+    .sell-alert-cta {
+        border:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:40px;
+        font-family: 'Poppins';
+        color:white;
+        font-size:1.8rem;
+        font-size:clamp(1.6rem, 2.5vw, 2rem);
+        background:var(--blue);
+        border-radius:20px;
+        padding:10px 20px;
+    }
+    .alert-close {
+        height:40px;
+        width:40px;
+        border-radius:50%;
+        font-size:1.5rem;
+        box-shadow:unset;
+        color:rgba(255,255,255,.5);
+    }
+    @media (min-width: 768px) {
+        .sell-alert {
+            padding:20px 20px 20px 20px;
+        }
     }
 </style>
 
