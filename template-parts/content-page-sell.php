@@ -79,7 +79,7 @@ get_sidebar();
 <script>document.querySelector('.banner-text-internal').innerText = 'SELL';
 setTimeout(() => {
     document.querySelector('.sell-alert').style.transform = "translateY(0%)"
-}, 1000);
+}, 30000);
 function closeAlert() {
     document.querySelector('.sell-alert').style.transform = "translateY(100%)"
 }
