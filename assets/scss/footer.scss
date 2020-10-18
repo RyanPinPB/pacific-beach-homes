@@ -8,10 +8,17 @@
   box-sizing: content-box;
 }
 
+.footer-top-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
 .footer-top-col-1 {
   display: flex;
   flex-direction: column;
   flex: 1 1 100%;
+  margin-top: 40px;
 }
 
 .footer-name {
@@ -39,7 +46,78 @@ span.footer-location {
 }
 
 .footer-top-col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-cta {
+  color: var(--orange);
+  font-size: 3.25rem;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 10px 10px 10px;
+}
+
+.footerForm fieldset {
+  padding: 0px;
+  width: 100%;
+  margin: auto;
+  border: none;
+}
+
+.footerForm legend,
+.footerForm label {
   display: none;
+}
+
+.footerForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1.7rem;
+  font-family: $bodyFont;
+}
+
+.footerForm textarea {
+  font-size: 1.7rem;
+  width: 100%;
+  height: 220px;
+  padding: 10px;
+  margin: 10px auto;
+  font-family: $bodyFont;
+}
+
+.footerForm button[type='submit'] {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 20px;
+  margin: 10px auto;
+  background: $orange;
+  color: $white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footerForm input,
+.footerForm textarea,
+.footerForm button {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footerForm {
+  .frm_error_style {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .frm_error {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
 
 .mc4wp-form-fields {
@@ -259,21 +337,20 @@ div.grecaptcha-badge {
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
+    margin-top: unset;
   }
 
   span.footer-name,
   span.form-cta {
-    font-family: $headerFont;
     font-size: 3rem;
     line-height: 1.2;
-    font-weight: 700;
     padding-top: 0;
     margin-bottom: 0;
   }
 
   span.form-cta {
-    color: $orange;
     padding-bottom: 10px;
+    margin: unset;
   }
 
   .footer-top-col-2 {
@@ -281,46 +358,16 @@ div.grecaptcha-badge {
     flex-direction: column;
     flex: 1 1 50%;
     padding-left: 25px;
-  }
-
-  .footerForm fieldset {
-    padding: 0px;
-    width: 100%;
-    margin: auto;
-    border: none;
-  }
-
-  .footerForm legend,
-  .footerForm label {
-    display: none;
+    margin: unset;
+    max-width: unset;
   }
 
   .footerForm input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px auto;
     font-size: 2.7rem;
-    font-family: $bodyFont;
   }
 
   .footerForm textarea {
     font-size: 2.7rem;
-    width: 100%;
-    height: 220px;
-    padding: 10px;
-    margin: 10px auto;
-    font-family: $bodyFont;
-  }
-
-  .footerForm button[type='submit'] {
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 20px;
-    margin: 10px auto;
-    background: $orange;
-    color: $white;
-    border-radius: 5px;
-    cursor: pointer;
   }
 
   .footerForm input:focus,
