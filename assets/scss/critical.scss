@@ -555,6 +555,12 @@ a.menu-icon {
     top: 65%;
     font-size: 20rem;
   }
+  .internal-page {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    max-width: 1600px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1600px) {

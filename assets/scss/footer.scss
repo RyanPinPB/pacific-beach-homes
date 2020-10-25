@@ -30,12 +30,11 @@
   white-space: nowrap;
 }
 
-span.footer-name,
-span.footer-phone,
-span.footer-email,
-span.footer-location {
+.footer-name,
+.footer-phone,
+.footer-email,
+.footer-location {
   font-size: 1.7rem;
-  font-weight: 400;
   color: $blueAccent;
   line-height: 1;
   padding-bottom: 20px;
@@ -313,10 +312,10 @@ div.grecaptcha-badge {
 }
 
 @media (min-width: 450px) {
-  span.footer-name,
-  span.footer-phone,
-  span.footer-email,
-  span.footer-location {
+  .footer-name,
+  .footer-phone,
+  .footer-email,
+  .footer-location {
     font-size: 2.25rem;
   }
 }
@@ -340,16 +339,15 @@ div.grecaptcha-badge {
     margin-top: unset;
   }
 
-  span.footer-name,
-  span.form-cta {
-    font-weight: 700;
+  .footer-name,
+  .form-cta {
     font-size: 3rem;
     line-height: 1.2;
     padding-top: 0;
     margin-bottom: 0;
   }
 
-  span.form-cta {
+  .form-cta {
     padding-bottom: 10px;
     margin: unset;
   }
@@ -414,8 +412,8 @@ div.grecaptcha-badge {
 }
 
 @media (min-width: 1025px) {
-  span.footer-name,
-  span.form-cta {
+  .footer-name,
+  .form-cta {
     font-size: 3.6rem;
   }
   .footer-top-col-1 {
@@ -426,5 +424,5 @@ div.grecaptcha-badge {
   }
 }
 
-@media (min-width: 1350px) {
-}
+// @media (min-width: 1350px) {
+// }
