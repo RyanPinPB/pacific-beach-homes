@@ -160,6 +160,9 @@ if (get_field('office_license', 'option')) {
 
 </div><!-- #page -->
 <?php wp_footer(); ?>
-
+<style>
+.footer-bottom-container:hover .google {fill: url(#google-gradient) var(--orange);}
+.footer-bottom-container:hover .instagram {fill: url(#ig-gradient) var(--orange);}
+</style>
 </body>
 </html>
