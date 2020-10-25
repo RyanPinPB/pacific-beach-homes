@@ -430,6 +430,13 @@ a.menu-icon {
   transition: 0.8s;
   text-align: center;
 }
+.footer-bottom-container:hover .google {
+  fill: url(#google-gradient);
+}
+.footer-bottom-container:hover .instagram {
+  fill: url(#ig-gradient);
+}
+
 @media (min-width: 769px) {
   a.menu-icon {
     display: none;
@@ -522,6 +529,11 @@ a.menu-icon {
   .banner-text-internal {
     top: 65%;
     font-size: 15rem;
+  }
+
+  #secondary ul li a {
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
 }
 
