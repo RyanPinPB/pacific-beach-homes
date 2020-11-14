@@ -29,11 +29,67 @@ get_header();
                     'after'  => '</div>',
                 ) );
                 ?>
-                <a class="site-button" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" rel="nofollow noopener" target="_blank">View homes for sale in Pacific Beach</a>
-                <h3>
-                    <a href="#footer">Schedule a consultation with us today to help make this process as easy and fast as you want</a>
-                </h3>
-                <a class="site-button-blue" href="https://pearson.lajollaagent.com/home-valuation/" target="_blank" rel="nofollow noopener">How much is my home worth?</a>
+                <style>
+                    .landing-page-options {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap:3rem;
+                    }
+                    .homes-for-sale {
+                        background-image: url("https://pacificbeachhomes.com/wp-content/themes/pacific-beach-homes/assets/images/button/oceanfront-house.jpg");
+                    }
+                    .home-valuation {
+                        background-image: url("https://pacificbeachhomes.com/wp-content/themes/pacific-beach-homes/assets/images/button/crystal-pier.jpg");
+                    }
+                    .learn-buying {
+                        background-image: url("https://pacificbeachhomes.com/wp-content/themes/pacific-beach-homes/assets/images/button/house-with-pool.jpg");
+                    }
+                    .learn-selling {
+                        background-image: url("https://pacificbeachhomes.com/wp-content/themes/pacific-beach-homes/assets/images/button/crystal-pier-aeriel.jpg");
+                    }
+                    .landing-page-button-background {
+                        display: -webkit-flex;
+                        display: flex;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        text-align: center;
+                        height: 300px;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        white-space: normal;
+                        margin-bottom:10px;
+                    }
+
+                    @media (min-width: 650px) {
+                        .landing-page-button-background {
+                            margin-bottom:unset;
+                            height: 400px;
+                            width: 47%;
+                            transition: -webkit-transform .3s ease-in-out;
+                            transition: transform .3s ease-in-out;
+                            transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+                        }
+
+                        .landing-page-button-background:hover {
+                            transform: scale(1.01);
+                        }
+                    }
+                </style>
+
+                <section class="landing-page-options">
+                <div class="landing-page-button-background homes-for-sale"><a class="site-button" href="https://pearson.lajollaagent.com/results-gallery/?postalcode=92109&amp;sort=importdate&amp;status=A&amp;utm_source=OTHERWEB&amp;utm_campaign=PacificBeachHomes&amp;mdv=5&amp;mpv=5&amp;utm_medium=referral" rel="nofollow noopener" target="_blank">View homes for sale</a></div>
+                <div class="landing-page-button-background home-valuation"><a class="site-button-blue" href="https://pearson.lajollaagent.com/home-valuation/" target="_blank" rel="nofollow noopener">What's my home worth?</a></div>
+                <div class="landing-page-button-background learn-buying"><a class="site-button" href="https://pacificbeachhomes.com/buying-a-home-in-pacific-beach/">Learn about buying</a></div>
+                <div class="landing-page-button-background learn-selling"><a class="site-button-blue" href="https://pacificbeachhomes.com/selling-a-home-in-pacific-beach/">Learn about selling</a></div>
+                </section>
+                <a class="site-button" href="/testimonials/" style="display:flex;justify-content:center;font-size:22.5px;">Read our reviews</a>
 
             </div><!-- .entry-content -->
 
@@ -73,10 +129,10 @@ get_header();
 </div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 ?>
 
-<script>document.querySelector('.banner-text-internal').innerText = 'SELL';
+<script>document.querySelector('.banner-text-internal').innerText = 'PB';
 setTimeout(() => {
     document.querySelector('.sell-alert').style.transform = "translateY(0%)"
 }, 15000);
