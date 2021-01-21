@@ -164,5 +164,14 @@ if (get_field('office_license', 'option')) {
 .footer-bottom-container:hover .google {fill: url(#google-gradient) var(--orange);}
 .footer-bottom-container:hover .instagram {fill: url(#ig-gradient) var(--orange);}
 </style>
+<!-- <script>
+  window.addEventListener('load', function() {
+    if (document.location.pathname == "/thank-you/") {
+      gtag('event', 'conversion', {'send_to': 'AW-529388693/CXi7CLLslewBEJWpt_wB'});
+    }
+  });
+
+</script> -->
+
 </body>
 </html>

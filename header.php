@@ -46,7 +46,7 @@ if (get_field('mailchimp_shortcode', 'option')) {
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<!-- <link rel="preconnect" href="https://www.google-tagmanager.com" crossorigin> -->
+	<link rel="preconnect" href="https://www.google-tagmanager.com" crossorigin>
 	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-regular.woff2" as="font" crossorigin>' ?>
 	<?= '<link rel="preload" href="' . get_template_directory_uri() . '/assets/fonts/poppins-v9-latin-700.woff2" as="font" crossorigin>' ?>
@@ -60,12 +60,27 @@ if (get_field('mailchimp_shortcode', 'option')) {
 	gtag('js', new Date());
 	gtag('config', 'UA-125122385-1');
 	</script>
+	
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Ryan Pearson">
 	<?php wp_head(); ?>
+	
+		<!-- Global site tag (gtag.js) - Google Ads: 529388693 -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-529388693"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-529388693');
+</script>
+<script>
+  gtag('config', 'AW-529388693/l8S9CNaK9OsBEJWpt_wB', {
+    'phone_conversion_number': '(858) 740-8495'
+  });
+</script> -->
 </head>
 
 <body <?php body_class(); ?>>
